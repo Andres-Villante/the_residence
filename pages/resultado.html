@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Resultado de la Cotización</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.jpg" class="logo"></a>
+        </div>
+
+        <div class="nav-container">
+            <nav>
+                <ul class="header-list">
+                    <li><a href="../pages/acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
+                    <li><a href="../pages/departamentos.html">DEPARTAMENTOS</a></li>
+                    <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+                    <li><a href="../pages/actividades.html">ACTIVIDADES PARA HACER EN COSTA DEL ESTE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="resultado-container">
+                <div id="resultado-container"></div>
+            </div>
+
+            <div class="contacto-container">
+                <h3>Contacto</h3>
+                <p>Para más información o consultas, por favor contáctenos:</p>
+                <p>Teléfono: 11 6642-5883</p>
+                <h3>Redes Sociales</h3>
+                <a href="https://www.instagram.com/theresidence.costadeleste/">theresidence.costadeleste</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Contacto</h4>
+        <p><b>11 6642-5883</b></p>
+
+        <h4>Redes Sociales</h4>
+        <p><b>theresidence.costadeleste</b></p>
+
+        <h4>Enlaces</h4>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="./pages/acerca_del_complejo.html">Acerca de The Residence</a></li>
+            <li><a href="./pages/departamentos.html">Departamentos</a></li>
+            <li><a href="./pages/servicios.html">Servicios</a></li>
+            <li><a href="./pages/actividades.html">Actividades en Costa del Este</a></li>
+        </ul>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var resultados = localStorage.getItem('resultadosCotizacion');
+    
+            if (resultados) {
+                resultados = JSON.parse(resultados);
+    
+                var resultadoContainer = document.getElementById('resultado-container');
+                var fechaIngreso = new Date(resultados.fechaIngreso);
+                var fechaSalida = new Date(resultados.fechaSalida);
+    
+                var options = { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' };
+                var fechaIngresoFormateada = fechaIngreso.toLocaleDateString('es-ES', options).replace(/^\w/, c => c.toUpperCase());
+                var fechaSalidaFormateada = fechaSalida.toLocaleDateString('es-ES', options).replace(/^\w/, c => c.toUpperCase());
+    
+                var resultadoHTML = '<h3>Resultados de la cotización:</h3>' +
+                    '<p>Fecha de ingreso: ' + fechaIngresoFormateada + '</p>' +
+                    '<p>Fecha de salida: ' + fechaSalidaFormateada + '</p>' +
+                    '<p>Cantidad de personas: ' + resultados.cantidadPersonas + '</p>' +
+                    '<p>Departamento: ' + resultados.departamento + ' ambientes</p>' +
+                    '<p>Precio por noche: $' + resultados.precio + '</p>';
+    
+                resultadoContainer.innerHTML = resultadoHTML;
+    
+                // Limpiar los resultados almacenados en el almacenamiento local
+                localStorage.removeItem('resultadosCotizacion');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
