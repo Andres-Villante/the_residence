@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
+        var precioTotal = 0;
         var departamento;
-        var precio;
 
         // Definir los rangos de fechas y sus respectivos precios por noche
         var rangosPrecios = [
@@ -63,51 +63,90 @@ document.addEventListener('DOMContentLoaded', function () {
                     { ambientes: 3, personas: [5, 6], precio: 800 },
                     { ambientes: 4, personas: [7, 8, 9, 10], precio: 900 }
                 ]
+            },
+            {
+                inicio: new Date('2023-10-11'),
+                fin: new Date('2023-10-16'),
+                precios: [
+                    { ambientes: 2, personas: [1, 2, 3, 4], precio: 1000 },
+                    { ambientes: 3, personas: [5, 6], precio: 1100 },
+                    { ambientes: 4, personas: [7, 8, 9, 10], precio: 1200 }
+                ]
+            },
+            {
+                inicio: new Date('2023-10-17'),
+                fin: new Date('2023-11-16'),
+                precios: [
+                    { ambientes: 2, personas: [1, 2, 3, 4], precio: 1300 },
+                    { ambientes: 3, personas: [5, 6], precio: 1400 },
+                    { ambientes: 4, personas: [7, 8, 9, 10], precio: 1500 }
+                ]
+            },
+            {
+                inicio: new Date('2023-11-17'),
+                fin: new Date('2023-11-21'),
+                precios: [
+                    { ambientes: 2, personas: [1, 2, 3, 4], precio: 1600 },
+                    { ambientes: 3, personas: [5, 6], precio: 1700 },
+                    { ambientes: 4, personas: [7, 8, 9, 10], precio: 1800 }
+                ]
+            },
+            {
+                inicio: new Date('2023-11-22'),
+                fin: new Date('2023-12-06'),
+                precios: [
+                    { ambientes: 2, personas: [1, 2, 3, 4], precio: 1900 },
+                    { ambientes: 3, personas: [5, 6], precio: 2000 },
+                    { ambientes: 4, personas: [7, 8, 9, 10], precio: 2100 }
+                ]
             }
         ];
+
 
         // Calcular la cantidad de días de diferencia entre las fechas de ingreso y salida
         var diasDiferencia = Math.ceil((fechaSalida - fechaIngreso) / (1000 * 60 * 60 * 24));
 
-        // Encontrar el rango de precios correspondiente
+        // Encontrar los rangos de precios correspondientes
         var rangosSuperpuestos = rangosPrecios.filter(function (rango) {
             return fechaIngreso <= rango.fin && fechaSalida >= rango.inicio;
         });
 
-        // Tomar los precios del segundo intervalo
-        var segundoIntervalo = rangosSuperpuestos[1];
-        if (segundoIntervalo && segundoIntervalo.precios) {
-            var preciosSegundoIntervalo = segundoIntervalo.precios.find(function (precio) {
+
+        rangosSuperpuestos.forEach(function (rango) {
+            var precios = rango.precios.filter(function (precio) {
                 return precio.personas.includes(cantidadPersonas);
             });
 
-            if (preciosSegundoIntervalo) {
-                departamento = preciosSegundoIntervalo.ambientes;
-                precio = preciosSegundoIntervalo.precio * diasDiferencia;
-            } else {
-                alert('No tenemos precios disponibles para la cantidad de personas seleccionadas');
-                return;
-            }
-        } else {
-            // Tomar los precios del primer intervalo
-            var primerIntervalo = rangosPrecios[0];
-            if (primerIntervalo && primerIntervalo.precios) {
-                var preciosPrimerIntervalo = primerIntervalo.precios.find(function (precio) {
-                    return precio.personas.includes(cantidadPersonas);
-                });
+            if (precios.length > 0) {
+                var precioPorNoche = precios[0].precio;
 
-                if (preciosPrimerIntervalo) {
-                    departamento = preciosPrimerIntervalo.ambientes;
-                    precio = preciosPrimerIntervalo.precio * diasDiferencia;
+                if (fechaIngreso >= rango.inicio && fechaSalida <= rango.fin) {
+                    // Superposición completa del rango
+                    precioTotal += precioPorNoche * diasDiferencia;
                 } else {
-                    alert('No tenemos precios disponibles para la cantidad de personas seleccionadas');
-                    return;
+                    // Superposición parcial del rango
+                    var diasRango1 = Math.ceil((rango.fin - fechaIngreso) / (1000 * 60 * 60 * 24)) + 1;
+                    var diasRango2 = Math.ceil((fechaSalida - rango.inicio) / (1000 * 60 * 60 * 24)) + 1;
+
+                    // Calcular el precio total sumando los precios por noche de cada intervalo
+                    var precioRango1 = precioPorNoche * diasRango1;
+                    var precioRango2 = precioPorNoche * diasRango2;
+                    precioTotal += precioRango1 + precioRango2;
                 }
-            } else {
-                alert('No tenemos precios disponibles para las fechas seleccionadas');
-                return;
+
+                departamento = rango.precios[0].ambientes;
             }
+        });
+
+        var precio = precioTotal.toFixed(2);
+
+
+        if (precioTotal === 0) {
+            alert('No tenemos precios disponibles para las fechas seleccionadas');
+            return;
         }
+
+        var precio = precioTotal.toFixed(2);
 
         // Almacenar los resultados en el almacenamiento local (localStorage)
         var resultados = {
@@ -115,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
             fechaSalida: fechaSalida.toISOString(),
             cantidadPersonas: cantidadPersonas,
             departamento: departamento,
-            precio: precio
+            precio: precio,
         };
 
         localStorage.setItem('resultadosCotizacion', JSON.stringify(resultados));
