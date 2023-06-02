@@ -63,96 +63,44 @@ document.addEventListener('DOMContentLoaded', function () {
                     { ambientes: 3, personas: [5, 6], precio: 800 },
                     { ambientes: 4, personas: [7, 8, 9, 10], precio: 900 }
                 ]
-            },
-            {
-                inicio: new Date('2023-10-11'),
-                fin: new Date('2023-10-16'),
-                precios: [
-                    { ambientes: 2, personas: [1, 2, 3, 4], precio: 1000 },
-                    { ambientes: 3, personas: [5, 6], precio: 1100 },
-                    { ambientes: 4, personas: [7, 8, 9, 10], precio: 1200 }
-                ]
-            },
-            {
-                inicio: new Date('2023-10-17'),
-                fin: new Date('2023-11-16'),
-                precios: [
-                    { ambientes: 2, personas: [1, 2, 3, 4], precio: 1300 },
-                    { ambientes: 3, personas: [5, 6], precio: 1400 },
-                    { ambientes: 4, personas: [7, 8, 9, 10], precio: 1500 }
-                ]
-            },
-            {
-                inicio: new Date('2023-11-17'),
-                fin: new Date('2023-11-21'),
-                precios: [
-                    { ambientes: 2, personas: [1, 2, 3, 4], precio: 1600 },
-                    { ambientes: 3, personas: [5, 6], precio: 1700 },
-                    { ambientes: 4, personas: [7, 8, 9, 10], precio: 1800 }
-                ]
-            },
-            {
-                inicio: new Date('2023-11-22'),
-                fin: new Date('2023-12-06'),
-                precios: [
-                    { ambientes: 2, personas: [1, 2, 3, 4], precio: 1900 },
-                    { ambientes: 3, personas: [5, 6], precio: 2000 },
-                    { ambientes: 4, personas: [7, 8, 9, 10], precio: 2100 }
-                ]
             }
         ];
 
-        // Verificar si la fecha de ingreso es posterior al 7/12
-        var fechaLimite = new Date('2023-12-07');
-        if (fechaIngreso > fechaLimite) {
-            alert('No tenemos precios disponibles para las fechas seleccionadas');
-            return;
-        }
+        // Calcular la cantidad de días de diferencia entre las fechas de ingreso y salida
+        var diasDiferencia = Math.ceil((fechaSalida - fechaIngreso) / (1000 * 60 * 60 * 24));
 
-        // Validar cantidad mínima de noches
-        var diasDiferencia = Math.floor((fechaSalida - fechaIngreso) / (1000 * 60 * 60 * 24));
-        if (diasDiferencia < 2) {
-            alert('Unicamente hacemos reservas de mínimo 2 noches.');
-            return;
-        }
-
-        // Obtener los intervalos que se superponen
+        // Encontrar el rango de precios correspondiente
         var rangosSuperpuestos = rangosPrecios.filter(function (rango) {
-            return fechaIngreso < rango.fin && fechaSalida > rango.inicio;
+            return fechaIngreso <= rango.fin && fechaSalida >= rango.inicio;
         });
 
-        // Verificar si hay superposición de intervalos
-        if (rangosSuperpuestos.length > 0) {
-            // Tomar los precios del segundo intervalo
-            var segundoIntervalo = rangosSuperpuestos[1];
+        // Tomar los precios del segundo intervalo
+        var segundoIntervalo = rangosSuperpuestos[1];
+        if (segundoIntervalo && segundoIntervalo.precios) {
             var preciosSegundoIntervalo = segundoIntervalo.precios.find(function (precio) {
                 return precio.personas.includes(cantidadPersonas);
             });
 
             if (preciosSegundoIntervalo) {
                 departamento = preciosSegundoIntervalo.ambientes;
-                precio = preciosSegundoIntervalo.precio;
+                precio = preciosSegundoIntervalo.precio * diasDiferencia;
             } else {
-                alert('No hay disponibilidad para la cantidad de personas seleccionada');
+                alert('No tenemos precios disponibles para la cantidad de personas seleccionadas');
                 return;
             }
         } else {
-            // Obtener el precio correspondiente al rango de fechas y cantidad de personas
-            var precioEncontrado = rangosPrecios.find(function (rango) {
-                return fechaIngreso >= rango.inicio && fechaSalida <= rango.fin;
-            });
-
-            // Validar si se encontró un precio válido
-            if (precioEncontrado) {
-                var preciosPorAmbiente = precioEncontrado.precios.find(function (precio) {
+            // Tomar los precios del primer intervalo
+            var primerIntervalo = rangosPrecios[0];
+            if (primerIntervalo && primerIntervalo.precios) {
+                var preciosPrimerIntervalo = primerIntervalo.precios.find(function (precio) {
                     return precio.personas.includes(cantidadPersonas);
                 });
 
-                if (preciosPorAmbiente) {
-                    departamento = preciosPorAmbiente.ambientes;
-                    precio = preciosPorAmbiente.precio;
+                if (preciosPrimerIntervalo) {
+                    departamento = preciosPrimerIntervalo.ambientes;
+                    precio = preciosPrimerIntervalo.precio * diasDiferencia;
                 } else {
-                    alert('No hay disponibilidad para la cantidad de personas seleccionada');
+                    alert('No tenemos precios disponibles para la cantidad de personas seleccionadas');
                     return;
                 }
             } else {

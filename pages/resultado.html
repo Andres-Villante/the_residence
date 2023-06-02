@@ -30,7 +30,7 @@
     <main>
         <div class="container">
             <div class="resultado-container">
-                <div id="resultado-container"></div>
+                <div id="resultado"></div>
             </div>
 
             <div class="contacto-container">
@@ -59,37 +59,44 @@
             <li><a href="./pages/actividades.html">Actividades en Costa del Este</a></li>
         </ul>
     </footer>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var resultados = localStorage.getItem('resultadosCotizacion');
-    
+
             if (resultados) {
                 resultados = JSON.parse(resultados);
-    
-                var resultadoContainer = document.getElementById('resultado-container');
+
+                var resultadoContainer = document.querySelector('#resultado');
+
                 var fechaIngreso = new Date(resultados.fechaIngreso);
                 var fechaSalida = new Date(resultados.fechaSalida);
-    
-                var options = { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' };
-                var fechaIngresoFormateada = fechaIngreso.toLocaleDateString('es-ES', options).replace(/^\w/, c => c.toUpperCase());
-                var fechaSalidaFormateada = fechaSalida.toLocaleDateString('es-ES', options).replace(/^\w/, c => c.toUpperCase());
-    
+
+                var opciones = {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                };
+
+                var fechaIngresoFormateada = fechaIngreso.toLocaleDateString('es-ES', opciones);
+                var fechaSalidaFormateada = fechaSalida.toLocaleDateString('es-ES', opciones);
+
                 var resultadoHTML = '<h3>Resultados de la cotización:</h3>' +
                     '<p>Fecha de ingreso: ' + fechaIngresoFormateada + '</p>' +
                     '<p>Fecha de salida: ' + fechaSalidaFormateada + '</p>' +
                     '<p>Cantidad de personas: ' + resultados.cantidadPersonas + '</p>' +
                     '<p>Departamento: ' + resultados.departamento + ' ambientes</p>' +
                     '<p>Precio por noche: $' + resultados.precio + '</p>';
-    
+
                 resultadoContainer.innerHTML = resultadoHTML;
-    
+
                 // Limpiar los resultados almacenados en el almacenamiento local
                 localStorage.removeItem('resultadosCotizacion');
             }
         });
+
     </script>
-    
+
 </body>
 
 </html>
