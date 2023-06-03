@@ -1,3 +1,11 @@
+/* Reseteo de CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*======================================
           Estilos para el Index
 =======================================*/
@@ -133,19 +141,9 @@ a {
   cursor: pointer;
 }
 
-
-/* COTIZACION */
-
-.resultado-tarjeta {
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-
-/* ESTILOS RESULTADOS.HTML */
+/*======================================
+          Estilos para el resultado.html
+=======================================*/
 
 .container {
   display: flex;
@@ -168,19 +166,4 @@ a {
 
 .resultado-container {
   margin-right: 20px;
-}
-
-
-
-
-/*======================================
-          Media Queries
-=======================================*/
-
-@media (orientation: portrait) {
-
-  .departamentos_servicios{
-    background-color: coral;
-  }
-
 }
