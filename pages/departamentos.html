@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Departamentos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -31,87 +32,99 @@
         <h1>Departamentos</h1>
 
         <div>
-            <button>Departamento de 2 Ambientes</button>
-            <button>Departamento de 3 Ambientes</button>
-            <button>Departamento de 4 Ambientes</button>
+            <button data-target="departamento2">Departamento de 2 Ambientes</button>
+            <button data-target="departamento3">Departamento de 3 Ambientes</button>
+            <button data-target="departamento4">Departamento de 4 Ambientes</button>            
         </div>
 
-        <h2>Departamento de 2 Ambientes</h2>
-        <section class="galeria-2amb">
+        <!-- Departamentos -->
+        <div id="departamento2">
+                <h2>Departamento de 2 Ambientes</h2>
+            <section class="galeria-2amb">
 
-            <div class="left-img-2amb">
-                <img src="../img/departamentos/2_ambientes/cocina.jpg" alt="">
+                <div class="left-img-2amb">
+                    <img src="../img/departamentos/2_ambientes/cocina.jpg" alt="">
+                </div>
+
+                <div class="right-img-1-2amb">
+                    <img src="../img/departamentos/2_ambientes/cama1.jpg" alt="">
+                </div>               
+
+                <div class="right-img-2-2amb">
+                    <img src="../img/departamentos/2_ambientes/baño.jpg" alt="">
+                </div>
+
+                <div class="bottom-img-2amb">
+                    <img src="../img/departamentos/2_ambientes/depto2amb.jpeg" alt="">
+                </div>
+            </section>
+
+            <h3>Plano del Departamento</h3>
+            <img src="" alt="">
+
+            <table>TABLA</table>
+
+        </div>
+
+
+        <div id="departamento3">
+            <h2>Departamento de 3 Ambientes</h2>
+            <section class="galeria-3amb">
+    
+                <div class="left-img-3amb">
+                    <img src="../img/departamentos/3_ambientes/cocina3amb.jpg" alt="">
+                </div>
+    
+                <div class="right-img-1-3amb">
+                    <img src="../img/departamentos/3_ambientes/cama.jpg" alt="">
+                </div>               
+    
+                <div class="right-img-2-3amb">
+                    <img src="../img/departamentos/3_ambientes/baño3amb.jpg" alt="">
+                </div>
+    
+                <div class="bottom-img-3amb">
+                    <img src="../img/departamentos/3_ambientes/2 camas.jpg" alt="">
+                </div>
+            </section>
+    
+            <h3>Plano del Departamento</h3>
+            <img src="" alt="">
+    
+            <table>TABLA</table>
             </div>
 
-            <div class="right-img-1-2amb">
-                <img src="../img/departamentos/2_ambientes/cama1.jpg" alt="">
-            </div>               
 
-            <div class="right-img-2-2amb">
-                <img src="../img/departamentos/2_ambientes/baño.jpg" alt="">
-            </div>
-
-            <div class="bottom-img-2amb">
-                <img src="../img/departamentos/2_ambientes/depto2amb.jpeg" alt="">
-            </div>
-        </section>
-
-        <h3>Plano del Departamento</h3>
-        <img src="" alt="">
-
-        <table>TABLA</table>
-
-        <h2>Departamento de 3 Ambientes</h2>
-        <section class="galeria-3amb">
-
-            <div class="left-img-3amb">
-                <img src="../img/departamentos/3_ambientes/cocina3amb.jpg" alt="">
-            </div>
-
-            <div class="right-img-1-3amb">
-                <img src="../img/departamentos/3_ambientes/cama.jpg" alt="">
-            </div>               
-
-            <div class="right-img-2-3amb">
-                <img src="../img/departamentos/3_ambientes/baño3amb.jpg" alt="">
-            </div>
-
-            <div class="bottom-img-3amb">
-                <img src="../img/departamentos/3_ambientes/2 camas.jpg" alt="">
-            </div>
-        </section>
-
-        <h3>Plano del Departamento</h3>
-        <img src="" alt="">
-
-        <table>TABLA</table>
-
-        <h2>Departamento de 4 Ambientes</h2>
-        <section class="galeria-4amb">
-
-            <div class="left-img-4amb">
-                <img src="../img/departamentos/4_ambientes/living3amb.jpg" alt="">
-            </div>
-
-            <div class="right-img-1-4amb">
-                <img src="../img/departamentos/4_ambientes/baño4amb.jpg" alt="">
-            </div>               
-
-            <div class="right-img-2-4amb">
-                <img src="../img/departamentos/4_ambientes/cama3amb.jpg" alt="">
-            </div>
-
-            <div class="bottom-img-4amb">
-                <img src="../img/departamentos/4_ambientes/3camas3amb.jpg" alt="">
-            </div>
-        </section>
-
-        <h3>Plano del Departamento</h3>
-        <img src="" alt="">
-
-        <table>TABLA</table>
+        <div id="departamento4">
+            <h2>Departamento de 4 Ambientes</h2>
+            <section class="galeria-4amb">
+    
+                <div class="left-img-4amb">
+                    <img src="../img/departamentos/4_ambientes/living3amb.jpg" alt="">
+                </div>
+    
+                <div class="right-img-1-4amb">
+                    <img src="../img/departamentos/4_ambientes/baño4amb.jpg" alt="">
+                </div>               
+    
+                <div class="right-img-2-4amb">
+                    <img src="../img/departamentos/4_ambientes/cama3amb.jpg" alt="">
+                </div>
+    
+                <div class="bottom-img-4amb">
+                    <img src="../img/departamentos/4_ambientes/3camas3amb.jpg" alt="">
+                </div>
+            </section>
+    
+            <h3>Plano del Departamento</h3>
+            <img src="" alt="">
+    
+            <table>TABLA</table>        
+        </div>
 
     </main>
+
+    <script src="/js/desplazamiento.js"></script>
 
     <footer>
 
