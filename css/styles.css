@@ -6,17 +6,22 @@
   box-sizing: border-box;
 }
 
-/*======================================
-          Estilos para el Index
-=======================================*/
-
 /* Estilos generales */
+
+p {
+  white-space: pre-line;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   }
+
+/*======================================
+          Estilos para el Index
+=======================================*/
+
 
 /* Estilos para el header */
 
@@ -55,81 +60,6 @@ header {
   font-size: 16px;
   font-weight: bold;
   transition: color 0.3s ease;
-}
-
-/* Estilos para los párrafos */
-
-p {
-  white-space: pre-line;
-}
-
-/* Tarjeta departamentos y servicios */
-
-.departamentos_servicios {
-  display: flex;
-  justify-content: center;
-}
-
-.departamento {
-  width: 400px;
-  text-align: center;
-  margin: 0 20px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.departamento__titulo {
-  color: #333333;
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.departamento__subtitulo {
-  color: #666666;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.departamento__descripcion {
-  color: #999999;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-.departamento__imagen {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.departamento__boton {
-  margin-top: auto;
-  background-color: #4caf50;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  padding: 12px 24px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.departamento__boton:hover {
-  background-color: #45a049;
-}
-
-.departamento__enlace {
-  text-decoration: none;
-  color: #ffffff;
 }
 
 /* Fondo principal */
@@ -202,6 +132,166 @@ p {
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Conocer mas complejo */
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.main-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 50px auto 0; 
+}
+
+.title {
+  text-align: center;
+}
+
+.description,
+.details {
+  text-align: justify;
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Tarjeta departamentos y servicios */
+
+.departamentos_servicios {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 0; 
+}
+
+.departamento {
+  width: 500px;
+  text-align: center;
+  margin: 0 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center;
+}
+
+.departamento__titulo {
+  color: #333333;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.departamento__subtitulo {
+  color: #666666;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.departamento__descripcion {
+  color: #999999;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.departamento__imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.departamento__boton {
+  margin-top: auto;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.departamento__boton:hover {
+  background-color: #45a049;
+}
+
+.departamento__enlace {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Donde Estamos */
+
+.donde-estamos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+.img-donde-estamos {
+  margin-right: 20px;
+  position: relative;
+}
+
+.img-donde-estamos img {
+  width: 100%;
+  height: auto;
+}
+
+.txt-donde-estamos {
+  display: flex;
+  flex-direction: column;
+}
+
+.txt-donde-estamos h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.txt-donde-estamos p {
+  margin-bottom: 10px;
+}
+
+.mapa-donde-estamos {
+  margin-top: 20px;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+  height: 300px;
 }
 
 /*======================================
