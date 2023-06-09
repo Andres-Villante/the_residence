@@ -321,11 +321,41 @@ iframe {
   margin-right: 20px;
 }
 
-
-
 /*======================================
       Estilos para el departamentos.html
 =======================================*/
+
+/* Titulos Departamentos */
+
+.titulo-general-departamentos{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.titulo-departamentos{
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Botones Departamentos */
+
+.botones-departamentos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.botones-departamentos button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
 /* Imagenes 2 Ambientes */
 
@@ -333,7 +363,6 @@ iframe {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 1rem;
-  padding: 1rem;
   transform: scale(0.95);
 }
 
@@ -373,7 +402,6 @@ iframe {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 1rem;
-  padding: 1rem;
   transform: scale(0.95);
 }
 
@@ -406,12 +434,10 @@ iframe {
 }
 
 /* Imagenes 4 Ambientes */
-
 .galeria-4amb {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 1rem;
-  padding: 1rem;
   transform: scale(0.95);
 }
 
@@ -432,13 +458,58 @@ iframe {
   grid-column: span 1;
 }
 
-
 .right-img-2-4amb {
   grid-column: span 1;
 }
 
 .bottom-img-4amb {
   grid-column: span 2;
+}
+
+.titulo-planos {
+  text-align: center;
+}
+
+.tabla {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #F0FFF0; /* Cambiar a verde (#00FF00) si se desea */
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle; /* Alineación vertical */
+}
+
+th {
+  background-color: lightgray;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid black;
 }
 
 /*======================================
@@ -464,7 +535,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #cccccc; /* Agregado: Borde de 1px sólido en color gris */
+  border: 1px solid #cccccc;
 }
 
 .tarjeta__titulo {
@@ -493,7 +564,6 @@ iframe {
   text-decoration: none;
   color: #ffffff;
 }
-
 
 /*======================================
                   Estilos para el footer
