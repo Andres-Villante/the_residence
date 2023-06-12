@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  }
+}
 
 /*======================================
           Estilos para el Index
@@ -138,15 +138,15 @@ header {
 
 .container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .main-content {
   max-width: 800px;
   text-align: center;
-  margin: 50px auto 0; 
+  margin: 50px auto 0;
 }
 
 .title {
@@ -184,7 +184,7 @@ header {
 .departamentos_servicios {
   display: flex;
   justify-content: center;
-  margin: 50px auto 0; 
+  margin: 50px auto 0;
 }
 
 .departamento {
@@ -197,7 +197,7 @@ header {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   text-align: center;
 }
 
@@ -327,13 +327,13 @@ iframe {
 
 /* Titulos Departamentos */
 
-.titulo-general-departamentos{
+.titulo-general-departamentos {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-.titulo-departamentos{
+.titulo-departamentos {
   text-align: center;
   margin-top: 50px;
 }
@@ -474,7 +474,8 @@ iframe {
   margin: 0 auto;
   max-width: 800px;
   padding: 20px;
-  background-color: #F0FFF0; /* Cambiar a verde (#00FF00) si se desea */
+  background-color: #F0FFF0;
+  /* Cambiar a verde (#00FF00) si se desea */
   border: 1px solid black;
 }
 
@@ -488,7 +489,8 @@ td {
   padding: 0.5rem;
   border: 1px solid black;
   text-align: center;
-  vertical-align: middle; /* Alineación vertical */
+  vertical-align: middle;
+  /* Alineación vertical */
 }
 
 th {
@@ -564,6 +566,68 @@ tr:nth-child(even) {
   text-decoration: none;
   color: #ffffff;
 }
+
+/*======================================
+          Estilos para el servicios.html
+=======================================*/
+
+/* Estilos para las tarjetas de servicios */
+
+.titulo-servicios {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tarjeta-servicios-container {
+  margin-bottom: 40px;
+}
+
+.card-header-servicios {
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body-servicios {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 0;
+}
+
+.card-body-servicios img {
+  width: 400px; 
+  height: 400px;
+  margin-right: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-body-servicios p {
+  margin: 0;
+  color: #666;
+  padding: 20px; /* Aumenta el valor del padding según tus necesidades */
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+}
+
+
+.cards-servicios {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cards-servicios + .tarjeta-container {
+  margin-top: 20px;
+}
+
+
+
 
 /*======================================
                   Estilos para el footer
