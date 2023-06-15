@@ -250,12 +250,13 @@ header {
   color: #ffffff;
 }
 
+/* Estilos para Donde Estamos */
 .donde-estamos-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
-  margin-top: 70px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -266,8 +267,8 @@ header {
 }
 
 .img-donde-estamos img {
-  width: 1200px; /* Ajusta el ancho de la imagen según tus necesidades */
-  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor sin exceder su tamaño */
+  width: 1200px;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -299,6 +300,68 @@ header {
   margin: 10px 0;
   text-align: center;
 }
+
+/* Estilos actividades */
+
+.actividades {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 300px;
+  position: relative;
+}
+
+.img-actividades {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.img-actividades img {
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.txt-actividades {
+  position: absolute;
+  margin-bottom: -500px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  width: 1100px;
+  text-align: center;
+}
+
+.txt-actividades h3,
+.txt-actividades p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+.txt-actividades .btn-conocer {
+  display: inline-block; 
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; 
+}
+
 
 /*======================================
           Estilos para el resultado.html
@@ -783,9 +846,6 @@ tr:nth-child(even) {
 .cards-servicios + .tarjeta-container {
   margin-top: 20px;
 }
-
-
-
 
 /*======================================
                   Estilos para el footer
