@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Enlace al archivo JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlace al archivo JavaScript de preguntas.js -->
+    <script src="../js/preguntas.js"></script>
+
+
     <title>Acerca del Complejo</title>
 </head>
 
@@ -28,58 +36,115 @@
     </header>
 
     <main>
-        <h1>Acerca del complejo</h1>
-
-        <p>
+        <h1 class="titlo-acerca-del-complejo">Acerca del complejo</h1>
+    
+        <p class="descripcion-acerca-del-complejo">
             The Residence es un complejo de departamentos ubicado en una zona tranquila frente al mar, rodeado de hermosos bosques de pinos, lo que lo convierte en un destino ideal para aquellos que buscan descansar en contacto con la naturaleza.
-
+    
             La ubicación privilegiada de The Residence permite a sus huéspedes disfrutar de la hermosa playa de Costa del Este sin necesidad de trasladarse en auto, ya que solo deben cruzar la calle costanera para acceder a ella. Además, el complejo se encuentra a unos 200 metros de una calle comercial donde se pueden encontrar restaurantes, confiterías y una variedad de comercios.
-
+    
             Cada unidad de The Residence es un departamento completamente equipado, con una cocina que cuenta con una heladera grande con freezer, horno microondas, cocina a gas de 4 hornallas, cacerolas y vajilla para todos los huéspedes. Esta comodidad resulta atractiva para aquellos que prefieren cocinar en lugar de comer afuera todos los días. Además, el complejo ofrece un quincho cubierto con parrillas, donde los huéspedes pueden disfrutar de un delicioso asado.
-
+    
             The Residence ofrece una combinación perfecta de ubicación, comodidad y servicios, convirtiéndolo en el destino ideal para unas vacaciones inolvidables en contacto con la naturaleza y cerca de todas las comodidades que ofrece Costa del Este.
         </p>
 
-        <br><br><br>
+        <div class="titulo-galeria">
+            <h2>Galería de The Residence</h2>
+        </div>
 
-        <h3>Preguntas Frecuentes</h3>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
 
-        <ul>
-            <li><b>Check-in y Check-out</b></li>
-            <h4>¿Cuál es el horario de check-in y check-out del hotel?</h4>
-            <p>Respuesta</p>
-            <br>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/acerca_del_complejo/complejo_1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/acerca_del_complejo/entrada.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/acerca_del_complejo/complejo_2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the fourth slide.</p>
+                </div>
+            </div>            
+            <div class="carousel-item">
+                <img src="../img/acerca_del_complejo/vista_2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fourth slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <div class="preguntas-frecuentes">
+            <h2 class="titulo-preguntas-frecuentes">Preguntas Frecuentes</h2>
+        
+            <ul class="todas-las-preguntas">
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cuál es el horario de check-in y check-out del hotel?</h3>
+                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+        
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cómo puedo cancelar mi reserva? ¿Hay alguna forma específica de hacerlo?</h3>
+                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+        
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cómo puedo pagar mi reserva?</h3>
+                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+        
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cuáles son los requisitos o información necesaria para realizar una reserva?</h3>
+                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+        
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿El hotel cuenta con estacionamiento? ¿Es gratuito para los huéspedes o tiene un costo adicional?</h3>
+                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+        
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿El desayuno está incluido en el precio de la habitación? ¿De qué se trata el desayuno? En caso de tener restricciones dietéticas o alergias, ¿se pueden atender solicitudes especiales para el desayuno?</h3>
+                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+        
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Con qué frecuencia se realiza el servicio de limpieza en las habitaciones? ¿Se ofrece limpieza diaria?</h3>
+                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+            </ul>
+        </div>
+        
 
-            <li><b>Cancelación de reservas</b></li>
-            <h4>¿Cómo puedo cancelar mi reserva? ¿Hay alguna forma específica de hacerlo?</h4>
-            <p>Respuesta</p>
-            <br>
-
-            <li><b>Métodos de Pago</b></li>
-            <h4>¿Cómo puedo pagar mi reserva?</h4>
-            <p>Respuesta</p>
-            <br>
-
-            <li><b>Reservas</b></li>
-            <h4>¿Cuáles son los requisitos o información necesaria para realizar una reserva?</h4>
-            <p>Respuesta</p>
-            <br>
-
-            <li><b>Estacionamiento</b></li>
-            <h4>¿El hotel cuenta con estacionamiento? ¿Es gratuito para los huéspedes o tiene un costo adicional?</h4>
-            <p>Respuesta</p>
-            <br>
-
-            <li><b>Desayuno</b></li>
-            <h4>¿El desayuno está incluido en el precio de la habitación? ¿De qué se trata el desayuno? En caso de tener restricciones dietéticas o alergias, ¿se pueden atender solicitudes especiales para el desayuno?</h4>
-            <p>Respuesta</p>
-
-            <li><b>Funcionamiento del servicio de limpieza</b></li>
-            <h4>¿Con qué frecuencia se realiza el servicio de limpieza en las habitaciones? ¿Se ofrece limpieza diaria?</h4>
-            <p>Respuesta</p>
-            <br>
-        </ul>
+        
     </main>
+    
 
     <footer class="footer">
         <div class="footer-contact">
