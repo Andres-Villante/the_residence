@@ -59,6 +59,14 @@ header {
   transition: color 0.3s ease;
 }
 
+
+
+
+
+
+
+
+
 /*======================================
           Estilos para el Index
 =======================================*/
@@ -852,8 +860,6 @@ tr:nth-child(even) {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-
-  
 }
 
 .cotizacion select {
