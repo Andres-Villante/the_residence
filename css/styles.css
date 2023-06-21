@@ -18,11 +18,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/*======================================
-        Estilos para el Header
-=======================================*/
+/*=======================================================================
+                        Estilos para el Header
+=======================================================================*/
 
 /* Estilos para el Header en pantallas mayores */
+
 header {
   background-color: #ffffff;
   padding: 20px;
@@ -66,12 +67,13 @@ header {
 }
 
 /* Estilos para el botón hamburguesa en pantallas chicas */
+
 .menu-icon-container {
   display: none;
 }
 
 .menu-icon {
-  display: none; 
+  display: none;
   outline: none;
   border: none;
   background: none;
@@ -103,8 +105,8 @@ header {
 
 .sidebar-list li {
   margin-bottom: 20px;
-  width: auto; 
-  padding: 0 20px; 
+  width: auto;
+  padding: 0 20px;
 }
 
 .sidebar-list li a {
@@ -113,7 +115,7 @@ header {
   font-size: 16px;
   font-weight: bold;
   transition: color 0.3s ease;
-  display: block; 
+  display: block;
 
 }
 
@@ -124,10 +126,10 @@ header {
   background: none;
 }
 
+/*=======================================================================
+                      Estilos para el Index
+=======================================================================*/
 
-/*======================================
-          Estilos para el Index
-=======================================*/
 
 /* Fondo principal */
 
@@ -170,7 +172,7 @@ header {
 .description-complejo {
   text-align: justify;
   text-align: center;
-  padding: 0 20px; 
+  padding: 0 20px;
 
 }
 
@@ -268,6 +270,7 @@ header {
 }
 
 /* Estilos para Donde Estamos */
+
 .donde-estamos-container {
   display: flex;
   flex-direction: column;
@@ -308,8 +311,8 @@ header {
 }
 
 .txt-donde-estamos iframe {
-  width: 100%; 
-  height: 200px; 
+  width: 100%;
+  height: 200px;
   margin-top: 20px;
   border: 0;
 }
@@ -367,9 +370,8 @@ header {
   text-align: center;
 }
 
-
 .txt-actividades .btn-conocer {
-  display: inline-block; 
+  display: inline-block;
   background-color: #4caf50;
   color: white;
   border: none;
@@ -378,13 +380,12 @@ header {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-
-/*======================================
-    Estilos para el resultado.html
-=======================================*/
+/*=======================================================================
+                    Estilos para el resultado.html
+=======================================================================*/
 
 .container {
   display: flex;
@@ -409,11 +410,12 @@ header {
   margin-right: 20px;
 }
 
-/*======================================
-Estilos para el acerca_del_complejo.html
-=======================================*/
+/*=======================================================================
+              Estilos para el acerca_del_complejo.html
+=======================================================================*/
 
 /* Estilos para el encabezado principal */
+
 .titlo-acerca-del-complejo,
 .titulo-galeria{
   text-align: center;
@@ -434,6 +436,7 @@ Estilos para el acerca_del_complejo.html
 }
 
 /* Estilos para el carousel */
+
 .carousel {
   max-width: 500px;
   margin: 0 auto;
@@ -459,19 +462,19 @@ Estilos para el acerca_del_complejo.html
   text-align: center;
   margin-bottom: 30px;
 }
-  
+
 .lista-de-preguntas {
   margin-bottom: 50px;
   list-style-type: none;
 }
-  
+
 .pregunta-especifica {
   margin-bottom: 20px;
   cursor: pointer;
   text-align: center;
   font-size: 22px;
 }
-  
+
 .respuesta-pregunta {
   display: none;
   margin-top: 10px;
@@ -483,11 +486,13 @@ Estilos para el acerca_del_complejo.html
 }
 
 /* Estilos para el acordeón */
+
 .lista-de-preguntas.active {
   background-color: #f5f5f5;
 }
 
 /* Estilos para el botón "Cerrar" en la respuesta */
+
 .cerrar-respuesta {
   background-color: #ff0000;
   color: #ffffff;
@@ -497,9 +502,9 @@ Estilos para el acerca_del_complejo.html
   cursor: pointer;
 }
 
-/*======================================
-    Estilos para el departamentos.html
-=======================================*/
+/*=======================================================================
+                Estilos para el departamentos.html
+=======================================================================*/
 
 /* Titulos Departamentos */
 
@@ -610,6 +615,7 @@ Estilos para el acerca_del_complejo.html
 }
 
 /* Imagenes 4 Ambientes */
+
 .galeria-4amb {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -689,10 +695,9 @@ tr:nth-child(even) {
   border-left: 1px solid black;
 }
 
-/*======================================
-    Estilos para el actividades.html
-=======================================*/
-
+/*=======================================================================
+                  Estilos para el actividades.html
+=======================================================================*/
 
 /* Titulos de actividades */
 
@@ -726,7 +731,7 @@ tr:nth-child(even) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .tarjeta {
@@ -774,7 +779,7 @@ tr:nth-child(even) {
 }
 
 .cards-localidades {
-  width: 500px; 
+  width: 500px;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
@@ -804,11 +809,9 @@ tr:nth-child(even) {
   margin-bottom: 10px;
 }
 
-
-
-/*======================================
-      Estilos para el servicios.html
-=======================================*/
+/*======================================================================= 
+                      Estilos para el servicios.html
+=======================================================================*/
 
 /* Estilos para las tarjetas de servicios */
 
@@ -837,7 +840,7 @@ tr:nth-child(even) {
 }
 
 .card-body-servicios img {
-  width: 400px; 
+  width: 400px;
   height: 400px;
   margin-right: 10px;
   border-radius: 5px;
@@ -848,10 +851,9 @@ tr:nth-child(even) {
 .card-body-servicios p {
   margin: 0;
   color: #666;
-  padding: 20px; 
-  font-size: 16px; 
+  padding: 20px;
+  font-size: 16px;
 }
-
 
 .cards-servicios {
   display: flex;
@@ -865,9 +867,9 @@ tr:nth-child(even) {
   margin-top: 20px;
 }
 
-/*======================================
-    Estilos para el cotizacion.html
-=======================================*/
+/*======================================================================= 
+                  Estilos para el cotizacion.html
+=======================================================================*/
 
 /* Estilos del contenedor principal */
 .fondo-principal-cotizacion {
@@ -931,9 +933,9 @@ tr:nth-child(even) {
   margin-bottom: 10px;
 }
 
-/*======================================
-        Estilos para el footer
-=======================================*/
+/*=======================================================================
+                        Estilos para el footer
+=======================================================================*/
 
 .footer {
   background-color: #f2f2f2;
@@ -976,16 +978,16 @@ tr:nth-child(even) {
   color: #333;
 }
 
-/* ------------------------------- Responsive ------------------------------- */
+/* ---------------------------- Responsive ---------------------------- */
 
 @media screen and (max-width: 768px) {
 
-  /* ==== index.html ==== */
+  /* ================ index.html ================ */
 
   /* Header y Boton Hamburguesa */
 
   .menu-icon-container {
-    display: flex; 
+    display: flex;
     align-items: center;
   }
 
@@ -996,14 +998,14 @@ tr:nth-child(even) {
   }
 
   .nav-list {
-    display: none; 
+    display: none;
   }
 
   .sidebar-list li a {
     white-space: nowrap;
   }
 
-  /* Header y Boton Hamburguesa */
+  /* Donde Estamos y Actividades*/
 
   .txt-donde-estamos{
     margin-bottom: -70vh;
@@ -1027,5 +1029,37 @@ tr:nth-child(even) {
 
   .actividades{
     margin-bottom: 300px;
+  }
+
+  /* ================ actividades.html ================ */
+
+  .departamentos_servicios,
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tarjeta,
+  .cards-localidades {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px;
+  }
+
+  .titulo-actividades {
+    font-size: 24px;
+  }
+
+  .subtitulo-actividades {
+    font-size: 36px;
+  }
+
+  .bienvenida-actividades {
+    font-size: 18px;
+  }
+
+  .descripcion-actividades {
+    max-width: 100%;
   }
 }
