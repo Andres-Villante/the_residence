@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Resultado de la Cotización</title>
 </head>
 
@@ -14,17 +15,25 @@
         <div class="logo">
             <a href="../index.html"><img src="../img/logo.jpg" class="logo"></a>
         </div>
-
-        <div class="nav-container">
-            <nav>
-                <ul class="header-list">
-                    <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
-                    <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
-                    <li><a href="./servicios.html">SERVICIOS</a></li>
-                    <li><a href=".actividades.html">ACTIVIDADES</a></li>
-                    <li><a href="./cotizacion.html">TARIFAS</a></li>
-                </ul>
-            </nav>
+        <nav class="nav-container">
+            <button class="menu-icon"><i class="fas fa-bars"></i></button>
+            <ul class="nav-list">
+                <li><a href="../pages/acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
+                <li><a href="../pages/departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+                <li><a href="../pages/actividades.html">ACTIVIDADES</a></li>
+                <li><a href="../pages/cotizacion.html">TARIFAS</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <button class="close-icon">&times;</button>
+            <ul class="sidebar-list">
+                <li><a href="../pages/acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
+                <li><a href="../pages/departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+                <li><a href="../pages/actividades.html">ACTIVIDADES</a></li>
+                <li><a href="../pages/cotizacion.html">TARIFAS</a></li>
+            </ul>
         </div>
     </header>
 
@@ -43,6 +52,9 @@
             </div>
         </div>
     </main>
+
+    <!-- Linkeo con JS del boton hamburguesa -->
+    <script src="../js/hamburguesa.js"></script>
 
     <footer class="footer">
         <div class="footer-contact">
