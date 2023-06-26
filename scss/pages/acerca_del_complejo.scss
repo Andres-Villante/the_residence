@@ -1,0 +1,89 @@
+@import "../_base";
+
+/*=======================================================================
+                Estilos para el acerca_del_complejo.html
+=======================================================================*/
+
+/* Estilos para el encabezado principal */
+.titlo-acerca-del-complejo,
+.titulo-galeria {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.descripcion-acerca-del-complejo {
+    max-width: 1000px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+.imagen-complejo-1 {
+    display: block;
+    max-width: 25%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Estilos para el carousel */
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+}
+
+.preguntas-frecuentes {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.titulo-preguntas-frecuentes {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lista-de-preguntas {
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+.pregunta-especifica {
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 22px;
+}
+
+.respuesta-pregunta {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.respuesta-pregunta.visible {
+    display: block;
+}
+
+/* Estilos para el acordeón */
+.lista-de-preguntas.active {
+    background-color: #f5f5f5;
+}
+
+/* Estilos para el botón "Cerrar" en la respuesta */
+.cerrar-respuesta {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}

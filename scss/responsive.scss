@@ -1,0 +1,84 @@
+/* ---------------------------- Responsive ---------------------------- */
+
+@media screen and (max-width: 768px) {
+
+    /* ================ index.html ================ */
+
+    /* Header y Boton Hamburguesa */
+    .menu-icon-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .sidebar-list li a {
+        white-space: nowrap;
+    }
+
+    /* Donde Estamos y Actividades*/
+
+    .txt-donde-estamos {
+        margin-bottom: -70vh;
+    }
+
+    .txt-actividades {
+        margin-top: -10vh;
+    }
+
+    .img-donde-estamos img,
+    .img-actividades img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .donde-estamos-container {
+        margin-bottom: 100px;
+    }
+
+    .actividades {
+        margin-bottom: 300px;
+    }
+
+    /* ================ actividades.html ================ */
+    
+    .departamentos_servicios,
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta,
+    .cards-localidades {
+        width: 90%;
+        max-width: 400px;
+        margin: 10px;
+    }
+
+    .titulo-actividades {
+        font-size: 24px;
+    }
+
+    .subtitulo-actividades {
+        font-size: 36px;
+    }
+
+    .bienvenida-actividades {
+        font-size: 18px;
+    }
+
+    .descripcion-actividades {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+@import "../_base";
+
+/*======================================================================= 
+                        Estilos para el servicios.html
+=======================================================================*/
+
+/* Estilos para las tarjetas de servicios */
+.titulo-servicios {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tarjeta-servicios-container {
+    margin-bottom: 40px;
+}
+
+.card-header-servicios {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body-servicios {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 0;
+}
+
+.card-body-servicios img {
+    width: 400px;
+    height: 400px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-body-servicios p {
+    margin: 0;
+    color: #666;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.cards-servicios {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cards-servicios+.tarjeta-container {
+    margin-top: 20px;
+}

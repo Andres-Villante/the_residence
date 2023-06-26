@@ -1,0 +1,251 @@
+@import "../_base";
+
+/*=======================================================================
+                        Estilos para el Index
+=======================================================================*/
+
+/* Fondo principal */
+.fondo-principal {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fondo-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-fondo-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    font-size: 24px;
+}
+
+/* Conocer mas complejo */
+.conocer-mas-complejo {
+    max-width: 800px;
+    text-align: center;
+    margin: 50px auto 0;
+}
+
+.titulo-complejo {
+    text-align: center;
+}
+
+.description-complejo {
+    text-align: justify;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.boton-complejo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-complejo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-complejo:hover {
+    background-color: #45a049;
+}
+
+/* Tarjeta departamentos y servicios */
+.departamentos_servicios {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0;
+}
+
+.departamento {
+    width: 500px;
+    text-align: center;
+    margin: 0 20px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.departamento__titulo {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.departamento__subtitulo {
+    color: #666666;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.departamento__descripcion {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.departamento__imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.departamento__boton {
+    margin-top: auto;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.departamento__boton:hover {
+    background-color: #45a049;
+}
+
+.departamento__enlace {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Estilos para Donde Estamos */
+.donde-estamos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.img-donde-estamos {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img-donde-estamos img {
+    width: 1200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.txt-donde-estamos {
+    position: absolute;
+    margin-bottom: -900px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 90%;
+}
+
+.txt-donde-estamos iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    border: 0;
+}
+
+.txt-donde-estamos h3,
+.txt-donde-estamos p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Estilos actividades */
+.actividades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 300px;
+    position: relative;
+}
+
+.img-actividades {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.img-actividades img {
+    width: 1200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.txt-actividades {
+    position: absolute;
+    margin-bottom: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 90%;
+    text-align: center;
+}
+
+.txt-actividades h3,
+.txt-actividades p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.txt-actividades .btn-conocer {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
