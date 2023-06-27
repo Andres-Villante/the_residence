@@ -1,9 +1,16 @@
+@import "./base";
+
 // Importacion todos los archivos de la carpeta "pages"
-@import 'pages/*';
+@import './pages/acerca_del_complejo.scss';
+@import './pages/actividades.scss';
+@import './pages/cotizacion.scss';
+@import './pages/departamentos.scss';
+@import './pages/index.scss';
+@import './pages/resultado.scss';
+@import './pages/servicios.scss';
 
 // Importacion todos los archivos de la carpeta "components"
-@import 'components/*';
-
-// Importacion de la parte responsive
-@import 'responsive';
+@import './components/button.scss';
+@import './components/footer.scss';
+@import './components/header.scss';
 
