@@ -1,0 +1,1068 @@
+/* Reseteo de CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+p {
+    white-space: pre-line;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*=======================================================================
+                        Estilos para el Header
+=======================================================================*/
+
+/* Estilos para el Header en pantallas mayores */
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list li:first-child {
+    margin-left: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Estilos para el botón hamburguesa en pantallas chicas */
+
+.menu-icon-container {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+/* Menu Desplegable */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.sidebar.active {
+    transform: translateX(0%);
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-list li {
+    margin-bottom: 20px;
+    width: auto;
+    padding: 0;
+}
+
+.sidebar-list li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: block;
+    white-space: nowrap;
+}
+
+.close-icon {
+    font-size: 24px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+
+/*=======================================================================
+                        Estilos para el Index
+=======================================================================*/
+
+
+/* Fondo principal */
+
+.fondo-principal {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fondo-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-fondo-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    font-size: 24px;
+}
+
+/* Conocer mas complejo */
+
+.conocer-mas-complejo {
+    max-width: 800px;
+    text-align: center;
+    margin: 50px auto 0;
+}
+
+.titulo-complejo {
+    text-align: center;
+}
+
+.description-complejo {
+    text-align: justify;
+    text-align: center;
+    padding: 0 20px;
+
+}
+
+.boton-complejo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-complejo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-complejo:hover {
+    background-color: #45a049;
+}
+
+/* Tarjeta departamentos y servicios */
+
+.departamentos_servicios {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0;
+}
+
+.departamento {
+    width: 500px;
+    text-align: center;
+    margin: 0 20px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.departamento__titulo {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.departamento__subtitulo {
+    color: #666666;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.departamento__descripcion {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.departamento__imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.departamento__boton {
+    margin-top: auto;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.departamento__boton:hover {
+    background-color: #45a049;
+}
+
+.departamento__enlace {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Estilos para Donde Estamos */
+
+.donde-estamos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.img-donde-estamos {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img-donde-estamos img {
+    width: 1200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.txt-donde-estamos {
+    position: absolute;
+    margin-bottom: -900px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 90%
+}
+
+.txt-donde-estamos iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    border: 0;
+}
+
+.txt-donde-estamos h3,
+.txt-donde-estamos p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Estilos actividades */
+
+.actividades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 300px;
+    position: relative;
+}
+
+.img-actividades {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.img-actividades img {
+    width: 1200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.txt-actividades {
+    position: absolute;
+    margin-bottom: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    width: 90%;
+    text-align: center;
+}
+
+.txt-actividades h3,
+.txt-actividades p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.txt-actividades .btn-conocer {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/*=======================================================================
+                    Estilos para el resultado.html
+=======================================================================*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.resultado-container,
+.contacto-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-container {
+    margin-right: 20px;
+}
+
+/*=======================================================================
+                Estilos para el acerca_del_complejo.html
+=======================================================================*/
+
+/* Estilos para el encabezado principal */
+
+.titlo-acerca-del-complejo,
+.titulo-galeria {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.descripcion-acerca-del-complejo {
+    max-width: 1000px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+.imagen-complejo-1 {
+    display: block;
+    max-width: 25%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Estilos para el carousel */
+
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+}
+
+.preguntas-frecuentes {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.titulo-preguntas-frecuentes {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lista-de-preguntas {
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+.pregunta-especifica {
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 22px;
+}
+
+.respuesta-pregunta {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.respuesta-pregunta.visible {
+    display: block;
+}
+
+/* Estilos para el acordeón */
+
+.lista-de-preguntas.active {
+    background-color: #f5f5f5;
+}
+
+/* Estilos para el botón "Cerrar" en la respuesta */
+
+.cerrar-respuesta {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*=======================================================================
+                Estilos para el departamentos.html
+=======================================================================*/
+
+/* Titulos Departamentos */
+
+.titulo-general-departamentos {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.titulo-departamentos {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Botones Departamentos */
+
+.botones-departamentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botones-departamentos button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Imagenes 2 Ambientes */
+
+.galeria-2amb {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    transform: scale(0.95);
+}
+
+.galeria-2amb img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.left-img-2amb {
+    grid-column: span 1;
+    grid-row: 1 / span 2;
+}
+
+.right-img-1-2amb {
+    grid-column: span 1;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.right-img-2-2amb {
+    grid-column: span 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.bottom-img-2amb {
+    grid-column: span 2;
+}
+
+/* Imagenes 3 Ambientes */
+
+.galeria-3amb {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    transform: scale(0.95);
+}
+
+.galeria-3amb img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.left-img-3amb {
+    grid-column: span 1;
+    grid-row: 1 / span 2;
+}
+
+.right-img-1-3amb {
+    grid-column: span 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.right-img-2-3amb {
+    grid-column: span 1;
+    justify-self: center;
+}
+
+.bottom-img-3amb {
+    grid-column: span 2;
+}
+
+/* Imagenes 4 Ambientes */
+
+.galeria-4amb {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    transform: scale(0.95);
+}
+
+.galeria-4amb img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.left-img-4amb {
+    grid-column: span 1;
+    grid-row: 1 / span 2;
+}
+
+.right-img-1-4amb {
+    grid-column: span 1;
+}
+
+.right-img-2-4amb {
+    grid-column: span 1;
+}
+
+.bottom-img-4amb {
+    grid-column: span 2;
+}
+
+.titulo-planos {
+    text-align: center;
+}
+
+.tabla {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #F0FFF0;
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.5rem;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    /* Alineación vertical */
+}
+
+th {
+    background-color: lightgray;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.divider {
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid black;
+}
+
+/*=======================================================================
+                    Estilos para el actividades.html
+=======================================================================*/
+
+/* Titulos de actividades */
+
+.titulo-actividades {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-actividades {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.bienvenida-actividades {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.descripcion-actividades {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Tarjetas Actividades */
+
+.departamentos_servicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    width: 400px;
+    text-align: center;
+    margin: 0 20px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: 1px solid #cccccc;
+}
+
+.tarjeta__titulo {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tarjeta__descripcion {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tarjeta__imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para Localidades Cercanas */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cards-localidades {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.cards-localidades img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-localidades-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-localidades-body {
+    margin-top: 10px;
+}
+
+.card-localidades-body p {
+    margin-bottom: 10px;
+}
+
+/*======================================================================= 
+                        Estilos para el servicios.html
+=======================================================================*/
+
+/* Estilos para las tarjetas de servicios */
+
+.titulo-servicios {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tarjeta-servicios-container {
+    margin-bottom: 40px;
+}
+
+.card-header-servicios {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body-servicios {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 0;
+}
+
+.card-body-servicios img {
+    width: 400px;
+    height: 400px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-body-servicios p {
+    margin: 0;
+    color: #666;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.cards-servicios {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cards-servicios+.tarjeta-container {
+    margin-top: 20px;
+}
+
+/*======================================================================= 
+                    Estilos para el cotizacion.html
+=======================================================================*/
+
+/* Estilos del contenedor principal */
+.fondo-principal-cotizacion {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilos de la imagen de fondo */
+.fondo-principal-cotizacion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos del contenedor de la cotización */
+.cotizacion-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la cotización */
+.cotizacion {
+    text-align: center;
+}
+
+.cotizacion h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cotizacion input[type="date"],
+.cotizacion select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.cotizacion select {
+    width: 150px;
+}
+
+.cotizacion button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/*=======================================================================
+                        Estilos para el footer
+=======================================================================*/
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-contact,
+.footer-social,
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer ul li a {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #333;
+}
+
+/* ---------------------------- Responsive ---------------------------- */
+
+@media screen and (max-width: 768px) {
+
+    /* ================ index.html ================ */
+
+    /* Header y Boton Hamburguesa */
+
+    .menu-icon-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .sidebar-list li a {
+        white-space: nowrap;
+    }
+
+    /* Donde Estamos y Actividades*/
+
+    .txt-donde-estamos {
+        margin-bottom: -70vh;
+    }
+
+    .txt-actividades {
+        margin-top: -10vh;
+    }
+
+    .img-donde-estamos img,
+    .img-actividades img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .donde-estamos-container {
+        margin-bottom: 100px;
+    }
+
+    .actividades {
+        margin-bottom: 300px;
+    }
+
+    /* ================ actividades.html ================ */
+
+    .departamentos_servicios,
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta,
+    .cards-localidades {
+        width: 90%;
+        max-width: 400px;
+        margin: 10px;
+    }
+
+    .titulo-actividades {
+        font-size: 24px;
+    }
+
+    .subtitulo-actividades {
+        font-size: 36px;
+    }
+
+    .bienvenida-actividades {
+        font-size: 18px;
+    }
+
+    .descripcion-actividades {
+        max-width: 100%;
+    }
+}
