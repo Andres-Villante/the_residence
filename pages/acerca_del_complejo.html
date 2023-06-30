@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Acerca del Complejo</title>
 </head>
 
@@ -40,55 +41,50 @@
     <main>
         <h1 class="titlo-acerca-del-complejo">Acerca del complejo</h1>
     
-        <p class="descripcion-acerca-del-complejo">
-            The Residence es un complejo de departamentos ubicado en una zona tranquila frente al mar, rodeado de hermosos bosques de pinos, lo que lo convierte en un destino ideal para aquellos que buscan descansar en contacto con la naturaleza.
+        <div class="descripcion-acerca-del-complejo">
+            <p>The Residence es un complejo de departamentos ubicado en una zona tranquila frente al mar, rodeado de hermosos bosques de pinos, lo que lo convierte en un destino ideal para aquellos que buscan descansar en contacto con la naturaleza.</p>
     
-            La ubicación privilegiada de The Residence permite a sus huéspedes disfrutar de la hermosa playa de Costa del Este sin necesidad de trasladarse en auto, ya que solo deben cruzar la calle costanera para acceder a ella. Además, el complejo se encuentra a unos 200 metros de una calle comercial donde se pueden encontrar restaurantes, confiterías y una variedad de comercios.
+            <p>La ubicación privilegiada de The Residence permite a sus huéspedes disfrutar de la hermosa playa de Costa del Este sin necesidad de trasladarse en auto, ya que solo deben cruzar la calle costanera para acceder a ella. Además, el complejo se encuentra a unos 200 metros de una calle comercial donde se pueden encontrar restaurantes, confiterías y una variedad de comercios.</p>
     
-            Cada unidad de The Residence es un departamento completamente equipado, con una cocina que cuenta con una heladera grande con freezer, horno microondas, cocina a gas de 4 hornallas, cacerolas y vajilla para todos los huéspedes. Esta comodidad resulta atractiva para aquellos que prefieren cocinar en lugar de comer afuera todos los días. Además, el complejo ofrece un quincho cubierto con parrillas, donde los huéspedes pueden disfrutar de un delicioso asado.
+            <p>Cada unidad de The Residence es un departamento completamente equipado, con una cocina que cuenta con una heladera grande con freezer, horno microondas, cocina a gas de 4 hornallas, cacerolas y vajilla para todos los huéspedes. Esta comodidad resulta atractiva para aquellos que prefieren cocinar en lugar de comer afuera todos los días. Además, el complejo ofrece un quincho cubierto con parrillas, donde los huéspedes pueden disfrutar de un delicioso asado.</p>
     
-            The Residence ofrece una combinación perfecta de ubicación, comodidad y servicios, convirtiéndolo en el destino ideal para unas vacaciones inolvidables en contacto con la naturaleza y cerca de todas las comodidades que ofrece Costa del Este.
-        </p>
+            <p>The Residence ofrece una combinación perfecta de ubicación, comodidad y servicios, convirtiéndolo en el destino ideal para unas vacaciones inolvidables en contacto con la naturaleza y cerca de todas las comodidades que ofrece Costa del Este.</p>
+        </div>
 
         <div class="titulo-galeria">
             <h2>Galería de The Residence</h2>
         </div>
 
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../img/acerca_del_complejo/complejo_1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Nuestro parque</h5>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../img/acerca_del_complejo/entrada.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Recepción</h5>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../img/acerca_del_complejo/complejo_2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the fourth slide.</p>
+                    <h5>Vista desde balcón</h5>
                 </div>
             </div>            
             <div class="carousel-item">
                 <img src="../img/acerca_del_complejo/vista_2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Fourth slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Atardecer</h5>
                 </div>
             </div>
             </div>
@@ -107,38 +103,104 @@
         
             <ul class="todas-las-preguntas">
                 <li class="lista-de-preguntas">
-                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cuál es el horario de check-in y check-out del hotel?</h3>
-                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Qué datos necesito para reservar?</h3>
+                    <p class="respuesta-pregunta"><b>1.</b>Fecha de ingreso y fecha de salida.<br>
+                    <b>2.</b>Tipo de departamento elegido.(2 Ambientes, 3 Ambientes o 4 Ambientes.).<br>
+                    <b>3.</b>Nombre completo y documentos del titular de cada departamento.<br>
+                    <b>4.</b>Cantidad de personas y Nombres y apellidos de todos los que van.(No hace falta documentos).Incluir nombre de todos los menores incluso bebes. En caso de necesitar CUNA avisar.<br>
+                    <b>5.</b>Un domicilio.<br>
+                    <b>6.</b>Datos del auto que lleva (marca/color/patente).<br>
+                    <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
                 </li>
         
                 <li class="lista-de-preguntas">
-                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cómo puedo cancelar mi reserva? ¿Hay alguna forma específica de hacerlo?</h3>
-                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cómo confirmo la reserva?</h3>
+                    <p class="respuesta-pregunta"><b>Baja temporada:</b> Depositando o transfiriendo un 50% sobre el valor total. <br>
+                    <b>Alta temporada:</b> Depositando o transfiriendo la primera cuota según el método de pago elegido.
+                    <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
                 </li>
         
                 <li class="lista-de-preguntas">
-                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cómo puedo pagar mi reserva?</h3>
-                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cuáles son los métodos de pago?</h3>
+                    <p class="respuesta-pregunta">•	Deposito. <br>
+                        •	Transferencia. <br>
+                        •	Efectivo. <br>
+                        <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
                 </li>
         
                 <li class="lista-de-preguntas">
-                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cuáles son los requisitos o información necesaria para realizar una reserva?</h3>
-                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cuáles son horarios de check-in y check-out?</h3>
+                    <p class="respuesta-pregunta"><b>Baja temporada:</b><br>
+                    •Check In de 10hs a 16hs. <br>
+                    •Check out 16hs. <br><br>
+                    <b>Vacaciones de invierno:</b> <br>
+                    •Check In 14hs. <br>
+                    •Check out 10hs. <br><br>
+                    <b>Alta temporada:</b> <br>
+                    •Check In de 16hs a 18hs. <br>
+                    •Check out 10hs. <br>
+                    <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
                 </li>
         
                 <li class="lista-de-preguntas">
-                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿El hotel cuenta con estacionamiento? ¿Es gratuito para los huéspedes o tiene un costo adicional?</h3>
-                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿En qué consiste el desayuno?</h3>
+                    <p class="respuesta-pregunta">El desayuno consiste en un kit con café, té y yerba que se entrega una vez por semana o estadía. Además, cada día se recibirá un servicio de panadería diario (medialunas, facturas, panes con manteca y dulce, etc. algo diferente cada día).<button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
                 </li>
         
                 <li class="lista-de-preguntas">
-                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿El desayuno está incluido en el precio de la habitación? ¿De qué se trata el desayuno? En caso de tener restricciones dietéticas o alergias, ¿se pueden atender solicitudes especiales para el desayuno?</h3>
-                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Se pueden atender solicitudes especiales para el desayuno?</h3>
+                    <p class="respuesta-pregunta">En este caso, se deberá abonar un adicional según la solicitud.<button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
                 </li>
         
                 <li class="lista-de-preguntas">
-                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Con qué frecuencia se realiza el servicio de limpieza en las habitaciones? ¿Se ofrece limpieza diaria?</h3>
-                    <p class="respuesta-pregunta">Respuesta <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">Acerca del servicio de limpieza</h3>
+                    <p class="respuesta-pregunta"><b>Baja temporada:</b> Se recibe el departamento limpio, calefaccionado y con ropa blanca. No incluye servicio de limpieza diario. <br><br>
+                    <b>Alta temporada:</b> Se recibe el departamento limpio y con ropa blanca. Incluye servicio de limpieza y cambio de toallas dia por medio. <br><br> En caso de necesitar algun servicio o cambio de ropa blanca adicional se debera abonar en el lugar a la empresa de limpieza.
+                    <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿El complejo cuenta con estacionamiento? ¿Es gratuito?
+                    </h3>
+                    <p class="respuesta-pregunta">Cada departamento cuenta con un espacio guardacoche descubierto para un auto. Este servicio está incluido en el alquiler y no requiere pago adicional.<button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿El complejo está frente al mar?</h3>
+                    <p class="respuesta-pregunta">Sí, The Residence está situado sobre la calle costanera frente al mar. Al salir del complejo, te encontrarás a unos pasos de la playa.
+                    <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Todos los departamentos tienen vista al mar?</h3>
+                    <p class="respuesta-pregunta">En The Residence, la mayoría de los departamentos tienen vista al mar. Sin embargo, los departamentos de planta baja, por un tema de altura, cuentan con una hermosa vista al jardín del complejo.<button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Todos los departamentos tienen balcón?</h3>
+                    <p class="respuesta-pregunta">Sí, todos los departamentos cuentan con un balcón en el cual podrás encontrar una mesa y sillas para disfrutar del hermoso paisaje.<button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿A qué distancia se encuentra el complejo del centro comercial?</h3>
+                    <p class="respuesta-pregunta">The Residence se encuentra a 200 metros del centro comercial.<button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿El complejo cuenta con piletas?</h3>
+                    <p class="respuesta-pregunta">No, el complejo no tiene piletas.
+                    <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
+                </li>
+
+                <li class="lista-de-preguntas">
+                    <h3 class="pregunta-especifica" onclick="toggleRespuesta(this)">¿Cómo puedo cancelar mi reserva? Penalidades</h3>
+                    <p class="respuesta-pregunta">En caso de cancelar una reserva, se considerará en cada caso particular y se podrá optar por las siguientes opciones: <br><br>
+                    <b>1-</b> Dejar el dinero a cuenta para otra fecha según disponibilidad. Se cobrará un 10% adicional por gastos administrativos. <br><br>
+                    <b>2- Devolución según la fecha de ingreso:</b> <br>
+                    •Hasta 30 días antes de viajar se retendrá el 20% sobre el total. <br>
+                    •Hasta 15 días antes de viajar se retendrá el 30% sobre el total. <br>
+                    •Menos de 15 días de anticipación se perderá el dinero abonado.
+                    <button class="cerrar-respuesta" onclick="cerrarRespuesta(this)">Cerrar</button></p>
                 </li>
             </ul>
         </div>
@@ -152,6 +214,9 @@
 
     <!-- Linkeo con JS del header -->
     <script src="../js/header.js"></script>
+
+    <!-- Linkeo con JS del carousel -->
+    <script src="../js/carousel.js"></script>
 
     <footer class="footer">
         <div class="footer-contact">
@@ -179,6 +244,9 @@
 
     <!-- Enlace al archivo JavaScript de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Enlace al archivo JavaScript de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
 </body>
 
