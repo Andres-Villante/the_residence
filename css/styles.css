@@ -850,8 +850,9 @@ body {
 }
 
 .card-header-servicios {
-  background-color: #f2f2f2;
-  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px;
   font-weight: bold;
   text-align: center;
   border-top-left-radius: 5px;
@@ -860,14 +861,14 @@ body {
 
 .card-body-servicios {
   display: flex;
-  align-items: center;
-  padding: 10px 10px 0;
+  padding: 20px;
+  text-align: center;
 }
 
 .card-body-servicios img {
-  width: 400px;
-  height: 400px;
-  margin-right: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 5px;
   object-fit: cover;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -875,21 +876,56 @@ body {
 
 .card-body-servicios p {
   margin: 0;
-  color: #666;
-  padding: 20px;
+  color: #333;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .cards-servicios {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
+  background-color: #fff;
   border-radius: 5px;
-  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
-.cards-servicios + .tarjeta-container {
-  margin-top: 20px;
+.cards-servicios:hover {
+  transform: translateY(-5px);
+}
+
+.main-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Cambios para la posición de la imagen y descripción */
+.tarjeta-servicios-container:nth-child(odd) .card-body-servicios {
+  flex-direction: row-reverse;
+}
+
+.tarjeta-servicios-container:nth-child(odd) .card-body-servicios img {
+  margin-left: 20px;
+}
+
+.tarjeta-servicios-container:nth-child(odd) .card-body-servicios p {
+  text-align: right;
+}
+
+.tarjeta-servicios-container:nth-child(even) .card-body-servicios {
+  flex-direction: row;
+}
+
+.tarjeta-servicios-container:nth-child(even) .card-body-servicios img {
+  margin-right: 20px;
+}
+
+.tarjeta-servicios-container:nth-child(even) .card-body-servicios p {
+  text-align: left;
 }
 
 * {
@@ -1240,10 +1276,62 @@ body {
     font-size: 16px;
     margin: 10px;
   }
+  /* ================ servicios.html ================ */
+  .main-servicios {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    gap: 20px;
+  }
+  .card-body-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .card-body-servicios img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    align-items: center;
+  }
+  .card-body-servicios h2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .card-body-servicios p {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .tarjeta-servicios-container:nth-child(odd) .card-body-servicios {
+    text-align: center;
+    align-items: center;
+  }
+  .tarjeta-servicios-container:nth-child(odd) .card-body-servicios img {
+    text-align: center;
+    align-items: center;
+  }
+  .tarjeta-servicios-container:nth-child(odd) .card-body-servicios p {
+    text-align: center;
+    align-items: center;
+  }
+  .tarjeta-servicios-container:nth-child(even) .card-body-servicios {
+    text-align: center;
+    align-items: center;
+  }
+  .tarjeta-servicios-container:nth-child(even) .card-body-servicios img {
+    text-align: center;
+    align-items: center;
+  }
+  .tarjeta-servicios-container:nth-child(even) .card-body-servicios p {
+    text-align: center;
+    align-items: center;
+  }
   /* ================ cotizacion.html ================ */
   /* ================ departamentos.html ================ */
   /* ================ resultado.html ================ */
-  /* ================ servicios.html ================ */
 }
 
 /*# sourceMappingURL=styles.css.map */

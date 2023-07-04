@@ -90,12 +90,74 @@
         font-size: 16px;
         margin: 10px;
     }
+    
+    /* ================ servicios.html ================ */
+
+    .main-servicios {
+        display: grid;
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+        gap: 20px;
+    }
+    
+    .card-body-servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .card-body-servicios img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        align-items: center;
+    }
+    
+    .card-body-servicios h2 {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .card-body-servicios p {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .tarjeta-servicios-container:nth-child(odd) .card-body-servicios {
+        text-align: center;
+        align-items: center;
+    }
+
+    .tarjeta-servicios-container:nth-child(odd) .card-body-servicios img {
+        text-align: center;
+        align-items: center;    
+    }
+
+    .tarjeta-servicios-container:nth-child(odd) .card-body-servicios p {
+        text-align: center;
+        align-items: center;    
+    }
+
+    .tarjeta-servicios-container:nth-child(even) .card-body-servicios {
+        text-align: center;
+        align-items: center;    
+    }
+
+    .tarjeta-servicios-container:nth-child(even) .card-body-servicios img {
+        text-align: center;
+        align-items: center;
+    }
+
+    .tarjeta-servicios-container:nth-child(even) .card-body-servicios p {
+        text-align: center;
+        align-items: center;
+    }
 
     /* ================ cotizacion.html ================ */
     /* ================ departamentos.html ================ */
     /* ================ resultado.html ================ */
-    /* ================ servicios.html ================ */
-
-
 
 }
