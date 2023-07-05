@@ -1038,6 +1038,7 @@ header {
   z-index: 999;
   transition: opacity 0.3s ease, transform 0.3s ease, top 0.3s ease;
   transform: translateY(0);
+  overflow: hidden;
 }
 
 header.fixed {

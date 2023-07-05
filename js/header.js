@@ -1,6 +1,9 @@
 // Obtén el elemento del header
 var header = document.querySelector('header');
 
+// Obtén el contenido de la página
+var content = document.querySelector('.content'); // Reemplaza '.content' con el selector correcto de tu contenido
+
 // Variable para almacenar la altura en la que el header se vuelve visible
 var headerVisibleHeight = 200;
 
@@ -22,13 +25,16 @@ function updateHeaderVisibility() {
         if (!isHeaderVisible()) {
             // El header ya no es visible
             header.classList.add('hidden');
+            content.style.marginTop = '0'; // Elimina el margen superior cuando el header está oculto
         } else {
             // El header es visible
             header.classList.remove('hidden');
+            content.style.marginTop = header.offsetHeight + 'px'; // Agrega un margen superior igual a la altura del header
         }
     } else {
         // El usuario está desplazándose hacia arriba
         header.classList.remove('hidden');
+        content.style.marginTop = header.offsetHeight + 'px'; // Agrega un margen superior igual a la altura del header
     }
 
     if (isHeaderVisible()) {
