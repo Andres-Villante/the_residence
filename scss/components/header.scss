@@ -17,9 +17,9 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 9999999;
     transition: opacity 0.3s ease, transform 0.3s ease, top 0.3s ease;
-    transform: translateY(0);
+    transform: none;
     overflow: hidden;
 }
 
