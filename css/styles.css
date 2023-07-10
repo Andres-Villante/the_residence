@@ -141,31 +141,38 @@ body {
 /* Estilos globales adicionales */
 /* Otros estilos globales que deseas incluir */
 /*=======================================================================
-                    Estilos para el actividades.html
+                    Estilos para actividades.html
 =======================================================================*/
 /* Titulos de actividades */
 .titulo-actividades {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333333;
 }
 
 .subtitulo-actividades {
   text-align: center;
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 64px;
+  margin-bottom: 40px;
+  color: #333333;
 }
 
 .bienvenida-actividades {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #666666;
 }
 
 .descripcion-actividades {
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666666;
+  margin-bottom: 30px;
 }
 
 /* Tarjetas Actividades */
@@ -173,30 +180,35 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .tarjeta {
   width: 400px;
   text-align: center;
-  margin: 0 20px 20px;
+  margin: 0 20px 40px;
   background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border: 1px solid #cccccc;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
 }
 
 .tarjeta__titulo {
-  color: #333333;
   font-size: 24px;
   margin-bottom: 15px;
+  color: #333333;
 }
 
 .tarjeta__descripcion {
   font-size: 16px;
-  line-height: 1.5;
   margin-bottom: 15px;
+  color: #666666;
 }
 
 .tarjeta__imagen {
@@ -204,50 +216,61 @@ body {
   height: 200px;
   object-fit: cover;
   object-position: center;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 15px;
 }
 
 /* Estilos para Localidades Cercanas */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .cards-localidades {
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 0 auto;
+  border-radius: 10px;
+  padding: 30px;
   box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.cards-localidades:hover {
+  transform: translateY(-5px);
 }
 
 .cards-localidades img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .card-localidades-header {
   font-size: 24px;
   font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: #333333;
 }
 
 .card-localidades-body {
   margin-top: 10px;
+  color: #666666;
 }
 
 .card-localidades-body p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 * {
