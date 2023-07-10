@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('button').click(function () {
-        var targetId = $(this).attr('data-target');
+        var targetId = $(this).data('target'); // Usar .data() en lugar de .attr()
         var target = $('#' + targetId);
 
         $('html, body').animate({

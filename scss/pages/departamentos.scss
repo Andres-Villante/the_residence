@@ -140,38 +140,41 @@
     grid-column: span 2;
 }
 
-.titulo-planos {
+.titulo-especificaciones {
     text-align: center;
+    margin-top: 50px;
 }
 
 .tabla {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 2025px;
     padding: 20px;
-    background-color: #F0FFF0;
-    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    display: flex; 
+    justify-content: center; 
+    overflow: hidden; 
 }
+
 
 table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 th,
 td {
-    padding: 0.5rem;
+    padding: 12px;
     border: 1px solid black;
     text-align: center;
-    vertical-align: middle;
-    /* Alineación vertical */
+    
 }
 
 th {
-    background-color: lightgray;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #4CAF50;
+    color: #333;
+    font-weight: bold;
 }
 
 .divider {
@@ -184,5 +187,6 @@ tr:nth-child(even) {
     top: 0;
     bottom: 0;
     left: 50%;
-    border-left: 1px solid black;
+    border-left: 1px solid #ddd; 
+    transform: translateX(-50%); 
 }

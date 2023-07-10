@@ -157,7 +157,32 @@
     }
 
     /* ================ cotizacion.html ================ */
-    /* ================ departamentos.html ================ */
     /* ================ resultado.html ================ */
+    /* ================ departamentos.html ================ */
 
+    .carousel-departamentos .galeria-2amb,
+    .carousel-departamentos .galeria-3amb,
+    .carousel-departamentos .galeria-4amb {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-departamentos .slick-slide img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    // Botones Departamentos
+    .botones-departamentos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .botones-departamentos button {
+        width: 500px; /* Ajusta el valor según tus necesidades */
+        font-size: 18px; /* Ajusta el valor según tus necesidades */
+        margin-bottom: 10px;
+    }
+    
 }
