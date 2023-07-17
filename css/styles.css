@@ -888,6 +888,7 @@ body {
   display: flex;
   padding: 20px;
   text-align: center;
+  align-items: center;
 }
 
 .card-body-servicios img {
