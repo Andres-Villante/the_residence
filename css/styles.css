@@ -1377,8 +1377,8 @@ body {
     align-items: center;
   }
   .botones-departamentos button {
-    width: 500px; /* Ajusta el valor según tus necesidades */
-    font-size: 18px; /* Ajusta el valor según tus necesidades */
+    width: 80%;
+    font-size: 18px;
     margin-bottom: 10px;
   }
 }
