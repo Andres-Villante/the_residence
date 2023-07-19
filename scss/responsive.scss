@@ -2,9 +2,7 @@
 
 /* ---------------------------- Responsive ---------------------------- */
 
-@media screen and (max-width: 768px) {
-
-    /* ================ index.html ================ */
+@media screen and (max-width: 1100px) {
 
     /* Header y Boton Hamburguesa */
     .menu-icon-container {
@@ -25,6 +23,11 @@
     .sidebar-list li a {
         white-space: nowrap;
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* ================ index.html ================ */
 
     /* Donde Estamos y Actividades*/
 
