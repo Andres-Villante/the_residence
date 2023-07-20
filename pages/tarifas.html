@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Descubre los exclusivos servicios que ofrece The Residence - Costa del Este. Diseñados para brindarte una experiencia inolvidable, nuestros servicios te permitirán relajarte y disfrutar al máximo tus vacaciones.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Tarifas de The Residence | Descubre las tarifas que ofrece The Residence para planificar tu estadia con nosotros.</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.jpg" class="logo"></a>
+        </div>
+        <nav class="nav-container">
+            <button class="menu-icon"><i class="fas fa-bars"></i></button>
+            <ul class="nav-list">
+                <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
+                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="./actividades.html">ACTIVIDADES</a></li>
+                <li><a href="./tarifas.html">TARIFAS</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <button class="close-icon">&times;</button>
+            <ul class="sidebar-list">
+                <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
+                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="./actividades.html">ACTIVIDADES</a></li>
+                <li><a href="./tarifas.html">TARIFAS</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-tarifas">
+            <div class="tarifas-section">
+                <h1>Tarifas por Mes</h1>
+
+                <p>En esta sección te proporcionamos toda la información que necesitas para planificar tu estadía con nosotros. Nuestros precios y planes de alojamiento están diseñados para adaptarse a tus necesidades y ofrecerte una experiencia inolvidable.</p>
+
+                <!-- Botones horizontales para cada mes -->
+                <div class="botones-container">
+                    <button class="btn-complejo btn-horizontales" id="btnAgosto"
+                        onclick="mostrarInformacion('agosto')">Precios de Agosto</button>
+                </div>
+                <div class="botones-container">
+                    <button class="btn-complejo btn-horizontales" id="btnSeptiembre"
+                        onclick="mostrarInformacion('septiembre')">Precios de Septiembre</button>
+                </div>
+                <div class="botones-container">
+                    <button class="btn-complejo btn-horizontales" id="btnOctubre"
+                        onclick="mostrarInformacion('octubre')">Precios de Octubre</button>
+                </div>
+                <div class="botones-container">
+                    <button class="btn-complejo btn-horizontales" id="btnNoviembre"
+                        onclick="mostrarInformacion('noviembre')">Precios de Noviembre</button>
+                </div>
+                <div class="botones-container">
+                    <button class="btn-complejo btn-horizontales" id="btnDiciembre"
+                        onclick="mostrarInformacion('diciembre')">Precios de Diciembre</button>
+                </div>
+                <div class="botones-container">
+                    <button class="btn-complejo btn-horizontales" id="btnEnero"
+                        onclick="mostrarInformacion('enero')">Precios de Enero</button>
+                </div>
+                <div class="botones-container">
+                    <button class="btn-complejo btn-horizontales" id="btnFebrero"
+                        onclick="mostrarInformacion('febrero')">Precios de Febrero</button>
+                </div>
+
+                <!-- Cuadro de precios -->
+                <div id="precioContainer" class="hidden">
+                    <div id="precioInfo"></div> <!-- Aquí se mostrará la información de cada botón -->
+                    <div id="descripcionMes"></div> <!-- Aquí se mostrará la descripción de cada mes -->
+                    <!-- Botón para cerrar la pregunta -->
+                    <button class="cerrar-respuesta" onclick="cerrarInformacion()">Cerrar Pregunta</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Linkeo con JS del carousel -->
+    <script src="../js/tarifas.js"></script>
+
+    <footer class="footer">
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes Sociales</h4>
+        </div>
+
+        <div class="footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./acerca_del_complejo.html">Acerca de The Residence</a></li>
+                <li><a href="./departamentos.html">Departamentos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./actividades.html">Actividades</a></li>
+                <li><a href="./tarifas.html">Tarifas</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
+
 </html>
