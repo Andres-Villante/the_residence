@@ -36,101 +36,240 @@
     margin-bottom: 30px;
 }
 
-/* Tarjetas Actividades */
-.departamentos_servicios {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+/* Fondo  */
+.fondo-actividades {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.tarjeta {
-    width: 400px;
-    text-align: center;
-    margin: 0 20px 40px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    border: 1px solid #cccccc;
-    transition: transform 0.3s ease;
-}
-
-.tarjeta:hover {
-    transform: translateY(-5px);
-}
-
-.tarjeta__titulo {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333333;
-}
-
-.tarjeta__descripcion {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #666666;
-}
-
-.tarjeta__imagen {
+.fondo-actividades img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-    margin-bottom: 15px;
 }
 
-/* Estilos para Localidades Cercanas */
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
-    align-items: stretch;
+.texto-actividades-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    gap: 20px;
-    margin-bottom: 50px;
-    margin-right: 20px;
-    margin-left: 20px; 
-
-}
-
-.cards-localidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 30px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
-}
-
-.cards-localidades:hover {
-    transform: translateY(-5px);
-}
-
-.cards-localidades img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.card-localidades-header {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 50px;
     font-size: 24px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: #333333;
 }
 
-.card-localidades-body {
-    margin-top: 10px;
-    color: #666666;
+
+a.btn {
+    background: $teal;
+    border-radius: 4px;
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+    color: $white;
+    display: inline-block;
+    padding: 6px 30px 8px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.1s 0s ease-out;
 }
 
-.card-localidades-body p {
-    margin-bottom: 15px;
+.no-touch a.btn:hover {
+    background: lighten($teal, 2.5);
+    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+    transform: translateY(-2px);
+    transition: all 0.25s 0s ease-out;
+}
+
+.no-touch a.btn:active,
+a.btn:active {
+    background: darken($teal, 2.5);
+    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+    transform: translate3d(0, 1px, 0);
+    transition: all 0.025s 0s ease-out;
+}
+
+div.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div.card {
+    background: $white;
+    display: inline-block;
+    width: calc(50% - 20px);
+    perspective: 1000;
+    position: relative;
+    text-align: left;
+    transition: all 0.3s 0s ease-in;
+    margin: 10px;
+    z-index: 1;
+    margin-bottom: 50px;
+
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__image-holder {
+        background: rgba(0, 0, 0, 0.1);
+        height: 0;
+        padding-bottom: 75%;
+    }
+
+    div.card-title {
+        background: $white;
+        padding: 6px 15px 10px;
+        position: relative;
+        z-index: 0;
+
+        a.toggle-info {
+            border-radius: 32px;
+            height: 32px;
+            padding: 0;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            width: 32px;
+
+            span {
+                background: $white;
+                display: block;
+                height: 2px;
+                position: absolute;
+                top: 16px;
+                transition: all 0.15s 0s ease-out;
+                width: 12px;
+            }
+
+            span.left {
+                right: 14px;
+                transform: rotate(45deg);
+            }
+
+            span.right {
+                left: 14px;
+                transform: rotate(-45deg);
+            }
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            margin: 0;
+            padding: 0;
+
+            small {
+                display: block;
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: -0.025em;
+            }
+        }
+    }
+
+    div.card-description {
+        padding: 0 15px 10px;
+        position: relative;
+        font-size: 20px;
+    }
+
+    div.card-actions {
+        box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+        padding: 10px 15px 20px;
+        text-align: center;
+    }
+
+    div.card-flap {
+        background: darken($white, 15);
+        position: absolute;
+        width: 100%;
+        transform-origin: top;
+        transform: rotateX(-90deg);
+    }
+
+    div.flap1 {
+        transition: all 0.3s 0.3s ease-out;
+        z-index: -1;
+    }
+
+    div.flap2 {
+        transition: all 0.3s 0s ease-out;
+        z-index: -2;
+    }
+
+}
+
+div.cards.showing {
+    div.card {
+        cursor: pointer;
+        opacity: 0.6;
+        transform: scale(0.88);
+    }
+}
+
+.no-touch div.cards.showing {
+    div.card:hover {
+        opacity: 0.94;
+        transform: scale(0.92);
+    }
+}
+
+div.card.show {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+
+    div.card-title {
+        a.toggle-info {
+            background: $salmon !important;
+
+            span {
+                top: 15px;
+            }
+
+            span.left {
+                right: 10px;
+            }
+
+            span.right {
+                left: 10px;
+            }
+        }
+    }
+
+    div.card-flap {
+        background: $white;
+        transform: rotateX(0deg);
+    }
+
+    div.flap1 {
+        transition: all 0.3s 0s ease-out;
+    }
+
+    div.flap2 {
+        transition: all 0.3s 0.2s ease-out;
+    }
+}
+
+.card__image-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image-fixed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
