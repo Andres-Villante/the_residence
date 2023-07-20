@@ -9,8 +9,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +19,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*=======================================================================
                 Estilos para el acerca_del_complejo.html
 =======================================================================*/
@@ -138,31 +134,50 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*=======================================================================
                     Estilos para actividades.html
 =======================================================================*/
-/* Titulos de actividades */
+/* Fondo Actividades Costa del Este*/
+.fondo-actividades {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.fondo-actividades img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-actividades-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .titulo-actividades {
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #333333;
+  font-size: 100px;
 }
 
 .subtitulo-actividades {
-  text-align: center;
-  font-size: 64px;
-  margin-bottom: 40px;
-  color: #333333;
+  font-size: 75px;
 }
 
 .bienvenida-actividades {
   text-align: center;
   font-size: 32px;
   margin-bottom: 30px;
-  color: #666666;
+  color: black;
+  margin-top: 30px;
 }
 
 .descripcion-actividades {
@@ -175,11 +190,13 @@ body {
   margin-bottom: 30px;
 }
 
-/* Fondo  */
+/* Fondo Localidades Cercanas  */
 .fondo-actividades {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .fondo-actividades img {
@@ -197,7 +214,7 @@ body {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 50px;
-  font-size: 24px;
+  font-size: 50px;
 }
 
 a.btn {
@@ -392,8 +409,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*======================================================================= 
                     Estilos para el cotizacion.html
 =======================================================================*/
@@ -469,8 +484,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*=======================================================================
                 Estilos para el departamentos.html
 =======================================================================*/
@@ -669,8 +682,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*=======================================================================
                         Estilos para el Index
 =======================================================================*/
@@ -931,8 +942,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*======================================================================= 
                         Estilos para el servicios.html
 =======================================================================*/
@@ -1036,8 +1045,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*======================================================================= 
                         Estilos para el tarifas.html
 =======================================================================*/
@@ -1051,8 +1058,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 .btn-complejo {
   display: inline-block;
   padding: 10px 20px;
@@ -1074,8 +1079,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*=======================================================================
                         Estilos para el footer
 =======================================================================*/
@@ -1130,8 +1133,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /*=======================================================================
                         Estilos para el Header
 =======================================================================*/
@@ -1319,8 +1320,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* Estilos globales adicionales */
-/* Otros estilos globales que deseas incluir */
 /* ---------------------------- Responsive ---------------------------- */
 /* Header y Boton Hamburguesa */
 @media screen and (max-width: 1100px) {
@@ -1449,7 +1448,7 @@ body {
 /* ================ actividades.html ================ */
 /* Estilos para las tarjetas de actividades */
 div.cards.cards-extra {
-  max-width: 1200px; /* Aumentamos el ancho máximo para acomodar las 4 tarjetas */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1469,6 +1468,19 @@ div.cards.cards-extra {
 @media (max-width: 767px) {
   div.card:not(.cards-extra .card) {
     width: calc(100% - 20px);
+  }
+}
+/* Estilos para titulo fondo actividades costa del este */
+@media screen and (max-width: 768px) {
+  .titulo-actividades {
+    font-size: 50px;
+  }
+  .subtitulo-actividades {
+    font-size: 50px;
+  }
+  /* Estilos para titulo fondo localidades cercanas */
+  .texto-actividades-img {
+    font-size: 25px;
   }
 }
 

@@ -167,7 +167,7 @@
 
 /* Estilos para las tarjetas de actividades */
 div.cards.cards-extra {
-    max-width: 1200px; /* Aumentamos el ancho máximo para acomodar las 4 tarjetas */
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
@@ -190,5 +190,23 @@ div.cards.cards-extra {
 @media (max-width: 767px) {
     div.card:not(.cards-extra .card) {
         width: calc(100% - 20px);
+    }
+}
+
+/* Estilos para titulo fondo actividades costa del este */
+
+@media screen and (max-width: 768px) {
+    .titulo-actividades{
+        font-size: $font-size-small;
+    }
+    
+    .subtitulo-actividades{
+        font-size: $font-size-small;
+    }
+
+    /* Estilos para titulo fondo localidades cercanas */
+
+    .texto-actividades-img{
+        font-size: 25px;
     }
 }

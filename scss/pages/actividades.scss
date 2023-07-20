@@ -4,26 +4,48 @@
                     Estilos para actividades.html
 =======================================================================*/
 
-/* Titulos de actividades */
-.titulo-actividades {
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #333333;
+
+/* Fondo Actividades Costa del Este*/
+.fondo-actividades {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
 }
 
-.subtitulo-actividades {
-    text-align: center;
-    font-size: 64px;
-    margin-bottom: 40px;
-    color: #333333;
+.fondo-actividades img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-actividades-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-actividades{
+    font-size: $font-size-large;
+}
+
+.subtitulo-actividades{
+    font-size: $font-size-medium;
 }
 
 .bienvenida-actividades {
     text-align: center;
     font-size: 32px;
     margin-bottom: 30px;
-    color: #666666;
+    color: black;
+    margin-top: 30px;
 }
 
 .descripcion-actividades {
@@ -36,11 +58,14 @@
     margin-bottom: 30px;
 }
 
-/* Fondo  */
+/* Fondo Localidades Cercanas  */
 .fondo-actividades {
     position: relative;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
 }
 
 .fondo-actividades img {
@@ -58,7 +83,7 @@
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 50px;
-    font-size: 24px;
+    font-size: $font-size-small;
 }
 
 
@@ -273,3 +298,4 @@ div.card.show {
     top: 0;
     left: 0;
 }
+
