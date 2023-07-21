@@ -39,9 +39,19 @@
     </header>
 
     <main>
+        <div id="modalOverlay" class="hidden">
+            <div id="modalContent">
+                <button class="cerrar-respuesta centrar-boton-cerrar" onclick="cerrarInformacion()">Cerrar</button>
+                <div id="precioContainer">
+                    <div id="descripcionMes"></div>
+                    <div id="precioInfo"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="main-tarifas">
             <div class="tarifas-section">
-                <h1>Tarifas por Mes</h1>
+                <h1>Tarifas</h1>
 
                 <div class="texto-tarifas">
                     <p>En esta sección te proporcionamos toda la información que necesitas para planificar tu estadía con nosotros. Nuestros precios y planes de alojamiento están diseñados para adaptarse a tus necesidades y ofrecerte una experiencia inolvidable.</p>
@@ -79,13 +89,6 @@
                 <div class="botones-container">
                     <button class="btn-complejo btn-horizontales" id="btnMarzo"
                         onclick="mostrarInformacion('marzo')">Marzo</button>
-                </div>
-
-                <!-- Cuadro de precios -->
-                <div id="precioContainer" class="hidden">
-                    <div id="precioInfo"></div> 
-                    <div id="descripcionMes"></div> 
-                    <button class="cerrar-respuesta centrar-boton-cerrar" onclick="cerrarInformacion()">Cerrar</button>
                 </div>
             </div>
         </div>

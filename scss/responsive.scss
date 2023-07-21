@@ -167,7 +167,7 @@
 
 /* Estilos para las tarjetas de actividades */
 div.cards.cards-extra {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -196,17 +196,71 @@ div.cards.cards-extra {
 /* Estilos para titulo fondo actividades costa del este */
 
 @media screen and (max-width: 768px) {
-    .titulo-actividades{
+    .titulo-actividades {
         font-size: $font-size-small;
     }
-    
-    .subtitulo-actividades{
+
+    .subtitulo-actividades {
         font-size: $font-size-small;
     }
 
     /* Estilos para titulo fondo localidades cercanas */
 
-    .texto-actividades-img{
+    .texto-actividades-img {
         font-size: 25px;
+    }
+}
+
+
+/* ================ tarifas.html ================ */
+
+@media (max-width: 768px) {
+    .tarifas-section {
+        padding: 15px;
+    }
+
+    .btn-complejo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    #precioContainer {
+        width: 100%;
+        margin: 10px auto;
+        max-width: 500px;
+    }
+
+    .precios-container h3 {
+        font-size: 18px;
+    }
+
+    .precios-container p {
+        font-size: 14px;
+    }
+}
+
+
+/* ================ resultado.html ================ */
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #preciosContainer {
+        width: 100%;
+        margin: 10px auto;
+        max-width: 500px;
+    }
+
+    .precios-container h3 {
+        font-size: 18px;
+    }
+
+    .precios-container p {
+        font-size: 14px;
     }
 }

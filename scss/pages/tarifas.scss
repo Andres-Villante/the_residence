@@ -4,11 +4,11 @@
                         Estilos para el tarifas.html
 =======================================================================*/
 
-.tarifas-section h1{
+.tarifas-section h1 {
     text-align: center;
 }
 
-.texto-tarifas{
+.texto-tarifas {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -32,10 +32,24 @@
     width: 100%;
 }
 
+
+/* Estilos para el botón "Cerrar" en el modal */
+.cerrar-respuesta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 .btn-complejo {
     width: 90%;
     padding: 5px 10px;
-    background-color: #00ff00; 
+    background-color: #00ff00;
     color: #ffffff;
     border: none;
     border-radius: 3px;
@@ -54,10 +68,6 @@
     justify-content: center;
 }
 
-.hidden {
-    display: none;
-}
-
 #precioContainer {
     background-color: white;
     padding: 10px;
@@ -70,7 +80,7 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 #descripcionMes {
@@ -80,5 +90,51 @@
 }
 
 #precioInfo {
-    text-align: left; 
+    text-align: left;
+}
+
+
+/* Estilos para resultado.html */
+
+.background-container {
+    background-image: url('../img/tarifas/playa1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.precios-container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.precios-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Cambiar el color del título */
+.main-container h3 {
+    color: black;
+    margin-top: 10px;
+}
+
+/* Cambiar el color de la descripción */
+.main-container p {
+    color: black;
+    margin-top: 10px;
 }

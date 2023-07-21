@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resultados de las tarifas de The Residence">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Resultados de Tarifas | The Residence</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.jpg" class="logo"></a>
+        </div>
+        <nav class="nav-container">
+            <button class="menu-icon"><i class="fas fa-bars"></i></button>
+            <ul class="nav-list">
+                <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
+                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="./actividades.html">ACTIVIDADES</a></li>
+                <li><a href="./tarifas.html">TARIFAS</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <button class="close-icon">&times;</button>
+            <ul class="sidebar-list">
+                <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
+                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="./actividades.html">ACTIVIDADES</a></li>
+                <li><a href="./tarifas.html">TARIFAS</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Imagen de Costa del Este con el mensaje -->
+    <div class="imagen-costa-este"></div>
+
+    <div class="background-container">
+        <div class="main-container" id="preciosContainer"></div>
+    </div>
+    <!-- Linkeo con JS de tarijas -->
+    <script src="../js/tarifas.js"></script>
+
+    <!-- Linkeo con JS del botom hamburguesa -->
+    <script src="../js/hamburguesa.js"></script>
+
+    <footer class="footer">
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes Sociales</h4>
+        </div>
+
+        <div class="footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./acerca_del_complejo.html">Acerca de The Residence</a></li>
+                <li><a href="./departamentos.html">Departamentos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./actividades.html">Actividades</a></li>
+                <li><a href="./tarifas.html">Tarifas</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Obtener los parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const mes = urlParams.get('mes');
+        const preciosString = urlParams.get('precios');
+
+        // Convertir la cadena de precios en un objeto
+        const preciosObjeto = JSON.parse(decodeURIComponent(preciosString));
+
+        // Obtener el contenedor para mostrar los precios
+        const preciosContainer = document.getElementById("preciosContainer");
+
+        // Mostrar los detalles de precios en el contenedor
+        if (preciosObjeto) {
+            const descripcionMes = document.createElement('div');
+            descripcionMes.setAttribute('id', 'descripcionMes');
+
+            switch (mes) {
+                case "agosto":
+                case "septiembre":
+                    descripcionMes.innerHTML = "<h3>Información de precios para agosto y septiembre</h3>" +
+                        "<p>Tarifas por noche (mínimo 2 noches):</p>" +
+                        "<p>Plan Parejas (depto. 2 amb.): " + preciosObjeto.parejas + "</p>" +
+                        "<p>Departamento 2 ambientes: " + preciosObjeto.departamento2 + "</p>" +
+                        "<p>Departamento 3 ambientes: " + preciosObjeto.departamento3 + "</p>" +
+                        "<p>Departamento 4 ambientes: " + preciosObjeto.departamento4 + "</p>";
+                    break;
+
+                case "octubre":
+                case "noviembre":
+                    descripcionMes.innerHTML = "<h3>Información de precios para octubre y noviembre</h3>" +
+                        "<p>Tarifas por noche (mínimo 2 noches):</p>" +
+                        "<p>Plan Parejas (depto. 2 amb.): " + preciosObjeto.parejas + "</p>" +
+                        "<p>Departamento 2 ambientes: " + preciosObjeto.departamento2 + "</p>" +
+                        "<p>Departamento 3 ambientes: " + preciosObjeto.departamento3 + "</p>" +
+                        "<p>Departamento 4 ambientes: " + preciosObjeto.departamento4 + "</p>";
+                    break;
+
+                case "diciembre":
+                case "enero":
+                case "febrero":
+                case "marzo":
+                    descripcionMes.textContent = preciosObjeto.mensaje;
+                    break;
+
+                default:
+                    descripcionMes.textContent = "Descripción de Mes no especificado.";
+            }
+
+            preciosContainer.appendChild(descripcionMes);
+        } else {
+            preciosContainer.innerHTML = "<p>No se encontraron detalles de precios para el mes seleccionado.</p>";
+        }
+    </script>
+    
+
+</body>
+
+</html>
