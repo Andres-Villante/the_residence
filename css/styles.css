@@ -1255,25 +1255,38 @@ body {
 /*=======================================================================
                         Estilos para el footer
 =======================================================================*/
+/* Estilos para el footer */
 .footer {
-  background-color: #f2f2f2;
-  padding: 20px;
+  background-color: #598a51;
+  padding: 30px 0;
   text-align: center;
+  color: #fff;
+  margin-top: 50px;
 }
 
-.footer-contact,
-.footer-social,
 .footer-links {
-  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.footer-contact {
+  margin-right: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .footer h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .footer p {
-  font-size: 16px;
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
 .footer ul {
@@ -1284,18 +1297,70 @@ body {
 
 .footer ul li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .footer ul li a {
-  color: #555;
+  color: #fff;
   text-decoration: none;
 }
 
 .footer ul li a:hover {
-  color: #333;
+  color: #f2f2f2;
 }
 
+/* Estilo para los iconos de Font Awesome */
+.footer i {
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Estilo para los enlaces */
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f2f2f2;
+}
+
+/* Estilo para el mapa */
+.footer-map {
+  margin-top: 30px; /* Agregar espacio arriba del mapa */
+  text-align: center; /* Centrar el mapa */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Ajuste para organizar el contenido en columnas */
+.footer-content > div {
+  flex-basis: 30%; /* Reducir el ancho para dejar espacio para el mapa centrado */
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-content > div {
+    flex-basis: 100%;
+  }
+  .footer-map {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .footer-links {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .footer-contact {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
