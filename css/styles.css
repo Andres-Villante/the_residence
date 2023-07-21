@@ -22,6 +22,10 @@ body {
 /*=======================================================================
                 Estilos para el acerca_del_complejo.html
 =======================================================================*/
+.img-circular {
+  border-radius: 50%;
+}
+
 /* Estilos para el encabezado principal */
 .titlo-acerca-del-complejo,
 .titulo-galeria {
@@ -137,6 +141,10 @@ body {
 /*=======================================================================
                     Estilos para actividades.html
 =======================================================================*/
+.img-circular {
+  border-radius: 50%;
+}
+
 /* Fondo Actividades Costa del Este*/
 .fondo-actividades {
   position: relative;
@@ -412,6 +420,10 @@ body {
 /*======================================================================= 
                     Estilos para el cotizacion.html
 =======================================================================*/
+.img-circular {
+  border-radius: 50%;
+}
+
 /* Estilos del contenedor principal */
 .fondo-principal-cotizacion {
   position: relative;
@@ -487,6 +499,10 @@ body {
 /*=======================================================================
                 Estilos para el departamentos.html
 =======================================================================*/
+.img-circular {
+  border-radius: 50%;
+}
+
 /* Titulos Departamentos */
 .titulo-general-departamentos {
   text-align: center;
@@ -685,6 +701,10 @@ body {
 /*=======================================================================
                         Estilos para el Index
 =======================================================================*/
+.img-circular {
+  border-radius: 50%;
+}
+
 /* Fondo principal */
 .fondo-principal {
   position: relative;
@@ -986,6 +1006,10 @@ body {
 /*======================================================================= 
                         Estilos para el servicios.html
 =======================================================================*/
+.img-circular {
+  border-radius: 50%;
+}
+
 /* Estilos para las tarjetas de servicios */
 .titulo-servicios {
   margin-top: 20px;
@@ -1089,6 +1113,10 @@ body {
 /*======================================================================= 
                         Estilos para el tarifas.html
 =======================================================================*/
+.img-circular {
+  border-radius: 50%;
+}
+
 .tarifas-section h1 {
   text-align: center;
 }
