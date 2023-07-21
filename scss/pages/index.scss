@@ -213,7 +213,6 @@
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 100px;
 }
 
 .txt-actividades {
@@ -249,4 +248,46 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
+}
+
+/* Estilos para la sección de Introducción a las Tarifas */
+.tarifas-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 1200px; 
+}
+
+.tarifas-index .img-tarifas-index {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.tarifas-index .img-tarifas-index img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tarifas-index .txt-tarifas-index {
+    flex: 1;
+}
+
+.tarifas-index .txt-tarifas-index h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tarifas-index .txt-tarifas-index p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
 }

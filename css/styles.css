@@ -894,7 +894,6 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 100px;
 }
 
 .txt-actividades {
@@ -930,6 +929,48 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
+}
+
+/* Estilos para la sección de Introducción a las Tarifas */
+.tarifas-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.tarifas-index .img-tarifas-index {
+  flex: 1;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.tarifas-index .img-tarifas-index img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.tarifas-index .txt-tarifas-index {
+  flex: 1;
+}
+
+.tarifas-index .txt-tarifas-index h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tarifas-index .txt-tarifas-index p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 * {
@@ -1471,8 +1512,10 @@ body {
     white-space: nowrap;
   }
 }
+/* ============================== 
+            index.html
+===============================*/
 @media screen and (max-width: 768px) {
-  /* ================ index.html ================ */
   /* Donde Estamos y Actividades*/
   .txt-donde-estamos {
     margin-bottom: -70vh;
@@ -1493,12 +1536,48 @@ body {
   .actividades {
     margin-bottom: 300px;
   }
-  /* ================ acerca_del_complejo.html ================ */
+  .tarifas-index {
+    flex-direction: column;
+    text-align: center;
+  }
+  .tarifas-index .img-tarifas-index {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .tarifas-index .txt-tarifas-index {
+    max-width: 100%;
+  }
+  .tarifas-index .departamento__titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .tarifas-index .departamento__subtitulo {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .tarifas-index .departamento__descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .tarifas-index .departamento__boton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+/* ============================== 
+    acerca_del_complejo.html
+===============================*/
+@media screen and (max-width: 768px) {
   .descripcion-acerca-del-complejo {
     font-size: 16px;
     margin: 10px;
   }
-  /* ================ servicios.html ================ */
+}
+/* ============================== 
+        servicios.html
+===============================*/
+@media screen and (max-width: 768px) {
   .main-servicios {
     display: grid;
     grid-template-columns: 1fr;
@@ -1552,7 +1631,11 @@ body {
     text-align: center;
     align-items: center;
   }
-  /* ================ departamentos.html ================ */
+}
+/* ============================== 
+        departamentos.html
+===============================*/
+@media screen and (max-width: 768px) {
   .carousel-departamentos .galeria-2amb,
   .carousel-departamentos .galeria-3amb,
   .carousel-departamentos .galeria-4amb {
@@ -1574,13 +1657,15 @@ body {
     margin-bottom: 10px;
   }
 }
-/* ================ actividades.html ================ */
-/* Estilos para las tarjetas de actividades */
-div.cards.cards-extra {
-  max-width: 1200px;
-  margin: 0 auto;
+/* ============================== 
+        actividades.html
+===============================*/
+@media screen and (max-width: 768px) {
+  div.cards.cards-extra {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
-
 @media (min-width: 1200px) {
   div.cards:not(.cards-extra) {
     flex-wrap: wrap;
@@ -1612,7 +1697,9 @@ div.cards.cards-extra {
     font-size: 25px;
   }
 }
-/* ================ tarifas.html ================ */
+/* ============================== 
+        tarifas.html
+===============================*/
 @media (max-width: 768px) {
   .tarifas-section {
     padding: 15px;
@@ -1634,7 +1721,9 @@ div.cards.cards-extra {
     font-size: 14px;
   }
 }
-/* ================ resultado.html ================ */
+/* ============================== 
+        resultado.html
+===============================*/
 @media (max-width: 768px) {
   .main-container {
     padding: 10px;

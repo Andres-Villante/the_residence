@@ -2,7 +2,6 @@
 
 /* ---------------------------- Responsive ---------------------------- */
 
-
 /* Header y Boton Hamburguesa */
 
 @media screen and (max-width: 1100px) {
@@ -26,10 +25,12 @@
         white-space: nowrap;
     }
 }
+    
+/* ============================== 
+            index.html
+===============================*/
 
 @media screen and (max-width: 768px) {
-
-    /* ================ index.html ================ */
 
     /* Donde Estamos y Actividades*/
 
@@ -57,16 +58,59 @@
         margin-bottom: 300px;
     }
 
+    // tarifas index
+    .tarifas-index {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .tarifas-index .img-tarifas-index {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 
-    /* ================ acerca_del_complejo.html ================ */
+    .tarifas-index .txt-tarifas-index {
+        max-width: 100%;
+    }
 
+    .tarifas-index .departamento__titulo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tarifas-index .departamento__subtitulo {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .tarifas-index .departamento__descripcion {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .tarifas-index .departamento__boton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* ============================== 
+    acerca_del_complejo.html
+===============================*/
+
+@media screen and (max-width: 768px) {
     .descripcion-acerca-del-complejo {
         font-size: 16px;
         margin: 10px;
     }
+}
 
-    /* ================ servicios.html ================ */
+/* ============================== 
+        servicios.html
+===============================*/
+
+@media screen and (max-width: 768px) {
 
     .main-servicios {
         display: grid;
@@ -131,8 +175,14 @@
         text-align: center;
         align-items: center;
     }
+}
 
-    /* ================ departamentos.html ================ */
+
+/* ============================== 
+        departamentos.html
+===============================*/
+
+@media screen and (max-width: 768px) {
 
     .carousel-departamentos .galeria-2amb,
     .carousel-departamentos .galeria-3amb,
@@ -158,15 +208,19 @@
         font-size: 18px;
         margin-bottom: 10px;
     }
-
 }
 
-/* ================ actividades.html ================ */
 
-/* Estilos para las tarjetas de actividades */
-div.cards.cards-extra {
-    max-width: 1200px;
-    margin: 0 auto;
+/* ============================== 
+        actividades.html
+===============================*/
+
+@media screen and (max-width: 768px) {
+
+    div.cards.cards-extra {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -210,7 +264,9 @@ div.cards.cards-extra {
 }
 
 
-/* ================ tarifas.html ================ */
+/* ============================== 
+        tarifas.html
+===============================*/
 
 @media (max-width: 768px) {
     .tarifas-section {
@@ -239,7 +295,9 @@ div.cards.cards-extra {
 }
 
 
-/* ================ resultado.html ================ */
+/* ============================== 
+        resultado.html
+===============================*/
 
 @media (max-width: 768px) {
     .main-container {
