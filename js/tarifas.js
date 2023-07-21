@@ -25,16 +25,16 @@ const precios = {
         departamento4: "$40.000"
     },
     diciembre: {
-        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre"
+        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre, con planes de cuotas para que tus vacaciones resulten mas accesibles."
     },
     enero: {
-        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre."
+        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre, con planes de cuotas para que tus vacaciones resulten mas accesibles."
     },
     febrero: {
-        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre."
+        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre, con planes de cuotas para que tus vacaciones resulten mas accesibles."
     },
     marzo: {
-        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre."
+        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre, con planes de cuotas para que tus vacaciones resulten mas accesibles."
     }
 };
 
