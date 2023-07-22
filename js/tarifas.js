@@ -1,4 +1,3 @@
-// Objeto para almacenar los detalles de precios para cada mes
 const precios = {
     agosto: {
         parejas: "$20.000",
@@ -44,6 +43,5 @@ function mostrarInformacion(mes) {
     var precioInfo = document.getElementById("precioInfo");
 
     precioContainer.style.display = "block";
-    // Redireccionar a resultado.html con los detalles de precios como parámetros de la URL
     window.location.href = `resultado.html?mes=${mes}&precios=${JSON.stringify(precios[mes])}`;
 }

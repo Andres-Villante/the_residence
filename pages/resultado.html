@@ -56,13 +56,12 @@
         </a>
     </div>
 
-
-    <!-- Imagen de Costa del Este con el mensaje -->
     <div class="imagen-costa-este"></div>
 
     <div class="background-container">
         <div class="main-container" id="preciosContainer"></div>
     </div>
+
     <!-- Linkeo con JS de tarifas -->
     <script src="../js/tarifas.js"></script>
 
@@ -110,18 +109,14 @@
     </footer>
 
     <script>
-        // Obtener los parámetros de la URL
         const urlParams = new URLSearchParams(window.location.search);
         const mes = urlParams.get('mes');
         const preciosString = urlParams.get('precios');
 
-        // Convertir la cadena de precios en un objeto
         const preciosObjeto = JSON.parse(decodeURIComponent(preciosString));
 
-        // Obtener el contenedor para mostrar los precios
         const preciosContainer = document.getElementById("preciosContainer");
 
-        // Mostrar los detalles de precios en el contenedor
         if (preciosObjeto) {
             const descripcionMes = document.createElement('div');
             descripcionMes.setAttribute('id', 'descripcionMes');

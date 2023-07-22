@@ -11,16 +11,13 @@ $(document).ready(function () {
         }
 
         if ($("div.cards").hasClass("showing")) {
-            // a card is already in view
             $("div.card.show")
                 .removeClass("show");
 
             if (isShowing) {
-                // this card was showing - reset the grid
                 $("div.cards")
                     .removeClass("showing");
             } else {
-                // this card isn't showing - get in with it
                 $(this)
                     .css({ zIndex: zindex })
                     .addClass("show");
@@ -30,7 +27,6 @@ $(document).ready(function () {
             zindex++;
 
         } else {
-            // no cards in view
             $("div.cards")
                 .addClass("showing");
             $(this)

@@ -9,24 +9,22 @@ $(document).ready(function () {
                 $carousel.slick({
                     arrows: false,
                     dots: true,
-                    adaptiveHeight: true // Permite la adaptación de altura automática del carrusel
+                    adaptiveHeight: true 
                 });
             }
-            $carousel.show(); // Mostrar el carrusel cuando es necesario
+            $carousel.show(); 
         } else {
-            $carousel.show(); // Mostrar las imágenes en pantallas grandes
+            $carousel.show(); 
             if ($carousel.hasClass('slick-initialized')) {
                 $carousel.slick('unslick');
             }
         }
     }
 
-    // Activa los carruseles al cargar la página
     activateCarousel($carousel2amb);
     activateCarousel($carousel3amb);
     activateCarousel($carousel4amb);
 
-    // Vuelve a activar/desactivar los carruseles al cambiar el tamaño de la pantalla
     $(window).on('resize', function () {
         activateCarousel($carousel2amb);
         activateCarousel($carousel3amb);
