@@ -1,0 +1,23 @@
+@import "../base";
+
+// Icono WhatsApp
+
+/* Estilos del botón de WhatsApp fijo */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 999;
+
+}
+
+.whatsapp-btn a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
