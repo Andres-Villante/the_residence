@@ -50,18 +50,18 @@ Nos encontramos en Costa del Este, un encantador destino costero situado entre M
 
 Ven a disfrutar de la magia de la costa y descubre todo lo que tenemos para ofrecerte. Te esperamos con los brazos abiertos en The Residence.
 
-**Ubicación:** [Ver en Google Maps](https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires/@-36.6128785,-56.6867452,17z/data=!4m11!3m10!1s0x959c6cf8713be0f1:0x121a1e935f208b59!5m4!1s2023-07-29!2i3!4m1!1i2!8m2!3d-36.6129444!4d-56.6869233!16s%2Fg%2F11s7x2c16v?hl=es-419&entry=ttu)
+**Ubicación:** [Ver en Google Maps](https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires/@-36.6128785,-56.6867452,17z/data=!4m11!3m10!1s0x959c6cf8713be0f1:0x121a1e935f208b59!5m4!1s2023-07-29!2i3!4m1!1i2!8m2!3d-36.6129444!4d-56.6869233!16s%2Fg%2F11s7x2c16v?hl=es-419&entry=ttu){:target="_blank"}
 
 
 ## Contacto de The Residence
 
 Si tienes alguna pregunta, sugerencia o simplemente quieres obtener más información sobre The Residence, no dudes en ponerte en contacto con nosotros a través de cualquiera de los siguientes medios:
 
-- 📱 WhatsApp: [+54 11 6642-5883](https://api.whatsapp.com/send?phone=541166425883&text=¡Hola! Estoy interesado en obtener más información sobre The Residence.)
+- 📱 WhatsApp: [+54 11 6642-5883](https://api.whatsapp.com/send?phone=541166425883&text=¡Hola! Estoy interesado en obtener más información sobre The Residence.){:target="_blank"}
 
 ¡Síguenos en Instagram para estar al tanto de nuestras novedades y promociones!
 
-- 📷 Instagram: [theresidence.costadeleste](https://www.instagram.com/theresidence.costadeleste/)
+- 📷 Instagram: [theresidence.costadeleste](https://www.instagram.com/theresidence.costadeleste/){:target="_blank"}
 
 ¡Esperamos verte pronto en The Residence!
 
