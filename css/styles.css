@@ -1586,6 +1586,9 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/*=======================================================================
+                    Estilos para el icono de whatsapp
+=======================================================================*/
 /* Estilos del botón de WhatsApp fijo */
 .whatsapp-btn {
   position: fixed;
@@ -1600,6 +1603,89 @@ body {
 }
 
 .whatsapp-btn a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* Animación de aparición */
+.appear-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.appear-animation.appeared {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tarjeta-servicios-container {
+  margin-bottom: 40px;
+}
+
+.card-header-servicios {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Animación de entrada desde el costado */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Estilos del botón de WhatsApp fijo */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 999;
+  animation: slideInFromRight 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*=======================================================================
+                    Estilos para el icono de instagram
+=======================================================================*/
+/* Estilos del botón de Instagram fijo */
+.instagram-btn {
+  display: none; /* Comienza oculto */
+  position: fixed;
+  bottom: 70px; /* Colócalo a la posición deseada */
+  right: 20px;
+  background-color: #e4405f; /* Color de Instagram */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 999;
+  animation: slideInFromRight 1s;
+}
+
+.instagram-btn a {
   display: block;
   color: white;
   text-decoration: none;

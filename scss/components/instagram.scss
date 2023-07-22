@@ -1,0 +1,26 @@
+@import "../base";
+
+/*=======================================================================
+                    Estilos para el icono de instagram
+=======================================================================*/
+
+/* Estilos del botón de Instagram fijo */
+.instagram-btn {
+    display: none; /* Comienza oculto */
+    position: fixed;
+    bottom: 70px; /* Colócalo a la posición deseada */
+    right: 20px;
+    background-color: #e4405f; /* Color de Instagram */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 999;
+    animation: slideInFromRight 1s;
+}
+
+.instagram-btn a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
