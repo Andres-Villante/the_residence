@@ -1205,7 +1205,19 @@ body {
   text-align: left;
 }
 
-/* Estilos para resultado.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*=======================================================================
+                Estilos para el resultado de tarifas
+=======================================================================*/
 .background-container {
   background-image: url("../img/tarifas/playa1.jpg");
   background-size: cover;
