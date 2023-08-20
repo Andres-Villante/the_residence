@@ -3,28 +3,31 @@ const precios = {
         parejas: "$20.000",
         departamento2: "$25.000",
         departamento3: "$30.000",
-        departamento4: "$35.000"
+        departamento4: "$35.000",
     },
     septiembre: {
-        parejas: "$20.000",
-        departamento2: "$25.000",
-        departamento3: "$30.000",
-        departamento4: "$35.000"
+        parejas: "$25.000",
+        departamento2: "$30.000",
+        departamento3: "$35.000",
+        departamento4: "$40.000",
     },
     octubre: {
-        parejas: "$25.000",
-        departamento2: "$30.000",
-        departamento3: "$35.000",
-        departamento4: "$40.000"
+        parejas: "$30.000",
+        departamento2: "$35.000",
+        departamento3: "$40.000",
+        departamento4: "$45.000",
     },
     noviembre: {
-        parejas: "$25.000",
-        departamento2: "$30.000",
-        departamento3: "$35.000",
-        departamento4: "$40.000"
+        parejas: "$30.000",
+        departamento2: "$35.000",
+        departamento3: "$40.000",
+        departamento4: "$45.000",
     },
     diciembre: {
-        mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre, con planes de cuotas para que tus vacaciones resulten mas accesibles."
+        parejas: "$35.000",
+        departamento2: "$45.000",
+        departamento3: "$55.000",
+        departamento4: "$60.000",
     },
     enero: {
         mensaje: "Las tarifas para alta temporada estarán disponibles a partir del mes de septiembre, con planes de cuotas para que tus vacaciones resulten mas accesibles."
