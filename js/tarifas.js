@@ -1,7 +1,4 @@
 const precios = {
-    diciembre: {
-        mensaje: "Consultar precios por WhatsApp."
-    },
     enero: {
         mensaje: "Consultar precios por WhatsApp."
     },
