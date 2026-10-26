@@ -1,395 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora nuestra selección de departamentos en The Residence - Costa del Este. Amplios, cómodos y con vistas geniales. Encuentra el departamento perfecto para disfrutar de tus mejores vacaciones en la costa.">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
-    <title>Departamentos de The Residence | Departamentos de 2, 3 y 4 ambientes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departamentos de 2, 3 y 4 ambientes | The Residence Costa del Este</title>
+  <meta name="description" content="Conocé los departamentos de The Residence: 2 ambientes (57 m²), 3 ambientes (80 m²) y 4 ambientes (120 m²) frente al mar en Costa del Este. Fotos, planos y equipamiento.">
+  <meta name="theme-color" content="#0d3553">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Departamentos de 2, 3 y 4 ambientes | The Residence Costa del Este">
+  <meta property="og:description" content="Conocé los departamentos de The Residence: 2 ambientes (57 m²), 3 ambientes (80 m²) y 4 ambientes (120 m²) frente al mar en Costa del Este. Fotos, planos y equipamiento.">
+  <meta property="og:image" content="../img/index/fondo.jpg">
+  <link rel="icon" href="../img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGHJZPQTRS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GGHJZPQTRS');
+  </script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../img/logo.jpg" class="logo img-circular" alt="Logo Circular">
-            </a>
-        </div>   
-        <nav class="nav-container">
-            <button class="menu-icon"><i class="fas fa-bars"></i></button>
-            <ul class="nav-list">
-                <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
-                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./tarifas.html">TARIFAS</a></li>
+  <a href="#contenido" class="sr-skip" style="position:absolute;left:-9999px">Saltar al contenido</a>
+
+  <div class="topbar">
+    <strong>#ElMarDeLasOportunidades</strong> · Cuotas sin interés para Verano 2027 · <a href="../pages/tarifas.html#cotizador">Pedí tu tarifa</a>
+  </div>
+
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="../index.html" aria-label="The Residence, ir al inicio">
+        <img class="brand__logo" src="../img/logo.jpg" alt="" width="50" height="50">
+        <span class="brand__text">
+          <span class="brand__name">THE RESIDENCE</span>
+          <span class="brand__tag">Costa del Este · Frente al mar</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+          <a class="nav__link" href="../pages/departamentos.html" aria-current="page">Departamentos</a>
+          <a class="nav__link" href="../pages/acerca_del_complejo.html">El complejo</a>
+          <a class="nav__link" href="../pages/servicios.html">Servicios</a>
+          <a class="nav__link" href="../pages/actividades.html">Costa del Este</a>
+          <a class="nav__link" href="../pages/tarifas.html">Tarifas</a>
+        <a class="btn btn--primary btn--sm" href="../pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <div class="drawer" aria-hidden="true">
+    <div class="drawer__panel">
+      <button class="drawer__close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark"></i></button>
+      <a class="drawer__link" href="../index.html">Inicio <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/departamentos.html" aria-current="page">Departamentos <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/acerca_del_complejo.html">El complejo <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/servicios.html">Servicios <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/actividades.html">Costa del Este <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/tarifas.html">Tarifas <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="btn btn--primary btn--block" href="../pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+      <a class="btn btn--wa btn--block" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence."><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <p class="drawer__script">#El Mar de las Oportunidades</p>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="page-hero__bg"><img src="../img/departamentos/2_ambientes/depto2amb.jpeg" alt=""></div>
+      <div class="wrap">
+        <p class="crumbs"><a href="../index.html">Inicio</a><span>/</span>Departamentos</p>
+        <span class="eyebrow">2 · 3 · 4 ambientes</span>
+        <h1>Nuestros <span class="script">departamentos</span></h1>
+        <p>Unidades totalmente equipadas frente al mar, con balcón terraza, aire acondicionado frío/calor, ropa blanca y cochera. Mirá fotos, planos y todo lo que incluye cada una.</p>
+      </div>
+      <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 50 C 240 10, 480 90, 720 50 S 1200 10, 1440 50 V90 H0Z" fill="#ffffff" opacity=".45"/><path d="M0 65 C 260 30, 520 100, 760 62 S 1220 35, 1440 62 V90 H0Z" fill="#ffffff"/></svg></div>
+    </section>
+
+    <nav class="unit-tabs" aria-label="Departamentos">
+      <div class="wrap unit-tabs__inner">
+        <a href="#dos-ambientes" class="is-active">2 Ambientes · 57 m²</a>
+        <a href="#tres-ambientes">3 Ambientes · 80 m²</a>
+        <a href="#cuatro-ambientes">4 Ambientes · 120 m²</a>
+        <a href="#comparar">Comparar</a>
+      </div>
+    </nav>
+
+    <!-- 2 AMBIENTES -->
+    <section class="unit-detail" id="dos-ambientes">
+      <div class="wrap">
+        <div class="unit-detail__head reveal">
+          <div>
+            <h2><span class="script">ideal parejas</span>2 Ambientes</h2>
+            <p>Dúplex en el tercer piso con vista al mar. En planta baja, living-comedor, cocina y balcón terraza; arriba, el dormitorio con su baño.</p>
+          </div>
+          <div class="unit-detail__price">
+            <small>Hasta</small>
+            <span class="title">4 <span class="script">personas</span></span>
+          </div>
+        </div>
+
+        <div class="gallery reveal" data-gallery="2amb">
+          <button class="gallery__item" type="button"><img src="../img/departamentos/2_ambientes/depto2amb.jpeg" alt="Living comedor con vista al mar"><span class="gallery__label">Living con vista al mar</span><span class="gallery__more"><i class="fa-solid fa-expand"></i>&nbsp; Ver galería</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/2_ambientes/cocina.jpg" alt="Cocina equipada" loading="lazy"><span class="gallery__label">Cocina</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/2_ambientes/cama1.jpg" alt="Dormitorio" loading="lazy"><span class="gallery__label">Dormitorio</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/2_ambientes/bano.jpg" alt="Baño" loading="lazy"><span class="gallery__label">Baño</span></button>
+          <button class="gallery__item gallery__item--plan" type="button"><img src="../img/departamentos/2_ambientes/plano_2.jpg" alt="Plano del departamento de 2 ambientes" loading="lazy"><span class="gallery__label"><i class="fa-solid fa-ruler-combined"></i> Plano</span></button>
+        </div>
+
+        <div class="unit-detail__body">
+          <div class="reveal">
+            <div class="feature-grid">
+              <div class="feature"><i class="fa-solid fa-ruler-combined"></i><strong>57 m²</strong><span>Superficie</span></div>
+              <div class="feature"><i class="fa-solid fa-user-group"></i><strong>2 a 4</strong><span>Personas</span></div>
+              <div class="feature"><i class="fa-solid fa-building"></i><strong>3er piso</strong><span>Ubicación</span></div>
+              <div class="feature"><i class="fa-solid fa-bed"></i><strong>1</strong><span>Dormitorio</span></div>
+              <div class="feature"><i class="fa-solid fa-bath"></i><strong>2</strong><span>Baños</span></div>
+              <div class="feature"><i class="fa-solid fa-stairs"></i><strong>Dúplex</strong><span>Escalera interna</span></div>
+              <div class="feature"><i class="fa-solid fa-snowflake"></i><strong>2</strong><span>Aires frío/calor</span></div>
+              <div class="feature"><i class="fa-solid fa-tv"></i><strong>2</strong><span>Televisores</span></div>
+              <div class="feature"><i class="fa-solid fa-sun"></i><strong>Sí</strong><span>Balcón terraza</span></div>
+            </div>
+            <div class="amenities">
+              <h3>Incluye</h3>
+              <ul>
+                <li><i class="fa-solid fa-kitchen-set"></i> Cocina completa</li>
+                <li><i class="fa-solid fa-snowflake"></i> Heladera con freezer</li>
+                <li><i class="fa-solid fa-fire-burner"></i> Cocina 4 hornallas</li>
+                <li><i class="fa-solid fa-microchip"></i> Microondas</li>
+                <li><i class="fa-solid fa-utensils"></i> Vajilla completa</li>
+                <li><i class="fa-solid fa-shirt"></i> Ropa blanca</li>
+                <li><i class="fa-solid fa-wifi"></i> Wi-Fi</li>
+                <li><i class="fa-solid fa-tv"></i> TV por cable</li>
+                <li><i class="fa-solid fa-mug-hot"></i> Desayuno</li>
+                <li><i class="fa-solid fa-car"></i> Cochera</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="book-card reveal" data-delay="1">
+            <h3>Reservá el 2 ambientes</h3>
+            <p>Contanos tus fechas y te pasamos la tarifa al instante.</p>
+            <ul>
+              <li><i class="fa-solid fa-credit-card"></i> Cuotas sin interés en verano</li>
+              <li><i class="fa-solid fa-water"></i> Vista al mar desde el living</li>
+              <li><i class="fa-solid fa-bread-slice"></i> Panadería diaria incluida</li>
             </ul>
-        </nav>
-        <div class="sidebar">
-            <button class="close-icon">&times;</button>
-            <ul class="sidebar-list">
-                <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
-                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./tarifas.html">TARIFAS</a></li>
+            <a class="btn btn--primary btn--block" href="../pages/tarifas.html?depto=2%20ambientes#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+            <a class="btn btn--wa btn--block" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20consultar%20por%20el%20departamento%20de%202%20ambientes%20de%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero consultar por el departamento de 2 ambientes de The Residence."><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 AMBIENTES -->
+    <section class="unit-detail" id="tres-ambientes">
+      <div class="wrap">
+        <div class="unit-detail__head reveal">
+          <div>
+            <h2><span class="script">ideal familias</span>3 Ambientes</h2>
+            <p>Todo en una sola planta, sin escaleras. Disponible en planta baja (con vista al jardín), primer y segundo piso. Dos dormitorios y dos baños.</p>
+          </div>
+          <div class="unit-detail__price">
+            <small>Hasta</small>
+            <span class="title">6 <span class="script">personas</span></span>
+          </div>
+        </div>
+
+        <div class="gallery reveal" data-gallery="3amb">
+          <button class="gallery__item" type="button"><img src="../img/departamentos/3_ambientes/cama.jpg" alt="Dormitorio principal con cama matrimonial"><span class="gallery__label">Dormitorio principal</span><span class="gallery__more"><i class="fa-solid fa-expand"></i>&nbsp; Ver galería</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/3_ambientes/dos_camas.jpg" alt="Segundo dormitorio con dos camas" loading="lazy"><span class="gallery__label">Segundo dormitorio</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/3_ambientes/cocina3amb.jpg" alt="Cocina equipada con horno y heladera" loading="lazy"><span class="gallery__label">Cocina</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/3_ambientes/bano3amb.jpg" alt="Baño" loading="lazy"><span class="gallery__label">Baño</span></button>
+          <button class="gallery__item gallery__item--plan" type="button"><img src="../img/departamentos/3_ambientes/plano_3.jpg" alt="Plano del departamento de 3 ambientes" loading="lazy"><span class="gallery__label"><i class="fa-solid fa-ruler-combined"></i> Plano</span></button>
+        </div>
+
+        <div class="unit-detail__body">
+          <div class="reveal">
+            <div class="feature-grid">
+              <div class="feature"><i class="fa-solid fa-ruler-combined"></i><strong>80 m²</strong><span>Superficie</span></div>
+              <div class="feature"><i class="fa-solid fa-user-group"></i><strong>5 a 6</strong><span>Personas</span></div>
+              <div class="feature"><i class="fa-solid fa-building"></i><strong>PB · 1° · 2°</strong><span>Ubicación</span></div>
+              <div class="feature"><i class="fa-solid fa-bed"></i><strong>2</strong><span>Dormitorios</span></div>
+              <div class="feature"><i class="fa-solid fa-bath"></i><strong>2</strong><span>Baños</span></div>
+              <div class="feature"><i class="fa-solid fa-person-walking"></i><strong>Una planta</strong><span>Sin escaleras</span></div>
+              <div class="feature"><i class="fa-solid fa-snowflake"></i><strong>2</strong><span>Aires frío/calor</span></div>
+              <div class="feature"><i class="fa-solid fa-tv"></i><strong>2</strong><span>Televisores</span></div>
+              <div class="feature"><i class="fa-solid fa-sun"></i><strong>Sí</strong><span>Balcón terraza</span></div>
+            </div>
+            <div class="amenities">
+              <h3>Incluye</h3>
+              <ul>
+                <li><i class="fa-solid fa-kitchen-set"></i> Cocina completa</li>
+                <li><i class="fa-solid fa-snowflake"></i> Heladera con freezer</li>
+                <li><i class="fa-solid fa-fire-burner"></i> Cocina 4 hornallas</li>
+                <li><i class="fa-solid fa-microchip"></i> Microondas</li>
+                <li><i class="fa-solid fa-utensils"></i> Vajilla completa</li>
+                <li><i class="fa-solid fa-shirt"></i> Ropa blanca</li>
+                <li><i class="fa-solid fa-wifi"></i> Wi-Fi</li>
+                <li><i class="fa-solid fa-tv"></i> TV por cable</li>
+                <li><i class="fa-solid fa-mug-hot"></i> Desayuno</li>
+                <li><i class="fa-solid fa-car"></i> Cochera</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="book-card reveal" data-delay="1">
+            <h3>Reservá el 3 ambientes</h3>
+            <p>Perfecto para familias: sin escaleras y con dos baños.</p>
+            <ul>
+              <li><i class="fa-solid fa-credit-card"></i> Cuotas sin interés en verano</li>
+              <li><i class="fa-solid fa-baby"></i> Cuna a pedido</li>
+              <li><i class="fa-solid fa-bread-slice"></i> Panadería diaria incluida</li>
             </ul>
+            <a class="btn btn--primary btn--block" href="../pages/tarifas.html?depto=3%20ambientes#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+            <a class="btn btn--wa btn--block" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20consultar%20por%20el%20departamento%20de%203%20ambientes%20de%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero consultar por el departamento de 3 ambientes de The Residence."><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp</a>
+          </aside>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-
-        <!-- Botón de WhatsApp fijo -->
-        <div class="whatsapp-btn">
-            <a href="https://api.whatsapp.com/send?phone=541166425883&text=¡Hola! Estoy interesado en obtener más información sobre The Residence." target="_blank">
-                <i class="fab fa-whatsapp"></i>
-                    Contáctanos por WhatsApp
-            </a>
-        </div>
-
-        <!-- Botón de Instagram fijo (oculto al principio) -->
-        <div class="instagram-btn instagram-btn-hidden">
-            <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank">
-                <i class="fab fa-instagram"></i>
-                    Síguenos en Instagram
-            </a>
-        </div>
-        
-        <div class="titulo-general-departamentos">
-            <h1>Departamentos</h1>
-        </div>
-        <div class="botones-departamentos">
-            <button data-target="departamento2">Departamento de 2 Ambientes</button>
-            <button data-target="departamento3">Departamento de 3 Ambientes</button>
-            <button data-target="departamento4">Departamento de 4 Ambientes</button>
+    <!-- 4 AMBIENTES -->
+    <section class="unit-detail" id="cuatro-ambientes">
+      <div class="wrap">
+        <div class="unit-detail__head reveal">
+          <div>
+            <h2><span class="script">ideal grupos</span>4 Ambientes</h2>
+            <p>Nuestro departamento más amplio: dúplex de 120 m² en el tercer piso, con tres dormitorios, dos baños más toilette, cuatro aires y doble balcón terraza.</p>
+          </div>
+          <div class="unit-detail__price">
+            <small>Hasta</small>
+            <span class="title">8 <span class="script">personas</span></span>
+          </div>
         </div>
 
-        <!-- Departamentos -->
-        <div class="carousel-departamentos">
-            <div id="departamento2">
-                <div class="titulo-departamentos">
-                    <h2>Departamento de 2 Ambientes</h2>
-                </div>
-                <section class="galeria-2amb">
+        <div class="gallery reveal" data-gallery="4amb">
+          <button class="gallery__item" type="button"><img src="../img/departamentos/4_ambientes/living3amb.jpg" alt="Living con salida al balcón terraza"><span class="gallery__label">Living</span><span class="gallery__more"><i class="fa-solid fa-expand"></i>&nbsp; Ver galería</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/4_ambientes/cama3amb.jpg" alt="Dormitorio principal" loading="lazy"><span class="gallery__label">Dormitorio principal</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/4_ambientes/3camas3amb.jpg" alt="Dormitorio con tres camas" loading="lazy"><span class="gallery__label">Dormitorio triple</span></button>
+          <button class="gallery__item" type="button"><img src="../img/departamentos/4_ambientes/bano4amb.jpg" alt="Baño" loading="lazy"><span class="gallery__label">Baño</span></button>
+          <button class="gallery__item gallery__item--plan" type="button"><img src="../img/departamentos/4_ambientes/plano_4.jpg" alt="Plano del departamento de 4 ambientes" loading="lazy"><span class="gallery__label"><i class="fa-solid fa-ruler-combined"></i> Plano</span></button>
+        </div>
 
-                    <div class="left-img-2amb">
-                        <img src="../img/departamentos/2_ambientes/cocina.jpg" alt="Imagen cocina departamento 2 ambientes">
-                    </div>
-
-                    <div class="right-img-1-2amb">
-                        <img src="../img/departamentos/2_ambientes/cama1.jpg" alt="Imagen cama departamento 2 ambientes">
-                    </div>
-
-                    <div class="right-img-2-2amb">
-                        <img src="../img/departamentos/2_ambientes/baño.jpg" alt="Imagen baño departamento 2 ambientes">
-                    </div>
-
-                    <div class="bottom-img-2amb">
-                        <img src="../img/departamentos/2_ambientes/depto2amb.jpeg" alt="Imagen cocina departamento 2 ambientes">
-                    </div>
-                </section>
+        <div class="unit-detail__body">
+          <div class="reveal">
+            <div class="feature-grid">
+              <div class="feature"><i class="fa-solid fa-ruler-combined"></i><strong>120 m²</strong><span>Superficie</span></div>
+              <div class="feature"><i class="fa-solid fa-user-group"></i><strong>7 a 8</strong><span>Personas</span></div>
+              <div class="feature"><i class="fa-solid fa-building"></i><strong>3er piso</strong><span>Ubicación</span></div>
+              <div class="feature"><i class="fa-solid fa-bed"></i><strong>3</strong><span>Dormitorios</span></div>
+              <div class="feature"><i class="fa-solid fa-bath"></i><strong>2 + toilette</strong><span>Baños</span></div>
+              <div class="feature"><i class="fa-solid fa-stairs"></i><strong>Dúplex</strong><span>Escalera interna</span></div>
+              <div class="feature"><i class="fa-solid fa-snowflake"></i><strong>4</strong><span>Aires frío/calor</span></div>
+              <div class="feature"><i class="fa-solid fa-tv"></i><strong>2</strong><span>Televisores</span></div>
+              <div class="feature"><i class="fa-solid fa-sun"></i><strong>Doble</strong><span>Balcón terraza</span></div>
             </div>
-        </div>
-
-        <div class="titulo-especificaciones">
-            <h3>Especificaciones del Departamento</h3>
-        </div>
-
-        <div class="tabla">
-            <table>
-                <tr>
-                    <th colspan="2">Departamento de 2 Ambientes</th>
-                </tr>
-
-                <tr>
-                    <td>Superficie</td>
-                    <td>57 m2</td>
-                </tr>
-
-                <tr>
-                    <td>Cantidad maxima de personas</td>
-                    <td>2 / 4</td>
-                </tr>
-
-                <tr>
-                    <td>Ubicación en el edificio</td>
-                    <td>Tercer Piso</td>
-                </tr>
-
-                <tr>
-                    <td>Dormitorios</td>
-                    <td>1</td>
-                </tr>
-
-                <tr>
-                    <td>Baños</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Cocina Totalmente Equipada</td>
-                    <td>SI</td>
-                </tr>
-
-                <tr>
-                    <td>Balcón Terraza</td>
-                    <td>SI</td>
-                </tr>
-
-                <tr>
-                    <td>Aire Acondicionado Frio/Calor</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Televisores</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Escaleras Internas</td>
-                    <td>SI</td>
-                </tr>
-
-            </table>
-        </div>
-        </div>
-
-        <div class="carousel-departamentos">
-            <div id="departamento3">
-                <div class="titulo-departamentos">
-                    <h2>Departamento de 3 Ambientes</h2>
-                </div>
-                <section class="galeria-3amb">
-                    <div class="left-img-3amb">
-                        <img src="../img/departamentos/3_ambientes/cocina3amb.jpg" alt="Imagen cocina departamento 3 ambientes">
-                    </div>
-                    <div class="right-img-1-3amb">
-                        <img src="../img/departamentos/3_ambientes/cama.jpg" alt="Imagen cama departamento 3 ambientes">
-                    </div>
-                    <div class="right-img-2-3amb">
-                        <img src="../img/departamentos/3_ambientes/baño3amb.jpg" alt="Imagen baño departamento 3 ambientes">
-                    </div>
-                    <div class="bottom-img-3amb">
-                        <img src="../img/departamentos/3_ambientes/2 camas.jpg" alt="Imagen camas departamento 3 ambientes">
-                    </div>
-                </section>
+            <div class="amenities">
+              <h3>Incluye</h3>
+              <ul>
+                <li><i class="fa-solid fa-kitchen-set"></i> Cocina completa</li>
+                <li><i class="fa-solid fa-snowflake"></i> Heladera con freezer</li>
+                <li><i class="fa-solid fa-fire-burner"></i> Cocina 4 hornallas</li>
+                <li><i class="fa-solid fa-microchip"></i> Microondas</li>
+                <li><i class="fa-solid fa-utensils"></i> Vajilla completa</li>
+                <li><i class="fa-solid fa-shirt"></i> Ropa blanca</li>
+                <li><i class="fa-solid fa-wifi"></i> Wi-Fi</li>
+                <li><i class="fa-solid fa-tv"></i> TV por cable</li>
+                <li><i class="fa-solid fa-mug-hot"></i> Desayuno</li>
+                <li><i class="fa-solid fa-car"></i> Cochera</li>
+              </ul>
             </div>
+          </div>
+          <aside class="book-card reveal" data-delay="1">
+            <h3>Reservá el 4 ambientes</h3>
+            <p>Espacio de sobra para viajar con amigos o familia grande.</p>
+            <ul>
+              <li><i class="fa-solid fa-credit-card"></i> Cuotas sin interés en verano</li>
+              <li><i class="fa-solid fa-sun"></i> Doble balcón terraza</li>
+              <li><i class="fa-solid fa-bread-slice"></i> Panadería diaria incluida</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="../pages/tarifas.html?depto=4%20ambientes#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+            <a class="btn btn--wa btn--block" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20consultar%20por%20el%20departamento%20de%204%20ambientes%20de%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero consultar por el departamento de 4 ambientes de The Residence."><i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp</a>
+          </aside>
         </div>
+      </div>
+    </section>
 
-
-        <div class="titulo-especificaciones">
-            <h3>Especificaciones del Departamento</h3>
+    <!-- COMPARADOR -->
+    <section class="section section--sky" id="comparar">
+      <div class="wrap">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Lado a lado</span>
+          <h2 class="title">Compará las <span class="script">unidades</span></h2>
+          <span class="brush"></span>
         </div>
-
-        <div class="tabla">
-            <table>
-                <tr>
-                    <th colspan="2">Departamento de 3 Ambientes</th>
-                </tr>
-
-                <tr>
-                    <td>Superficie</td>
-                    <td>80 m2</td>
-                </tr>
-
-                <tr>
-                    <td>Cantidad maxima de personas</td>
-                    <td>5 / 6</td>
-                </tr>
-
-                <tr>
-                    <td>Ubicación en el edificio</td>
-                    <td>Planta Baja / Primer Piso / Segundo Piso</td>
-                </tr>
-
-                <tr>
-                    <td>Dormitorios</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Baños</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Cocina Totalmente Equipada</td>
-                    <td>SI</td>
-                </tr>
-
-                <tr>
-                    <td>Balcón Terraza</td>
-                    <td>SI</td>
-                </tr>
-
-                <tr>
-                    <td>Aire Acondicionado Frio/Calor</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Televisores</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Escaleras Internas</td>
-                    <td>NO</td>
-                </tr>
-
-            </table>
+        <div class="compare-wrap reveal">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col">Característica</th><th scope="col">2 Ambientes</th><th scope="col">3 Ambientes</th><th scope="col">4 Ambientes</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Superficie</th><td>57 m²</td><td>80 m²</td><td>120 m²</td></tr>
+              <tr><th scope="row">Capacidad máxima</th><td>2 / 4</td><td>5 / 6</td><td>7 / 8</td></tr>
+              <tr><th scope="row">Ubicación en el edificio</th><td>Tercer piso</td><td>PB / 1° / 2° piso</td><td>Tercer piso</td></tr>
+              <tr><th scope="row">Dormitorios</th><td>1</td><td>2</td><td>3</td></tr>
+              <tr><th scope="row">Baños</th><td>2</td><td>2</td><td>2 + toilette</td></tr>
+              <tr><th scope="row">Cocina totalmente equipada</th><td class="yes"><i class="fa-solid fa-check"></i></td><td class="yes"><i class="fa-solid fa-check"></i></td><td class="yes"><i class="fa-solid fa-check"></i></td></tr>
+              <tr><th scope="row">Balcón terraza</th><td class="yes"><i class="fa-solid fa-check"></i></td><td class="yes"><i class="fa-solid fa-check"></i></td><td class="yes">Doble</td></tr>
+              <tr><th scope="row">Aire acondicionado frío/calor</th><td>2</td><td>2</td><td>4</td></tr>
+              <tr><th scope="row">Televisores</th><td>2</td><td>2</td><td>2</td></tr>
+              <tr><th scope="row">Escaleras internas</th><td>Sí (dúplex)</td><td class="no">No</td><td>Sí (dúplex)</td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><a class="btn btn--primary btn--sm" href="../pages/tarifas.html?depto=2%20ambientes#cotizador">Cotizar</a></td>
+                <td><a class="btn btn--primary btn--sm" href="../pages/tarifas.html?depto=3%20ambientes#cotizador">Cotizar</a></td>
+                <td><a class="btn btn--primary btn--sm" href="../pages/tarifas.html?depto=4%20ambientes#cotizador">Cotizar</a></td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
+        <p class="reveal" style="text-align:center;color:var(--muted);font-size:.88rem;margin-top:20px"><i class="fa-solid fa-circle-info"></i> La mayoría de las unidades tiene vista al mar; las de planta baja miran al jardín del complejo.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <h2>¿Ya elegiste el tuyo?</h2>
+          <p>Pedí tu tarifa en un minuto y conocé las opciones de cuotas sin interés para Verano 2027.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn--sun" href="../pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+            <a class="btn btn--ghost" href="../pages/servicios.html">Ver servicios incluidos</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="carousel-departamentos">
-            <div id="departamento4">
-                <div class="titulo-departamentos">
-                    <h2>Departamento de 4 Ambientes</h2>
-                </div>
-                <section class="galeria-4amb">
+  </main>
 
-                    <div class="left-img-4amb">
-                        <img src="../img/departamentos/4_ambientes/living3amb.jpg" alt="Imagen living departamento 4 ambientes">
-                    </div>
-
-                    <div class="right-img-1-4amb">
-                        <img src="../img/departamentos/4_ambientes/baño4amb.jpg" alt="Imagen baño departamento 4 ambientes">
-                    </div>
-
-                    <div class="right-img-2-4amb">
-                        <img src="../img/departamentos/4_ambientes/cama3amb.jpg" alt="Imagen cama departamento 4 ambientes">
-                    </div>
-
-                    <div class="bottom-img-4amb">
-                        <img src="../img/departamentos/4_ambientes/3camas3amb.jpg" alt="Imagen camas departamento 4 ambientes">
-                    </div>
-                </section>
-            </div>
+  <footer class="footer">
+    <div class="footer__wave" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C 240 0, 480 60, 720 30 S 1200 0, 1440 30 V60 H0Z" fill="#082236"/></svg></div>
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="../index.html">
+            <img class="brand__logo" src="../img/logo.jpg" alt="" width="50" height="50">
+            <span class="brand__text"><span class="brand__name">THE RESIDENCE</span><span class="brand__tag">Costa del Este</span></span>
+          </a>
+          <p class="footer__about">Departamentos de 2, 3 y 4 ambientes frente al mar, entre pinos y a 200 metros del centro comercial de Costa del Este.</p>
+          <p class="footer__script">#El Mar de las Oportunidades</p>
         </div>
-
-        <div class="titulo-especificaciones">
-            <h3>Especificaciones del Departamento</h3>
+        <div>
+          <h4>Explorá</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/departamentos.html">Departamentos</a></li>
+            <li><a href="../pages/acerca_del_complejo.html">El complejo</a></li>
+            <li><a href="../pages/servicios.html">Servicios</a></li>
+            <li><a href="../pages/actividades.html">Costa del Este</a></li>
+            <li><a href="../pages/tarifas.html">Tarifas</a></li>
+          </ul>
         </div>
-
-        <div class="tabla">
-            <table>
-                <tr>
-                    <th colspan="2">Departamento de 4 Ambientes</th>
-                </tr>
-
-                <tr>
-                    <td>Superficie</td>
-                    <td>120 m2</td>
-                </tr>
-
-                <tr>
-                    <td>Cantidad maxima de personas</td>
-                    <td>7 / 8</td>
-                </tr>
-
-                <tr>
-                    <td>Ubicación en el edificio</td>
-                    <td>Tercer Piso</td>
-                </tr>
-
-                <tr>
-                    <td>Dormitorios</td>
-                    <td>3</td>
-                </tr>
-
-                <tr>
-                    <td>Baños</td>
-                    <td>2 y Toilette</td>
-                </tr>
-
-                <tr>
-                    <td>Cocina Totalmente Equipada</td>
-                    <td>SI</td>
-                </tr>
-
-                <tr>
-                    <td>Balcón Terraza</td>
-                    <td>SI, Doble</td>
-                </tr>
-
-                <tr>
-                    <td>Aire Acondicionado Frio/Calor</td>
-                    <td>4</td>
-                </tr>
-
-                <tr>
-                    <td>Televisores</td>
-                    <td>2</td>
-                </tr>
-
-                <tr>
-                    <td>Escaleras Internas</td>
-                    <td>SI</td>
-                </tr>
-
-            </table>
+        <div>
+          <h4>Departamentos</h4>
+          <ul>
+            <li><a href="../pages/departamentos.html#dos-ambientes">2 ambientes · hasta 4 pers.</a></li>
+            <li><a href="../pages/departamentos.html#tres-ambientes">3 ambientes · hasta 6 pers.</a></li>
+            <li><a href="../pages/departamentos.html#cuatro-ambientes">4 ambientes · hasta 8 pers.</a></li>
+            <li><a href="../pages/departamentos.html#comparar">Comparar unidades</a></li>
+          </ul>
         </div>
-    </main>
-
-    <!-- Linkeo con JS de los botones de desplazamiento -->
-    <script src="../js/desplazamiento.js"></script>
-
-    <!-- Linkeo con JS del boton hamburguesa -->
-    <script src="../js/hamburguesa.js"></script>
-
-    <!-- Linkeo con JS del boton hamburguesa -->
-    <script src="../js/carousel-deptos.js"></script>
-
-    <!-- Linkeo con JS del icono de instagram -->
-    <script src="../js/instagram.js"></script>
-
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./acerca_del_complejo.html">Acerca de The Residence</a></li>
-                    <li><a href="./departamentos.html">Departamentos</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./actividades.html">Actividades</a></li>
-                    <li><a href="./tarifas.html">Tarifas</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p>
-                    <a href="https://api.whatsapp.com/send?phone=541166425883&text=¡Hola! Estoy interesado en obtener más información sobre The Residence." target="_blank">
-                        <i class="fab fa-whatsapp"></i> 11 6642-5883
-                    </a>
-                </p>
-            </div>
-    
-            <div class="footer-social">
-                <h4>Redes Sociales</h4>
-                <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank">
-                    <i class="fab fa-instagram"></i> theresidence.costadeleste
-                </a>
-            </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul class="footer__contact">
+            <li><i class="fa-brands fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence.">+54 11 6642-5883</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires" target="_blank" rel="noopener">Las Amapolas 351, Costa del Este, Buenos Aires</a></li>
+            <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank" rel="noopener">@theresidence.costadeleste</a></li>
+          </ul>
+          <div class="social">
+            <a href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence." aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires" target="_blank" rel="noopener" aria-label="Cómo llegar"><i class="fa-solid fa-map-location-dot"></i></a>
+          </div>
         </div>
-    
-        <div class="footer-map" id="map">
-            <h4>¿Dónde Estamos?</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.6402738588813!2d-56.68674519022255!3d-36.61287848521712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c6cf8713be0f1%3A0x121a1e935f208b59!2sLas%20Amapolas%20351%2C%20Costa%20del%20Este%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689961008935!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </footer>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> The Residence · Costa del Este</span>
+        <span>Escapadas · Fines de semana · Vacaciones · Verano 2027</span>
+      </div>
+    </div>
+  </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+  <a class="wa-float" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence." aria-label="Escribinos por WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>¿Consultas? Escribinos</span></a>
 
+  <script src="../js/site.js"></script>
 </body>
-
 </html>

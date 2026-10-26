@@ -1,201 +1,437 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Residence - Costa del Este: Alquileres de departamentos frente al mar en un lugar exclusivo. Ambiente acogedor y relajante para unas vacaciones inolvidables. Amplias comodidades y servicios para disfrutar al máximo. ¡Conoce The Residence ahora!">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>The Residence - Costa del Este | Alquileres de departamentos en Costa del Este frente al mar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Residence · Costa del Este | Departamentos frente al mar</title>
+  <meta name="description" content="Departamentos de 2, 3 y 4 ambientes frente al mar en Costa del Este. Desayuno, cochera, quincho con parrillas y cuotas sin interés. #ElMarDeLasOportunidades">
+  <meta name="theme-color" content="#0d3553">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Residence · Costa del Este | Departamentos frente al mar">
+  <meta property="og:description" content="Departamentos de 2, 3 y 4 ambientes frente al mar en Costa del Este. Desayuno, cochera, quincho con parrillas y cuotas sin interés. #ElMarDeLasOportunidades">
+  <meta property="og:image" content="./img/index/fondo.jpg">
+  <link rel="icon" href="./img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/site.css">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGHJZPQTRS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-GGHJZPQTRS');
-    </script>
-
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGHJZPQTRS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GGHJZPQTRS');
+  </script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="">
-                <img src="./img/logo.jpg" class="logo img-circular" alt="Logo Circular">
-            </a>
-        </div>        
-        <nav class="nav-container">
-            <button class="menu-icon"><i class="fas fa-bars"></i></button>
-            <ul class="nav-list">
-                <li><a href="./pages/acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
-                <li><a href="./pages/departamentos.html">DEPARTAMENTOS</a></li>
-                <li><a href="./pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="./pages/actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./pages/tarifas.html">TARIFAS</a></li>
+  <a href="#contenido" class="sr-skip" style="position:absolute;left:-9999px">Saltar al contenido</a>
+
+  <div class="topbar">
+    <strong>#ElMarDeLasOportunidades</strong> · Cuotas sin interés para Verano 2027 · <a href="./pages/tarifas.html#cotizador">Pedí tu tarifa</a>
+  </div>
+
+  <header class="header header--overlay">
+    <div class="wrap header__inner">
+      <a class="brand" href="./index.html" aria-label="The Residence, ir al inicio">
+        <img class="brand__logo" src="./img/logo.jpg" alt="" width="50" height="50">
+        <span class="brand__text">
+          <span class="brand__name">THE RESIDENCE</span>
+          <span class="brand__tag">Costa del Este · Frente al mar</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+          <a class="nav__link" href="./pages/departamentos.html">Departamentos</a>
+          <a class="nav__link" href="./pages/acerca_del_complejo.html">El complejo</a>
+          <a class="nav__link" href="./pages/servicios.html">Servicios</a>
+          <a class="nav__link" href="./pages/actividades.html">Costa del Este</a>
+          <a class="nav__link" href="./pages/tarifas.html">Tarifas</a>
+        <a class="btn btn--primary btn--sm" href="./pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <div class="drawer" aria-hidden="true">
+    <div class="drawer__panel">
+      <button class="drawer__close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark"></i></button>
+      <a class="drawer__link" href="./index.html" aria-current="page">Inicio <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="./pages/departamentos.html">Departamentos <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="./pages/acerca_del_complejo.html">El complejo <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="./pages/servicios.html">Servicios <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="./pages/actividades.html">Costa del Este <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="./pages/tarifas.html">Tarifas <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="btn btn--primary btn--block" href="./pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+      <a class="btn btn--wa btn--block" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence."><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <p class="drawer__script">#El Mar de las Oportunidades</p>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg"><img src="./img/index/fondo.jpg" alt="Atardecer sobre el mar visto desde The Residence, entre pinos"></div>
+      <div class="wrap">
+        <div class="hero__content">
+          <svg class="hero__sun" viewBox="0 0 120 70" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd86b"/><stop offset="1" stop-color="#f2a93b"/></linearGradient></defs><path d="M22 40a38 38 0 0 1 76 0z" fill="url(#sg)"/><path d="M6 46c18-8 36 8 54 0s36-8 54 0" stroke="#5fc3e8" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M14 58c16-7 31 7 46 0s30-7 46 0" stroke="#bfe6f6" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+          <p class="hero__kicker">Costa del Este · Frente al mar</p>
+          <h1 class="hero__title"><small>The Residence</small>#El Mar de las Oportunidades</h1>
+          <p class="hero__sub">Departamentos de 2, 3 y 4 ambientes cruzando la costanera, entre pinos y a 200 metros del centro. Escapadas, fines de semana, vacaciones y Verano 2027 en cuotas sin interés.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="./pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+            <a class="btn btn--ghost" href="#departamentos">Ver departamentos <i class="fa-solid fa-arrow-down"></i></a>
+          </div>
+          <div class="hero__badges">
+            <span class="chip"><i class="fa-solid fa-credit-card"></i> Cuotas sin interés</span>
+            <span class="chip"><i class="fa-solid fa-mug-hot"></i> Desayuno incluido</span>
+            <span class="chip"><i class="fa-solid fa-car"></i> Cochera</span>
+            <span class="chip"><i class="fa-solid fa-umbrella-beach"></i> A pasos de la playa</span>
+          </div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#departamentos" aria-label="Bajar"><i class="fa-solid fa-chevron-down"></i></a>
+      <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 50 C 240 10, 480 90, 720 50 S 1200 10, 1440 50 V90 H0Z" fill="#ffffff" opacity=".45"/><path d="M0 65 C 260 30, 520 100, 760 62 S 1220 35, 1440 62 V90 H0Z" fill="#ffffff"/></svg></div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <div class="perks">
+      <div class="wrap">
+        <div class="perks__grid reveal">
+          <div class="perk"><span class="perk__icon"><i class="fa-solid fa-water"></i></span><div><h3>Frente al mar</h3><p>Cruzás la costanera y estás en la playa.</p></div></div>
+          <div class="perk"><span class="perk__icon"><i class="fa-solid fa-credit-card"></i></span><div><h3>Cuotas sin interés</h3><p>Planes de pago pensados para el verano.</p></div></div>
+          <div class="perk"><span class="perk__icon"><i class="fa-solid fa-bread-slice"></i></span><div><h3>Desayuno + panadería</h3><p>Medialunas y facturas en tu puerta cada mañana.</p></div></div>
+          <div class="perk"><span class="perk__icon"><i class="fa-solid fa-fire-burner"></i></span><div><h3>Quincho y cochera</h3><p>Parrillas cubiertas y lugar para tu auto.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEPARTAMENTOS -->
+    <section class="section" id="departamentos">
+      <div class="wrap">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Nuestras unidades</span>
+          <h2 class="title">Elegí tu <span class="script">departamento</span></h2>
+          <span class="brush"></span>
+          <p class="lead">Tres tipologías totalmente equipadas, con balcón terraza, aire acondicionado frío/calor y cocina completa. Para parejas, familias o grupos de amigos.</p>
+        </div>
+
+        <div class="units">
+          <article class="unit reveal">
+            <div class="unit__media">
+              <img src="./img/departamentos/2_ambientes/depto2amb.jpeg" alt="Living del departamento de 2 ambientes con vista al mar" loading="lazy">
+              <span class="unit__badge unit__badge--sun">Vista al mar</span>
+              <span class="unit__size">57 <small>m²</small></span>
+            </div>
+            <div class="unit__body">
+              <span class="unit__kicker">ideal parejas</span>
+              <h3 class="unit__title">2 Ambientes</h3>
+              <p class="unit__text">Dúplex en el tercer piso: living-comedor con balcón terraza abajo y dormitorio arriba.</p>
+              <ul class="unit__specs">
+                <li><i class="fa-solid fa-user-group"></i> 2 a 4 personas</li>
+                <li><i class="fa-solid fa-bed"></i> 1 dormitorio</li>
+                <li><i class="fa-solid fa-bath"></i> 2 baños</li>
+                <li><i class="fa-solid fa-stairs"></i> Dúplex</li>
+              </ul>
+              <div class="unit__actions">
+                <a class="btn btn--outline btn--sm" href="./pages/departamentos.html#dos-ambientes">Ver fotos</a>
+                <a class="btn btn--primary btn--sm" href="./pages/tarifas.html?depto=2%20ambientes#cotizador">Cotizar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="unit reveal" data-delay="1">
+            <div class="unit__media">
+              <img src="./img/departamentos/3_ambientes/cama.jpg" alt="Dormitorio principal del departamento de 3 ambientes" loading="lazy">
+              <span class="unit__badge">Sin escaleras</span>
+              <span class="unit__size">80 <small>m²</small></span>
+            </div>
+            <div class="unit__body">
+              <span class="unit__kicker">ideal familias</span>
+              <h3 class="unit__title">3 Ambientes</h3>
+              <p class="unit__text">Todo en una planta, en planta baja, primer o segundo piso. Dos dormitorios y dos baños.</p>
+              <ul class="unit__specs">
+                <li><i class="fa-solid fa-user-group"></i> 5 a 6 personas</li>
+                <li><i class="fa-solid fa-bed"></i> 2 dormitorios</li>
+                <li><i class="fa-solid fa-bath"></i> 2 baños</li>
+                <li><i class="fa-solid fa-snowflake"></i> 2 aires</li>
+              </ul>
+              <div class="unit__actions">
+                <a class="btn btn--outline btn--sm" href="./pages/departamentos.html#tres-ambientes">Ver fotos</a>
+                <a class="btn btn--primary btn--sm" href="./pages/tarifas.html?depto=3%20ambientes#cotizador">Cotizar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="unit reveal" data-delay="2">
+            <div class="unit__media">
+              <img src="./img/departamentos/4_ambientes/living3amb.jpg" alt="Living del departamento de 4 ambientes con salida al balcón" loading="lazy">
+              <span class="unit__badge">Balcón doble</span>
+              <span class="unit__size">120 <small>m²</small></span>
+            </div>
+            <div class="unit__body">
+              <span class="unit__kicker">ideal grupos</span>
+              <h3 class="unit__title">4 Ambientes</h3>
+              <p class="unit__text">El más amplio: dúplex de 120 m² con tres dormitorios, dos baños, toilette y doble balcón terraza.</p>
+              <ul class="unit__specs">
+                <li><i class="fa-solid fa-user-group"></i> 7 a 8 personas</li>
+                <li><i class="fa-solid fa-bed"></i> 3 dormitorios</li>
+                <li><i class="fa-solid fa-bath"></i> 2 + toilette</li>
+                <li><i class="fa-solid fa-snowflake"></i> 4 aires</li>
+              </ul>
+              <div class="unit__actions">
+                <a class="btn btn--outline btn--sm" href="./pages/departamentos.html#cuatro-ambientes">Ver fotos</a>
+                <a class="btn btn--primary btn--sm" href="./pages/tarifas.html?depto=4%20ambientes#cotizador">Cotizar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p style="text-align:center;margin-top:40px" class="reveal"><a class="link-arrow" href="./pages/departamentos.html#comparar">Comparar las tres unidades <i class="fa-solid fa-arrow-right"></i></a></p>
+      </div>
+    </section>
+
+    <!-- CAMPAÑA -->
+    <section class="section section--sky" id="campana">
+      <div class="wrap promo">
+        <div class="promo__poster reveal">
+          <img src="./img/campana/mar-de-oportunidades.png" alt="Afiche de la campaña #El Mar de las Oportunidades de The Residence: pedí tu tarifa, cuotas sin interés" loading="lazy">
+        </div>
+        <div class="reveal" data-delay="1">
+          <span class="eyebrow">Campaña Verano 2027</span>
+          <h2 class="promo__title">#El Mar de las <span>Oportunidades</span></h2>
+          <span class="brush"></span>
+          <ul class="promo__list">
+            <li><i class="fa-solid fa-credit-card"></i><div><strong>Cuotas sin interés</strong><span>Reservá hoy tu verano y pagalo en cuotas fijas.</span></div></li>
+            <li><i class="fa-solid fa-calendar-check"></i><div><strong>Una opción para cada ocasión</strong><span>Escapadas, fines de semana largos, vacaciones de invierno y temporada de verano.</span></div></li>
+            <li><i class="fa-solid fa-comments"></i><div><strong>Tarifa personalizada</strong><span>Contanos fechas y cantidad de personas y te enviamos tu precio por WhatsApp.</span></div></li>
+          </ul>
+          <div class="promo__actions">
+            <a class="btn btn--primary" href="./pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+            <a class="btn btn--teal" href="./pages/tarifas.html#oportunidades"><i class="fa-solid fa-percent"></i> Ver opciones</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENÚ DE OPORTUNIDADES -->
+    <section class="section" id="oportunidades">
+      <div class="wrap">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Un menú de oportunidades</span>
+          <h2 class="title">Para cada <span class="script">ocasión</span></h2>
+          <span class="brush"></span>
+        </div>
+        <div class="menu-grid">
+          <article class="opp reveal" style="--c:#12a1a6">
+            <span class="opp__icon"><i class="fa-solid fa-person-walking-luggage"></i></span>
+            <h3>Escapadas</h3>
+            <p class="opp__when">Todo el año</p>
+            <p>Dos o tres noches para cortar la rutina, caminar la playa y respirar aire de pinos.</p>
+            <a class="link-arrow" href="./pages/tarifas.html?plan=Escapada#cotizador">Cotizar escapada <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="opp reveal" data-delay="1" style="--c:#1666c0">
+            <span class="opp__icon"><i class="fa-solid fa-calendar-week"></i></span>
+            <h3>Fines de semana</h3>
+            <p class="opp__when">Findes y feriados largos</p>
+            <p>Llegás el viernes, te vas el domingo con las pilas cargadas. Ideal para feriados.</p>
+            <a class="link-arrow" href="./pages/tarifas.html?plan=Fin%20de%20semana#cotizador">Cotizar finde <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="opp reveal" data-delay="2" style="--c:#4f46c8">
+            <span class="opp__icon"><i class="fa-solid fa-suitcase-rolling"></i></span>
+            <h3>Vacaciones</h3>
+            <p class="opp__when">Invierno y temporada media</p>
+            <p>Una semana o más con el departamento calefaccionado y todo listo para disfrutar.</p>
+            <a class="link-arrow" href="./pages/tarifas.html?plan=Vacaciones#cotizador">Cotizar vacaciones <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="opp opp--featured reveal" data-delay="3" style="--c:#f7c548">
+            <span class="opp__ribbon">CUOTAS</span>
+            <span class="opp__icon" style="color:#0d3553"><i class="fa-solid fa-sun"></i></span>
+            <h3>Verano 2027</h3>
+            <p class="opp__when">Enero · Febrero · Marzo</p>
+            <p>Asegurá tu quincena o tu mes frente al mar y pagalo en cuotas sin interés.</p>
+            <a class="link-arrow" href="./pages/tarifas.html?plan=Verano%202027#cotizador">Reservar verano <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EL COMPLEJO -->
+    <section class="section section--sand">
+      <div class="wrap split">
+        <div class="split__media reveal">
+          <img class="img-main" src="./img/acerca_del_complejo/complejo_1.jpg" alt="Parque y edificios de The Residence con balcones blancos" loading="lazy">
+          <img class="img-float" src="./img/acerca_del_complejo/vista_2.jpg" alt="Vista desde un balcón del complejo" loading="lazy">
+          <div class="stat-badge"><strong>200 m</strong><span>del centro<br>comercial</span></div>
+        </div>
+        <div class="reveal" data-delay="1">
+          <span class="eyebrow">El complejo</span>
+          <h2 class="title">Tu hogar en <span class="script">la costa</span></h2>
+          <span class="brush"></span>
+          <p class="lead" style="margin-top:18px">The Residence está en una zona tranquila frente al mar, rodeado de bosques de pinos. Para ir a la playa solo cruzás la costanera; para cenar afuera, caminás 200 metros hasta la calle comercial.</p>
+          <ul class="checks">
+            <li><i class="fa-solid fa-circle-check"></i> Parque parquizado</li>
+            <li><i class="fa-solid fa-circle-check"></i> Quincho con parrillas</li>
+            <li><i class="fa-solid fa-circle-check"></i> Cochera descubierta</li>
+            <li><i class="fa-solid fa-circle-check"></i> Wi-Fi y TV por cable</li>
+            <li><i class="fa-solid fa-circle-check"></i> Ropa blanca incluida</li>
+            <li><i class="fa-solid fa-circle-check"></i> Balcón en todas las unidades</li>
+          </ul>
+          <a class="btn btn--outline" href="./pages/acerca_del_complejo.html">Conocer el complejo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Incluido en tu estadía</span>
+          <h2 class="title">Servicios que <span class="script">suman</span></h2>
+          <span class="brush"></span>
+        </div>
+        <div class="services">
+          <a class="service service--wide reveal" href="./pages/servicios.html#desayuno">
+            <img src="./img/servicios/desayuno.jpg" alt="Desayuno con medialunas y café" loading="lazy">
+            <div class="service__body"><span class="service__icon"><i class="fa-solid fa-mug-hot"></i></span><h3>Desayuno</h3><p>Kit de café, té y yerba + panadería fresca en tu puerta todas las mañanas.</p></div>
+          </a>
+          <a class="service reveal" data-delay="1" href="./pages/servicios.html#limpieza">
+            <img src="./img/servicios/limpieza.jpg" alt="Departamento limpio y ordenado" loading="lazy">
+            <div class="service__body"><span class="service__icon"><i class="fa-solid fa-broom"></i></span><h3>Limpieza</h3><p>Día por medio en alta temporada.</p></div>
+          </a>
+          <a class="service reveal" href="./pages/servicios.html#quincho">
+            <img src="./img/servicios/parrilla.jpg" alt="Parrilla con asado" loading="lazy">
+            <div class="service__body"><span class="service__icon"><i class="fa-solid fa-fire"></i></span><h3>Quincho</h3><p>Parrillas cubiertas para tu asado.</p></div>
+          </a>
+          <a class="service reveal" data-delay="1" href="./pages/servicios.html#estacionamiento">
+            <img src="./img/servicios/estacionamiento.jpg" alt="Estacionamiento del complejo" loading="lazy">
+            <div class="service__body"><span class="service__icon"><i class="fa-solid fa-car"></i></span><h3>Cochera</h3><p>Un lugar por departamento, sin cargo.</p></div>
+          </a>
+          <a class="service reveal" data-delay="2" href="./pages/servicios.html#wifi">
+            <img src="./img/servicios/wifi.jpg" alt="Conexión Wi-Fi" loading="lazy">
+            <div class="service__body"><span class="service__icon"><i class="fa-solid fa-wifi"></i></span><h3>Wi-Fi y TV</h3><p>Internet gratis y cable.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVIDADES -->
+    <section class="section section--sky">
+      <div class="wrap">
+        <div class="section-head reveal" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+          <div>
+            <span class="eyebrow">Costa del Este</span>
+            <h2 class="title">Mucho más que <span class="script">playa</span></h2>
+            <span class="brush"></span>
+          </div>
+          <a class="link-arrow" href="./pages/actividades.html">Ver todas las actividades <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="acts acts--mini">
+          <article class="act reveal"><div class="act__media"><img src="./img/actividades/playas.jpg" alt="Playa de Costa del Este" loading="lazy"><span class="act__tag">Cruzando la calle</span></div><div class="act__body"><h3>Playas</h3></div></article>
+          <article class="act reveal" data-delay="1"><div class="act__media"><img src="./img/actividades/caminata.jpg" alt="Sendero entre pinos" loading="lazy"><span class="act__tag">Naturaleza</span></div><div class="act__body"><h3>Caminatas y bici</h3></div></article>
+          <article class="act reveal" data-delay="2"><div class="act__media"><img src="./img/actividades/gastronomia.jpg" alt="Gastronomía local" loading="lazy"><span class="act__tag">A 200 m</span></div><div class="act__body"><h3>Gastronomía</h3></div></article>
+          <article class="act reveal" data-delay="3"><div class="act__media"><img src="./img/actividades/mundo_marino.jpg" alt="Mundo Marino en San Clemente" loading="lazy"><span class="act__tag">~40 km</span></div><div class="act__body"><h3>Mundo Marino</h3></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="section" id="ubicacion">
+      <div class="wrap">
+        <div class="location reveal">
+          <div class="location__info">
+            <span class="eyebrow">Dónde estamos</span>
+            <h2 class="title">Las Amapolas <span class="script">351</span></h2>
+            <p class="lead" style="margin-top:14px">Costa del Este, Partido de La Costa. Entre Mar del Tuyú y Aguas Verdes, a unos 360 km de Buenos Aires.</p>
+            <ul class="distances">
+              <li><span><i class="fa-solid fa-umbrella-beach"></i> Playa</span><span>Cruzando la costanera</span></li>
+              <li><span><i class="fa-solid fa-store"></i> Centro comercial</span><span>200 m</span></li>
+              <li><span><i class="fa-solid fa-fish"></i> Mundo Marino · Termas</span><span>~40 km</span></li>
+              <li><span><i class="fa-solid fa-city"></i> Buenos Aires</span><span>~360 km</span></li>
             </ul>
-        </nav>
-        <div class="sidebar">
-            <button class="close-icon">&times;</button>
-            <ul class="sidebar-list">
-                <li><a href="./pages/acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
-                <li><a href="./pages/departamentos.html">DEPARTAMENTOS</a></li>
-                <li><a href="./pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="./pages/actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./pages/tarifas.html">TARIFAS</a></li>
-            </ul>
+            <a class="btn btn--primary" href="https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires" target="_blank" rel="noopener"><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a>
+          </div>
+          <div class="location__map">
+            <iframe title="Mapa de The Residence en Costa del Este" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.6402738588813!2d-56.68674519022255!3d-36.61287848521712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c6cf8713be0f1%3A0x121a1e935f208b59!2sLas%20Amapolas%20351%2C%20Costa%20del%20Este%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689961008935!5m2!1ses-419!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-
-        <!-- Botón de WhatsApp fijo (oculto al principio) -->
-        <div class="whatsapp-btn whatsapp-btn-hidden">
-            <a href="https://api.whatsapp.com/send?phone=541166425883&text=¡Hola! Estoy interesado en obtener más información sobre The Residence." target="_blank">
-                <i class="fab fa-whatsapp"></i>
-                Contáctanos por WhatsApp
-            </a>
+    <!-- CTA -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <h2>Tu lugar frente al mar te espera</h2>
+          <p>Contanos cuándo querés venir y cuántos son. Te respondemos por WhatsApp con tu tarifa y las opciones de cuotas sin interés.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn--sun" href="./pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+            <a class="btn btn--ghost" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20consultar%20disponibilidad%20en%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero consultar disponibilidad en The Residence."><i class="fa-brands fa-whatsapp"></i> Escribinos</a>
+          </div>
+          <div class="tags"><span>Escapadas</span><span>Fines de semana</span><span>Vacaciones</span><span>Verano 2027</span></div>
         </div>
+      </div>
+    </section>
 
-        <!-- Botón de Instagram fijo (oculto al principio) -->
-        <div class="instagram-btn instagram-btn-hidden">
-            <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank">
-                <i class="fab fa-instagram"></i>
-                Síguenos en Instagram
-            </a>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wave" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C 240 0, 480 60, 720 30 S 1200 0, 1440 30 V60 H0Z" fill="#082236"/></svg></div>
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="./index.html">
+            <img class="brand__logo" src="./img/logo.jpg" alt="" width="50" height="50">
+            <span class="brand__text"><span class="brand__name">THE RESIDENCE</span><span class="brand__tag">Costa del Este</span></span>
+          </a>
+          <p class="footer__about">Departamentos de 2, 3 y 4 ambientes frente al mar, entre pinos y a 200 metros del centro comercial de Costa del Este.</p>
+          <p class="footer__script">#El Mar de las Oportunidades</p>
         </div>
-
-        <div class="fondo-principal">
-            <img src="./img/index/fondo.jpg" alt="Imagen principal">
-            <div class="texto-fondo-principal">
-                <h1>The Residence - Costa del Este</h1>
-                <h2>Tus vacaciones perfectas en el lugar perfecto</h2>
-            </div>              
+        <div>
+          <h4>Explorá</h4>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/departamentos.html">Departamentos</a></li>
+            <li><a href="./pages/acerca_del_complejo.html">El complejo</a></li>
+            <li><a href="./pages/servicios.html">Servicios</a></li>
+            <li><a href="./pages/actividades.html">Costa del Este</a></li>
+            <li><a href="./pages/tarifas.html">Tarifas</a></li>
+          </ul>
         </div>
-
-        <div class="conocer-mas-complejo">
-            <h2 class="titulo-complejo">The Residence - Tu hogar en la Costa</h2>
-            <p class="description-complejo">Descubre el lugar perfecto para unas vacaciones inolvidables en un lugar exclusivo en Costa del Este. The Residence te ofrece una experiencia única que te hará sentir como en casa.Nuestros departamentos totalmente equipados y frente al mar te brindarán el ambiente acogedor y relajante que deseas. Además, nuestras amplias comodidades y servicios te permitirán disfrutar al máximo tus vacaciones.</p>
-            <p>Ven y conoce más sobre The Residence.</p>
-            <div class="boton-complejo">
-                <a class="btn-complejo" href="./pages/acerca_del_complejo.html">CONOCER MÁS</a>
-            </div>
+        <div>
+          <h4>Departamentos</h4>
+          <ul>
+            <li><a href="./pages/departamentos.html#dos-ambientes">2 ambientes · hasta 4 pers.</a></li>
+            <li><a href="./pages/departamentos.html#tres-ambientes">3 ambientes · hasta 6 pers.</a></li>
+            <li><a href="./pages/departamentos.html#cuatro-ambientes">4 ambientes · hasta 8 pers.</a></li>
+            <li><a href="./pages/departamentos.html#comparar">Comparar unidades</a></li>
+          </ul>
         </div>
-
-        <div class="departamentos_servicios">
-                <div class="departamento departamento--departamentos">
-                    <h3 class="departamento__titulo">Departamentos</h3>
-                    <h4 class="departamento__subtitulo">Tu comodidad es nuestra prioridad</h4>
-                <div class="departamento__imagen-container">
-                    <img class="departamento__imagen" src="img/index/deptos.jpg" alt="">
-                </div>
-                <div class="departamento__info">
-                    <p class="departamento__descripcion">¡Aquí te esperan los mejores departamentos de la costa! Amplios, cómodos y con vistas geniales. ¿Qué esperas para vivir tus mejores vacaciones?</p>
-                    <a class="departamento__boton departamento__enlace" href="./pages/departamentos.html">CONOCER MÁS</a>
-                </div>
-            </div>
-            <div class="departamento departamento--servicios">
-                <h3 class="departamento__titulo">Servicios</h3>
-                <h4 class="departamento__subtitulo">Disfruta de atenciones especiales</h4>
-                <div class="departamento__imagen-container">
-                <img class="departamento__imagen" src="img/index/servicios.jpg" alt="imagen servicios del index">
-            </div>
-            <div class="departamento__info">
-                <p class="departamento__descripcion">Descubre nuestros exclusivos servicios diseñados para brindarte una experiencia inolvidable, pensados para que te relajes y te olvides de preocupaciones.</p>
-                <a class="departamento__boton departamento__enlace" href="./pages/servicios.html">CONOCER MÁS</a>
-            </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul class="footer__contact">
+            <li><i class="fa-brands fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence.">+54 11 6642-5883</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires" target="_blank" rel="noopener">Las Amapolas 351, Costa del Este, Buenos Aires</a></li>
+            <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank" rel="noopener">@theresidence.costadeleste</a></li>
+          </ul>
+          <div class="social">
+            <a href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence." aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires" target="_blank" rel="noopener" aria-label="Cómo llegar"><i class="fa-solid fa-map-location-dot"></i></a>
+          </div>
         </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> The Residence · Costa del Este</span>
+        <span>Escapadas · Fines de semana · Vacaciones · Verano 2027</span>
+      </div>
+    </div>
+  </footer>
 
-        <div class="donde-estamos-container">
-            <div class="img-donde-estamos">
-                <img src="./img/index/donde_estamos.jpg" alt="imagen donde-estamos del index">
-            </div>
-            <div class="txt-donde-estamos">
-                <h3>¿Dónde Estamos?</h3>
-                <p>Nos encontramos en Costa del Este, un encantador destino costero situado entre Mar del Tuyú y Aguas Verdes. Nuestros acogedores departamentos te esperan para brindarte una experiencia única durante tus vacaciones.</p>
-                <p>Ven a disfrutar de la magia de la costa y descubre todo lo que tenemos para ofrecerte. Te esperamos con los brazos abiertos en The Residence.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.6402738588813!2d-56.68674519022255!3d-36.61287848521712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c6cf8713be0f1%3A0x121a1e935f208b59!2sLas%20Amapolas%20351%2C%20Costa%20del%20Este%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689961008935!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        
-        <div class="actividades">
-            <div class="img-actividades">
-                <img src="./img/index/que_hacer.jpg" alt="imagen actividades del index">
-            </div>
-            <div class="txt-actividades">
-                <h3>¿Qué hacer en Costa del Este?</h3>
-                <p>Prepárate para vivir una experiencia llena de diversión y aventura en Costa del Este. Esta fascinante localidad costera te ofrece una amplia variedad de actividades para disfrutar al máximo de tus vacaciones. Desde relajarte en sus hermosas playas hasta explorar la naturaleza, Costa del Este tiene algo para todos los gustos.
-                ¿Estás listo para descubrir las emocionantes opciones que te esperan? Haz clic a continuación para explorar las distintas actividades y descubrir todo lo que Costa del Este tiene para ofrecerte.</p>
-                <div class="boton-complejo">
-                    <a class="btn-complejo" href="./pages/actividades.html">CONOCER MÁS</a>
-                </div>
-            </div>
-        </div>
+  <a class="wa-float" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence." aria-label="Escribinos por WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>¿Consultas? Escribinos</span></a>
 
-        <!-- Sección de las Tarifas -->
-        <div class="tarifas-index">
-            <div class="img-tarifas-index">
-                <img src="./img/index/playa.jpg" alt="imagen tarifas del index">
-            </div>
-            <div class="txt-tarifas-index">
-                <h3>Conoce nuestras Tarifas</h3>
-                <p>Descubre nuestras tarifas atractivas para diferentes tipos de departamentos. En The Residence, nos esforzamos por ofrecerte la mejor relación precio-calidad para que puedas disfrutar al máximo tus vacaciones.</p>
-                <div class="boton-complejo">
-                    <a class="btn-complejo" href="./pages/tarifas.html">CONOCER MÁS</a>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- Linkeo con JS del boton hamburguesa -->
-    <script src="./js/hamburguesa.js"></script>
-
-    <!-- Linkeo con JS del boton hamburguesa -->
-    <script src="./js/instagram.js"></script>
-
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="./pages/acerca_del_complejo.html">Acerca de The Residence</a></li>
-                    <li><a href="./pages/departamentos.html">Departamentos</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/actividades.html">Actividades</a></li>
-                    <li><a href="./pages/tarifas.html">Tarifas</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p>
-                    <a href="https://api.whatsapp.com/send?phone=541166425883&text=¡Hola! Estoy interesado en obtener más información sobre The Residence." target="_blank">
-                        <i class="fab fa-whatsapp"></i> 11 6642-5883
-                    </a>
-                </p>
-            </div>
-    
-            <div class="footer-social">
-                <h4>Redes Sociales</h4>
-                <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank">
-                    <i class="fab fa-instagram"></i> theresidence.costadeleste
-                </a>
-            </div>
-        </div>
-    
-        <div class="footer-map" id="map">
-            <h4>¿Dónde Estamos?</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.6402738588813!2d-56.68674519022255!3d-36.61287848521712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c6cf8713be0f1%3A0x121a1e935f208b59!2sLas%20Amapolas%20351%2C%20Costa%20del%20Este%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689961008935!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </footer>
-
+  <script src="./js/site.js"></script>
 </body>
 </html>

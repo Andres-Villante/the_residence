@@ -1,374 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <meta name="description"
-        content="Descubre las emocionantes actividades disponibles en Costa del Este y localidades cercanas. Desde relajarte en las playas hasta explorar la naturaleza, hay algo para todos los gustos. Prepárate para vivir una experiencia llena de diversión en La Costa.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qué hacer en Costa del Este | The Residence</title>
+  <meta name="description" content="Playas, caminatas, pesca, ciclismo, gastronomía y paseos cercanos: Mundo Marino, Termas de San Clemente, Faro San Antonio y más.">
+  <meta name="theme-color" content="#0d3553">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Qué hacer en Costa del Este | The Residence">
+  <meta property="og:description" content="Playas, caminatas, pesca, ciclismo, gastronomía y paseos cercanos: Mundo Marino, Termas de San Clemente, Faro San Antonio y más.">
+  <meta property="og:image" content="../img/index/fondo.jpg">
+  <link rel="icon" href="../img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/site.css">
 
-    <title>Actividades para hacer en Costa del Este | Descubre las diversas opciones para aprovechar al máximo tu estadía en The Residence</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGHJZPQTRS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GGHJZPQTRS');
+  </script>
 </head>
 
 <body>
+  <a href="#contenido" class="sr-skip" style="position:absolute;left:-9999px">Saltar al contenido</a>
 
-    <header>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../img/logo.jpg" class="logo img-circular" alt="Logo Circular">
-            </a>
+  <div class="topbar">
+    <strong>#ElMarDeLasOportunidades</strong> · Cuotas sin interés para Verano 2027 · <a href="../pages/tarifas.html#cotizador">Pedí tu tarifa</a>
+  </div>
+
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="../index.html" aria-label="The Residence, ir al inicio">
+        <img class="brand__logo" src="../img/logo.jpg" alt="" width="50" height="50">
+        <span class="brand__text">
+          <span class="brand__name">THE RESIDENCE</span>
+          <span class="brand__tag">Costa del Este · Frente al mar</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+          <a class="nav__link" href="../pages/departamentos.html">Departamentos</a>
+          <a class="nav__link" href="../pages/acerca_del_complejo.html">El complejo</a>
+          <a class="nav__link" href="../pages/servicios.html">Servicios</a>
+          <a class="nav__link" href="../pages/actividades.html" aria-current="page">Costa del Este</a>
+          <a class="nav__link" href="../pages/tarifas.html">Tarifas</a>
+        <a class="btn btn--primary btn--sm" href="../pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <div class="drawer" aria-hidden="true">
+    <div class="drawer__panel">
+      <button class="drawer__close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark"></i></button>
+      <a class="drawer__link" href="../index.html">Inicio <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/departamentos.html">Departamentos <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/acerca_del_complejo.html">El complejo <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/servicios.html">Servicios <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/actividades.html" aria-current="page">Costa del Este <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="drawer__link" href="../pages/tarifas.html">Tarifas <i class="fa-solid fa-chevron-right"></i></a>
+      <a class="btn btn--primary btn--block" href="../pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+      <a class="btn btn--wa btn--block" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence."><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <p class="drawer__script">#El Mar de las Oportunidades</p>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="page-hero__bg"><img src="../img/actividades/playa-costa.jpg" alt=""></div>
+      <div class="wrap">
+        <p class="crumbs"><a href="../index.html">Inicio</a><span>/</span>Costa del Este</p>
+        <span class="eyebrow">Qué hacer</span>
+        <h1>Bienvenidos a <span class="script">Costa del Este</span></h1>
+        <p>Una localidad costera tranquila, rodeada de bosques, a unos 360 km de Buenos Aires. Ideal para unas vacaciones distintas.</p>
+      </div>
+      <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 50 C 240 10, 480 90, 720 50 S 1200 10, 1440 50 V90 H0Z" fill="#ffffff" opacity=".45"/><path d="M0 65 C 260 30, 520 100, 760 62 S 1220 35, 1440 62 V90 H0Z" fill="#ffffff"/></svg></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div class="split__media reveal">
+          <img class="img-main" src="../img/actividades/caminata.jpg" alt="Sendero entre los pinos de Costa del Este" loading="lazy">
+          <img class="img-float" src="../img/actividades/playas.jpg" alt="Playa de Costa del Este" loading="lazy">
         </div>
-        <nav class="nav-container">
-            <button class="menu-icon"><i class="fas fa-bars"></i></button>
-            <ul class="nav-list">
-                <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
-                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./tarifas.html">TARIFAS</a></li>
-            </ul>
-        </nav>
-        <div class="sidebar">
-            <button class="close-icon">&times;</button>
-            <ul class="sidebar-list">
-                <li><a href="./acerca_del_complejo.html">ACERCA DE THE RESIDENCE</a></li>
-                <li><a href="./departamentos.html">DEPARTAMENTOS</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./actividades.html">ACTIVIDADES</a></li>
-                <li><a href="./tarifas.html">TARIFAS</a></li>
-            </ul>
+        <div class="reveal" data-delay="1">
+          <span class="eyebrow">El destino</span>
+          <h2 class="title">Naturaleza, playa <span class="script">y calma</span></h2>
+          <span class="brush"></span>
+          <p class="lead" style="margin-top:18px">En Costa del Este la preservación del medio ambiente es prioridad: bosques y áreas verdes con senderos para caminar y andar en bici.</p>
+          <p>Además vas a encontrar restaurantes, cafeterías y tiendas locales con productos y artesanías únicas. Relajarte en la playa, pescar, ir de compras o disfrutar de la gastronomía: hay planes para todos los gustos.</p>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <!-- Botón de WhatsApp fijo -->
-        <div class="whatsapp-btn">
-            <a href="https://api.whatsapp.com/send?phone=541166425883&text=¡Hola! Estoy interesado en obtener más información sobre The Residence."
-                target="_blank">
-                <i class="fab fa-whatsapp"></i>
-                Contáctanos por WhatsApp
-            </a>
+    <section class="section section--sky">
+      <div class="wrap">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">En Costa del Este</span>
+          <h2 class="title">Actividades <span class="script">en el lugar</span></h2>
+          <span class="brush"></span>
         </div>
-
-        <!-- Botón de Instagram fijo (oculto al principio) -->
-        <div class="instagram-btn instagram-btn-hidden">
-            <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank">
-                <i class="fab fa-instagram"></i>
-                Síguenos en Instagram
-            </a>
+        <div class="acts">
+          <article class="act reveal"><div class="act__media"><img src="../img/actividades/playas.jpg" alt="Playa" loading="lazy"><span class="act__tag">Cruzando la calle</span></div><div class="act__body"><h3>Playas</h3><p>Arena suave y aguas refrescantes: el entorno perfecto para relajarte y tomar sol.</p></div></article>
+          <article class="act reveal" data-delay="1"><div class="act__media"><img src="../img/actividades/caminata.jpg" alt="Caminata" loading="lazy"><span class="act__tag">Naturaleza</span></div><div class="act__body"><h3>Caminatas</h3><p>Senderos ideales para caminar y descubrir la flora y fauna local.</p></div></article>
+          <article class="act reveal" data-delay="2"><div class="act__media"><img src="../img/actividades/pesca.jpg" alt="Pesca" loading="lazy"><span class="act__tag">Costa o embarcación</span></div><div class="act__body"><h3>Pesca</h3><p>Oportunidades para los amantes de la pesca, desde la costa o en embarcaciones.</p></div></article>
+          <article class="act reveal"><div class="act__media"><img src="../img/actividades/gastronomia.jpg" alt="Gastronomía" loading="lazy"><span class="act__tag">A 200 m</span></div><div class="act__body"><h3>Gastronomía</h3><p>De delicias locales a platos de distintas culturas, para todos los paladares.</p></div></article>
+          <article class="act reveal" data-delay="1"><div class="act__media"><img src="../img/actividades/centro.jpg" alt="Centro comercial" loading="lazy"><span class="act__tag">A 200 m</span></div><div class="act__body"><h3>Centro comercial</h3><p>Tiendas, paseos y artesanías a una caminata del complejo.</p></div></article>
+          <article class="act reveal" data-delay="2"><div class="act__media"><img src="../img/actividades/ciclismo.jpg" alt="Ciclismo" loading="lazy"><span class="act__tag">Deporte</span></div><div class="act__body"><h3>Ciclismo</h3><p>Recorré los senderos en bici disfrutando del paisaje natural.</p></div></article>
         </div>
+      </div>
+    </section>
 
-        <div class="fondo-actividades">
-            <img src="../img/actividades/playa-costa.jpg" alt="Imagen de fondo">
-
-            <div class="texto-actividades-img">
-                <h1 class="titulo-actividades">Actividades para hacer en</h1>
-                <h2 class="subtitulo-actividades">Costa del Este</h2>
-            </div>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Paseos cercanos</span>
+          <h2 class="title">Excursiones <span class="script">a un rato</span></h2>
+          <span class="brush"></span>
+          <p class="lead">San Clemente, Las Toninas, Santa Teresita, Mar del Tuyú, San Bernardo, Mar de Ajó, Pinamar, Cariló y Villa Gesell: todo a tiro de auto.</p>
         </div>
-
-        <h3 class="bienvenida-actividades">Les damos la bienvenida a Costa del Este</h3>
-
-        <p class="descripcion-actividades">
-            Costa del Este, en Buenos Aires, Argentina, es una encantadora localidad costera perfecta para unas vacaciones tranquilas en la playa. A solo 360 km al sureste de Buenos Aires. Conocida por su encanto natural y su ambiente relajado, es el destino ideal para los que buscan disfrutar de unas vacaciones únicas.
-            <br><br>
-
-            La preservación del medio ambiente es fundamental en Costa del Este. Rodeada de bosques y áreas verdes con senderos para caminar y andar en bicicleta, los visitantes pueden explorar y disfrutar plenamente del entorno. Además, encontrarás una gran variedad de restaurantes, cafeterías y tiendas locales con productos y artesanías únicas. <br><br>
-
-            En Costa del Este, las opciones de actividades son diversas. Ya sea que desees relajarte en la playa, explorar la naturaleza, pescar, ir de compras o disfrutar de la gastronomía. Este destino te ofrece una experiencia inolvidable. ¡Ven y descubre todo lo que Costa del Este tiene para ofrecerte!
-        </p>
-
-        <div class="cards">
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/playas.jpg"
-                        alt="Imagen playa de actividades">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Playas</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Te invitamos a disfrutar de sus playas con arena suave y aguas refrescantes, creando el entorno perfecto para relajarte y tomar sol.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/caminata.jpg"
-                        alt="Imagen playa de actividades">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Caminatas</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Descubre la belleza natural de Costa del Este a través de sus senderos, ideales para relajantes caminatas y explorar la flora y fauna local.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/pesca.jpg"
-                        alt="Imagen pesca de actividades">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Pesca</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Si eres amante de la pesca, te ofrecemos emocionantes oportunidades para disfrutar de este deporte, ya sea en la costa o en embarcaciones.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/gastronomia.jpg"
-                        alt="Imagen gastronomia de actividades">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Gastronomía</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Descubre una amplia variedad gastronómica, desde delicias locales hasta platos de diferentes culturas, para todos los paladares.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/centro.jpg"
-                        alt="Imagen centro de actividades">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Centro Comercial</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Sumérgete en la diversidad de tiendas y paseos de compras del centro comercial.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/ciclismo.jpg"
-                        alt="Imagen ciclismo de actividades">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Ciclismo</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Recorre los encantadores senderos en bicicleta y disfruta del paisaje natural mientras practicas tu deporte favorito.
-                    </div>
-                </div>
-            </div>
-
-            <div class="fondo-actividades">
-                <img src="../img/actividades/localidades_cercanas.jpg" alt="Foto Partido de la costa">
-                <div class="texto-actividades-img">
-                    <h2>Localidades Cercanas a Costa del Este</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/mundo_marino.jpg"
-                        alt="Imagen mundo marino de actividades">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Mundo Marino</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Visitá el parque temático Mundo Marino, ubicado en San Clemente del Tuyú, a aproximadamente 40 km de Costa del Este. Podrás disfrutar de espectáculos de delfines, leones marinos y orcas, así como explorar acuarios y aprender sobre la vida marina.</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/termas.jpg"
-                        alt="Imagen termas de localidades cercanas">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Termas San Clemente</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Disfrutá de una jornada de relajación en las Termas Marinas de San Clemente, ubicadas a escasos 40 km aproximadamente de Costa del Este. Disfruta de un día dedicado a tu descanso y bienestar. Una experiencia única para recargar energías y cuidar de ti mismo.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/faro.jpg"
-                        alt="Imagen faro de localidades cercanas">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Faro San Antonio</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Visita el Faro San Antonio en San Clemente del Tuyú, a unos 40 km de Costa del Este. Este icónico faro ofrece una vista panorámica del océano y sus alrededores. Puedes subir a la cima del faro y disfrutar de las impresionantes vistas.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/localidades_cercanas_chica.jpg"
-                        alt="Imagen de localidades cercanas">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Localidades Cercanas</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Puedes realizar excursiones a localidades cercanas como San Clemente, Las Toninas, Santa Teresita, Mar del Tuyú, San Bernardo, Mar de Ajó, Pinamar, Cariló y Villa Gesell. Estas localidades ofrecen opciones de entretenimiento, tiendas, restaurantes y actividades recreativas.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/laberinto.jpg"
-                        alt="Imagen de localidades cercanas">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Laberinto Las Toninas</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Uno de los Laberintos más Grandes de Sudamérica te desafía a recorrer 6.400 m2 de superficie en un entorno natural, con mucha vegetación a solo metros del mar.
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__image-holder">
-                    <img class="card__image card__image-fixed" src="../img/actividades/poseidon.jpg"
-                        alt="Imagen de localidades cercanas">
-                </div>
-                <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                        <span class="left"></span>
-                        <span class="right"></span>
-                    </a>
-                    <h2>Poseidón</h2>
-                </div>
-                <div class="card-flap flap1">
-                    <div class="card-description">
-                        Poseidón en Santa Teresita es un fascinante parque acuático que te ofrece una experiencia inolvidable. Con emocionantes toboganes, piscinas refrescantes y diversión para toda la familia, es el lugar perfecto para crear recuerdos inolvidables. ¡Sumérgete en la diversión!
-                    </div>
-                </div>
-            </div>
-    </main>
-
-    <!-- Linkeo con JS del boton hamburguesa -->
-    <script src="../js/hamburguesa.js"></script>
-
-    <!-- Linkeo con JS de las tarjetas -->
-    <script src="../js/tarjetas.js"></script>
-
-    <!-- Linkeo con JS del icono de instagram -->
-    <script src="../js/instagram.js"></script>
-
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./acerca_del_complejo.html">Acerca de The Residence</a></li>
-                    <li><a href="./departamentos.html">Departamentos</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./actividades.html">Actividades</a></li>
-                    <li><a href="./tarifas.html">Tarifas</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p>
-                    <a href="https://api.whatsapp.com/send?phone=541166425883&text=¡Hola! Estoy interesado en obtener más información sobre The Residence."
-                        target="_blank">
-                        <i class="fab fa-whatsapp"></i> 11 6642-5883
-                    </a>
-                </p>
-            </div>
-
-            <div class="footer-social">
-                <h4>Redes Sociales</h4>
-                <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank">
-                    <i class="fab fa-instagram"></i> theresidence.costadeleste
-                </a>
-            </div>
+        <div class="acts">
+          <article class="act reveal"><div class="act__media"><img src="../img/actividades/mundo_marino.jpg" alt="Mundo Marino" loading="lazy"><span class="act__tag">San Clemente · ~40 km</span></div><div class="act__body"><h3>Mundo Marino</h3><p>Espectáculos de delfines, lobos marinos y orcas, acuarios y mucho para aprender sobre la vida marina.</p></div></article>
+          <article class="act reveal" data-delay="1"><div class="act__media"><img src="../img/actividades/termas.jpg" alt="Termas Marinas" loading="lazy"><span class="act__tag">San Clemente · ~40 km</span></div><div class="act__body"><h3>Termas Marinas</h3><p>Una jornada dedicada al descanso y al bienestar para recargar energías.</p></div></article>
+          <article class="act reveal" data-delay="2"><div class="act__media"><img src="../img/actividades/faro.jpg" alt="Faro San Antonio" loading="lazy"><span class="act__tag">San Clemente · ~40 km</span></div><div class="act__body"><h3>Faro San Antonio</h3><p>Subí a la cima y disfrutá de una vista panorámica del océano y la bahía.</p></div></article>
+          <article class="act reveal"><div class="act__media"><img src="../img/actividades/laberinto.jpg" alt="Laberinto de Las Toninas" loading="lazy"><span class="act__tag">Las Toninas</span></div><div class="act__body"><h3>Laberinto Las Toninas</h3><p>Uno de los laberintos más grandes de Sudamérica: 6.400 m² entre vegetación, a metros del mar.</p></div></article>
+          <article class="act reveal" data-delay="1"><div class="act__media"><img src="../img/actividades/poseidon.jpg" alt="Parque acuático Poseidón" loading="lazy"><span class="act__tag">Santa Teresita</span></div><div class="act__body"><h3>Poseidón</h3><p>Parque acuático con toboganes y piletas para toda la familia.</p></div></article>
+          <article class="act reveal" data-delay="2"><div class="act__media"><img src="../img/actividades/localidades_cercanas_chica.jpg" alt="Localidades cercanas" loading="lazy"><span class="act__tag">Partido de La Costa y más</span></div><div class="act__body"><h3>Localidades vecinas</h3><p>Entretenimiento, tiendas, restaurantes y actividades recreativas en toda la costa.</p></div></article>
         </div>
+      </div>
+    </section>
 
-        <div class="footer-map" id="map">
-            <h4>¿Dónde Estamos?</h4>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.6402738588813!2d-56.68674519022255!3d-36.61287848521712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c6cf8713be0f1%3A0x121a1e935f208b59!2sLas%20Amapolas%20351%2C%20Costa%20del%20Este%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689961008935!5m2!1ses-419!2sar"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <h2>Tu base frente al mar</h2>
+          <p>Volvé de cada paseo a tu departamento con balcón, a metros de la playa.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn--sun" href="../pages/tarifas.html#cotizador"><i class="fa-solid fa-phone-volume"></i> Pedí tu tarifa</a>
+            <a class="btn btn--ghost" href="../pages/departamentos.html">Ver departamentos</a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wave" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C 240 0, 480 60, 720 30 S 1200 0, 1440 30 V60 H0Z" fill="#082236"/></svg></div>
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="../index.html">
+            <img class="brand__logo" src="../img/logo.jpg" alt="" width="50" height="50">
+            <span class="brand__text"><span class="brand__name">THE RESIDENCE</span><span class="brand__tag">Costa del Este</span></span>
+          </a>
+          <p class="footer__about">Departamentos de 2, 3 y 4 ambientes frente al mar, entre pinos y a 200 metros del centro comercial de Costa del Este.</p>
+          <p class="footer__script">#El Mar de las Oportunidades</p>
+        </div>
+        <div>
+          <h4>Explorá</h4>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/departamentos.html">Departamentos</a></li>
+            <li><a href="../pages/acerca_del_complejo.html">El complejo</a></li>
+            <li><a href="../pages/servicios.html">Servicios</a></li>
+            <li><a href="../pages/actividades.html">Costa del Este</a></li>
+            <li><a href="../pages/tarifas.html">Tarifas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Departamentos</h4>
+          <ul>
+            <li><a href="../pages/departamentos.html#dos-ambientes">2 ambientes · hasta 4 pers.</a></li>
+            <li><a href="../pages/departamentos.html#tres-ambientes">3 ambientes · hasta 6 pers.</a></li>
+            <li><a href="../pages/departamentos.html#cuatro-ambientes">4 ambientes · hasta 8 pers.</a></li>
+            <li><a href="../pages/departamentos.html#comparar">Comparar unidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul class="footer__contact">
+            <li><i class="fa-brands fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence.">+54 11 6642-5883</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires" target="_blank" rel="noopener">Las Amapolas 351, Costa del Este, Buenos Aires</a></li>
+            <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank" rel="noopener">@theresidence.costadeleste</a></li>
+          </ul>
+          <div class="social">
+            <a href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence." aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/theresidence.costadeleste/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google.com/maps/place/Las+Amapolas+351,+Costa+del+Este,+Provincia+de+Buenos+Aires" target="_blank" rel="noopener" aria-label="Cómo llegar"><i class="fa-solid fa-map-location-dot"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> The Residence · Costa del Este</span>
+        <span>Escapadas · Fines de semana · Vacaciones · Verano 2027</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://api.whatsapp.com/send?phone=541166425883&amp;text=%C2%A1Hola!%20Quiero%20informaci%C3%B3n%20sobre%20The%20Residence." target="_blank" rel="noopener" data-wa="¡Hola! Quiero información sobre The Residence." aria-label="Escribinos por WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>¿Consultas? Escribinos</span></a>
+
+  <script src="../js/site.js"></script>
 </body>
-
 </html>
