@@ -1,0 +1,8 @@
+{
+  "name": "the-residence",
+  "private": true,
+  "description": "Sitio estático de The Residence - Costa del Este",
+  "engines": {
+    "node": "24.x"
+  }
+}
